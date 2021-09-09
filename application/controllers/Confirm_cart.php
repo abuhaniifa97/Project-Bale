@@ -36,7 +36,29 @@ class Confirm_cart extends CI_Controller {
 		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		// $data['query'] = $this->model_barang->tampil_data()->result();
 		$data['show_query'] = $this->model_confirm->tampil_detail()->result();
-		$this->load->view('confirm_cart',$data);
+		
+		
+
+		// Funnction Validasi Masuk berhasil
+		$ip= $_SERVER['REMOTE_ADDR'];
+		$this->db->select('ip');
+		$this->db->where('ip',$ip);
+		$query = $this->db->get('pembeli');
+		$num = $query->num_rows();
+		if($num < 1)
+		{
+			// $this->session->set_flashdata('success','Action Completed');
+			// echo base_url('alamat');
+			
+			echo "<script>console.log('Tidak berhasil upload akhir')</script>";
+			
+		}
+		else{
+				// $this->session->set_flashdata('success','Action Completed');
+				// redirect('confirm_cart');
+			echo "<script>console.log('Berhasil upload akhir')</script>";
+		}
+		//Funnction Validasi Masuk
 	}
 	public function provinsi(){
 

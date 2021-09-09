@@ -119,18 +119,18 @@
         <?php $this->load->view('partial/footer') ?>
       </div>
 
-    <!-- sweetalert -->
-        
+        <!-- sweetalert -->
         <?php if ($this->session->flashdata('success')): ?>
             <script>
-                swal({
-                title: "Good job!",
-                text: "You clicked the button!",
-                icon: "success",
-                button: "Aww yiss!",
-                });
+                Swal.fire(
+                'Di tambahkan',
+                'Berhasil di tambahkan',
+                'success'
+                )           
             </script>
         <?php endif; ?>
+        
+        
       
        <!-- akhir sweetalert -->
 

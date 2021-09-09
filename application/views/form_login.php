@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php $this->load->view('partial/head'); ?>
 
 
@@ -33,9 +32,8 @@
                       </div>
                       <button type="submit" value="login" class="btn btn-primary form-control text-white">Login</button>
                     </form>
-                    <br>
                     <a href="<?= base_url() ?>halaman_utama">
-                     <button type="submit" value="login" class="btn btn-outline-primary form-control" >kembali</button>
+                     <button type="submit" value="login" class="btn btn-outline-primary form-control mt-3" >kembali</button>
 
                     </a>
                       <!-- <button class="btn btn-outline-dark "><span style="color=ffff;">Kembali belanja</span></button> -->
