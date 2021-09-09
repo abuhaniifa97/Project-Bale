@@ -17,11 +17,15 @@ class Alamat extends CI_Controller {
 		$data['berat'] = $this->model_keranjang->tampil_detail_pesanan()->result();
 		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		$data['provinsi']=$this->model_pembeli->get_all_provinsi();
+		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
+		$data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();
+		
 		
 			
 		$data['path'] = base_url('assets');
 		
 		// $this->session->set_flashdata('success','Action Completed');
+		// $this->load->view('edit_alamat', $data);
 		$this->load->view('alamat', $data);
 	}
 
@@ -81,7 +85,9 @@ class Alamat extends CI_Controller {
 		$num = $query->num_rows();
 		if($num > 0)
 		{
-			echo "<script>console.log('Tidak berhasil upload akhir')</script>";
+			$this->session->set_flashdata('success','Action Completed');
+			redirect('alamat');
+			// echo "<script>console.log('Tidak berhasil upload akhir')</script>";
 			
 		}else{
 			$data = array(
@@ -120,12 +126,92 @@ class Alamat extends CI_Controller {
 								$this->model_pembeli->input_data($data2,'tb_provinsi');
 								$this->model_pembeli->input_data($data3,'tb_kota');
 								$this->model_pembeli->input_data($data4,'tb_kecamatan');
-			echo "<script>console.log('Berhasil upload akhir')</script>";
+								$this->session->set_flashdata('success','Action Completed');
+								redirect('confirm_cart');
+			// echo "<script>console.log('Berhasil upload akhir')</script>";
 		}
 		//Akhir cek alamat IP
+	}
 
+	//function edit
+	public function edit_data()
+	{
+		// $data['berat'] = $this->model_keranjang->tampil_detail_pesanan()->result();
+		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
+		// $data['provinsi']=$this->model_pembeli->get_all_provinsi();
+		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
+		// $data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();
+		$this->load->view('edit_alamat',$data);
 
 	}
+
+	// FUNCTION UPDATE DATA
+	public function update(){
+		// Deklrasi Manual
+		$destination = 'Kota Bandung';
+		$berat = $this->input->post('total_berat');
+		// Akhir Deklrasi Manual
+		// Deklarasi Varible
+		$ip_alamat = $this->input->post('ip_alamat');
+		$id_pembeli = $this->input->post('id_pembeli');
+		$no_telepon = $this->input->post('no_telepon');
+		$nama_pembeli = $this->input->post('nama_pembeli');
+		$alamat = $this->input->post('alamat');
+		$provinsi = $this->input->post('provinsi');
+		$kota = $this->input->post('kota');
+		$kecamatan = $this->input->post('kecamatan');
+		$kodepos = $this->input->post('kodepos');
+		// Akhir Deklarasi
+		
+		
+			$data = array(
+				'ip'         =>$ip_alamat,
+				'id_pembeli' => $id_pembeli,
+				'no_telepon' => $no_telepon,
+				'nama_pembeli' => $nama_pembeli,
+				'alamat' => $alamat,
+				'id_provinsi' => $provinsi,
+				'id_kota'=>$kota,
+				'id_kecamatan'=>$kecamatan,
+				'kodepos'=>$kodepos
+				);
+	
+				// data provinsi
+				$data2 = array(
+					
+					'id_provinsi' => $provinsi,
+					'id_pembeli' => $id_pembeli
+					
+					);
+	
+					// data kabupaten
+					$data3 = array(
+						'id_pembeli' => $id_pembeli,
+						'id_kota'=>$kota
+						);
+	
+						// data kecamatan
+						$data4 = array(
+							'id_pembeli' => $id_pembeli,
+							'id_kecamatan'=>$kecamatan,
+							);
+	
+								$this->model_pembeli->input_data($data,'pembeli');
+								$this->model_pembeli->input_data($data2,'tb_provinsi');
+								$this->model_pembeli->input_data($data3,'tb_kota');
+								$this->model_pembeli->input_data($data4,'tb_kecamatan');
+								$this->session->set_flashdata('success','Action Completed');
+								redirect('edit_alamat');
+		
+								
+			// echo "<script>console.log('Berhasil upload akhir')</script>";
+		
+		
+		
+		//Akhir cek alamat IP
+	}
+
+		
 
 }
 

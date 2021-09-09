@@ -93,9 +93,8 @@ class Halaman_utama extends CI_Controller {
 		$this->model_barang->update_stok($where_stok,$data_stok,'produk');
 		// Akhir Update Stok
 		 $this->model_keranjang->add_cart_m($dataa,'keranjang');
-		 $this->session->set_flashdata('pesan','<div class="alert alert-primary" role="alert">
-		   Berhasil Tambah Keranjang
-	     </div>');
+		 $this->session->set_flashdata('success','Action Completed');
+		 
 		 redirect('halaman_utama');
 		
 

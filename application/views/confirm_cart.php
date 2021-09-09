@@ -4,7 +4,7 @@
 <body> 
     <!-- dekrlerasi -->
 	<section class="content">
-		<div class="container" style="max-width: 1340px;">
+		<div class="container" style="max-width: 1370px;">
 			<h4 class="text-center" style="font-weight: bold; font-size:30px;">Konfirmasi Pembayaran</h4>
 			<div class="row flex-column-reverse flex-lg-row mt-5">
 				<div class="col-md-7">
@@ -36,7 +36,7 @@
 										
 										<div class="row">
 											<div class="col-md-12">
-												<a href="alamat"><p class="font-italic" style="color:#FC185A; ">Edit alamat kembali ke halaman Alamat</p></a>
+												<a href="<?php echo base_url('alamat/edit_data') ?>"><p class="font-italic" style="color:#FC185A; ">Edit Alamat</p></a>
 											</div>	
 										</div>
 										
@@ -219,4 +219,16 @@
 
 </script>
   <!-- Akhir Checkout -->
+
+  <!-- sweetalert -->
+  	<?php if ($this->session->flashdata('success')): ?>
+		<script>
+			Swal.fire(
+			'Di tambahkan',
+			'Berhasil di tambahkan',
+			'success'
+			)           
+		</script>
+	<?php endif; ?>
+
 </body>
