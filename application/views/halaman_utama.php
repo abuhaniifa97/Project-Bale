@@ -78,7 +78,8 @@
                 <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk1">
 						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
+							<!-- <img src="<?php echo base_url().'assets/img/discon.jpg'  ?>" style="position: absolute;left: 12px;top: 15px"  alt="img-fluid"> -->
+                           <span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span> -->
 						</div>
                         <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
                             <img src="<?php echo base_url('assets/gambar_utama/bergo4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
