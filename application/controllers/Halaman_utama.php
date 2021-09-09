@@ -77,7 +77,7 @@ class Halaman_utama extends CI_Controller {
 				'harga'              => $harga,
 				'qty'                => $qty,
 				'nama_varian_satu'   => $nama_varian_satu,
-				'nama_varian_satu'   => $isi_varian_satu,
+				'isi_varian_satu'   => $isi_varian_satu,
 				'nama_varian_dua'    => $nama_varian_dua,
 				'isi_varian_dua'     => $isi_varian_dua
 		         

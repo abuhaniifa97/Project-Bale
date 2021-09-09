@@ -28,6 +28,8 @@ class Confirm_cart extends CI_Controller {
 	 */
 	public function index()
 	{
+		// Show Join
+		$data['show_detail'] = $this->model_confirm->show_detail()->result();
 		// Ongkir 
 		$data['ongkir'] = '';
 		$data['query'] = $this->model_keranjang->tampil_data()->result();

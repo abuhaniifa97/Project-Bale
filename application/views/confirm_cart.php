@@ -9,6 +9,7 @@
 			<div class="row flex-column-reverse flex-lg-row mt-5">
 				<div class="col-md-7">
 					<div class="container">
+						<?php foreach ($show_detail as $list) :?>
 						<div class="row">
 							<div class="col-md-12 text-center">
 								<!-- gambar img tokopedia -->
@@ -18,21 +19,21 @@
 							<div class="col-md-12">
 								<div class="row">
 									<div class="col-md-6">
-										<?php foreach ($buyer as $buy) :?>
+										
 										<div class="row">
 											<div class="col-md-12">
 												<span style="font-size:12px;font-weight:bold">Penerima</span>
 												<br>
-												<span style="font-weight: bold;"><?php echo $buy->nama_pembeli?></span>
+												<span style="font-weight: bold;"><?php echo $list->nama_pembeli?></span>
 											</div>
 											<div class="col-md-12">
-												<span><?php echo $buy->no_telepon?></span>
+												<span><?php echo $list->no_telepon?></span>
 											</div>
 											<div class="col-md-12">
-												<span><?php echo $buy->alamat?></span>
+												<span><?php echo $list->alamat?></span>
 											</div>
 										</div>
-										<?php endforeach?>
+										
 										<div class="row">
 											<div class="col-md-12">
 												<a href="alamat"><p class="font-italic" style="color:#FC185A; ">Edit alamat kembali ke halaman Alamat</p></a>
@@ -61,8 +62,6 @@
 							<div class="col-md-12">
 								<br>
 								<table style="margin-top: 1px;">
-								
-								<?php foreach ($query as $cart) : ?>
 									<thead>
 										<tr>
 											<th style="width:400px">Produk</th>
@@ -70,12 +69,18 @@
 											<th style="width:200px">Jumlah</th>
 										</tr>
 									</thead>
-									<tr>
-										<td style="width:400px"><?php echo $cart->nama_produk ?></td>
-										<td style="width:200px"></td>
-										<td style="width:200px"><?php echo $cart->qty?></td>
-									</tr>
-									<?php endforeach ?>
+									
+										<?php foreach ($query as $prd) :?>
+										<tr>
+											<td style="width:400px"><?php echo $prd->nama_produk ?></td>
+											<td style="width:200px">
+												(<span><?php echo $prd->isi_varian_satu?></span>
+												<br>
+												<span><?php echo $prd->isi_varian_dua?></span>)
+											</td>
+											<td style="width:200px"><?php echo $prd->qty?></td>
+										</tr>
+										<?php endforeach ?>
 								</table>
 								<hr style="width:100%">
 							</div>
@@ -93,19 +98,21 @@
 								<form id="payment-form" method="post" action="<?=site_url()?>confirm_cart/finish">
 								<input type="hidden" name="result_type" id="result-type" value="">
 									<input type="hidden" name="result_data" id="result-data" value="">
-									<?php foreach ($buyer as $buy) :?>
-										<input type="hidden" name="penerima_detail" id="penerima_detail" value="<?php echo $buy->nama_pembeli ?>">
-										<input type="hidden" value="<?php echo $buy->no_telepon?>" name="no_detail" id="no_detail">
-										<input type="hidden" value="<?php echo $buy->alamat?>" name="alamat_detail" id="alamat_detail">
-									<?php endforeach ?>
-									<?php foreach ($query as $cart) : ?>
-										<input type="hidden" value="<?php echo $cart->nama_produk ?>" name="produk_detail" id="produk_detail">
-										<input type="hidden" value="<?php echo $cart->qty?>" name="qty_detail" id="qty_detail">
-										<input type="hidden" value="<?php echo $cart->harga?>" name="harga_detail" id="harga_detail">
-									<?php endforeach?>
-									<?php foreach ($detail_keranjang as $cart_detail) : ?>
-										<input type="hidden" value="<?php echo $cart_detail->total_harga ?>" name="total_detail" id="total_detail">
-									<?php endforeach?>
+										<!-- Pembeli -->
+										<input type="hidden" name="penerima_detail" id="penerima_detail" value="<?php echo $list->nama_pembeli ?>">
+										<input type="hidden" value="<?php echo $list->no_telepon?>" name="no_detail" id="no_detail">
+										<input type="hidden" value="<?php echo $list->alamat?>" name="alamat_detail" id="alamat_detail">
+										<!-- Akhir Pembeli -->
+										<!-- Keranjang -->
+										<?php foreach ($query as $prod) :?>
+										<input type="hidden" value="<?php echo $prod->nama_produk ?>" name="produk_detail" id="produk_detail">
+										<input type="hidden" value="<?php echo $prod->qty?>" name="qty_detail" id="qty_detail">
+										<input type="hidden" value="<?php echo $prod->harga?>" name="harga_detail" id="harga_detail">
+										<?php endforeach?>
+										<!-- Akhir Keranjang -->
+										<!-- Detail Keranjang -->
+										<input type="hidden" value="<?php echo $list->total_harga ?>" name="total_detail" id="total_detail">
+										<!-- Detail Keranjang -->
 									<br>
 										<button class="btn btn-dark mt-2 mr-2" id="pay-button" style="width:210px;margin-bottom:10px">Lanjut Ke Pembayaran</button>
 										<a href="<?php echo base_url('alamat'); ?>" style="width: 208px;" class="btn btn-outline-dark">Kembali Ke Alamat</a>
@@ -116,6 +123,7 @@
 							</div>
 							
 						</div>
+						<?php endforeach?>
 					</div>
 					<div class="col-md-5 text-center">
 					<span class="responsive"><img src="<?php echo base_url('assets/gambar/payment.jpg') ?>" class="img-fluid"  width="330px"></span>
