@@ -35,4 +35,11 @@ class Model_confirm extends CI_Model{
   public function input_data($data,$table){
 	$this->db->insert($table, $data);
   }
+  public function show_detail(){
+	  $show = $this->db->query("SELECT pembeli.nama_pembeli,pembeli.no_telepon,pembeli.alamat,detail_keranjang.total_harga,detail_keranjang.total_berat
+	  FROM (pembeli
+	  INNER JOIN detail_keranjang ON pembeli.ip = detail_keranjang.ip)
+	  ");
+	  return $show;
+  }
 }    

@@ -19,7 +19,8 @@ class Detail_keranjang extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{   
+	{   	
+		 $data['show_item'] = $this->model_barang->join_show_produk()->result();
 		 $data['query'] = $this->model_keranjang->tampil_data()->result();
 		 $data['total'] = $this->model_keranjang->jumlah_harga()->result();
 		 $data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();

@@ -77,7 +77,7 @@ class Halaman_utama extends CI_Controller {
 				'harga'              => $harga,
 				'qty'                => $qty,
 				'nama_varian_satu'   => $nama_varian_satu,
-				'nama_varian_satu'   => $isi_varian_satu,
+				'isi_varian_satu'   => $isi_varian_satu,
 				'nama_varian_dua'    => $nama_varian_dua,
 				'isi_varian_dua'     => $isi_varian_dua
 		         
@@ -93,9 +93,8 @@ class Halaman_utama extends CI_Controller {
 		$this->model_barang->update_stok($where_stok,$data_stok,'produk');
 		// Akhir Update Stok
 		 $this->model_keranjang->add_cart_m($dataa,'keranjang');
-		 $this->session->set_flashdata('pesan','<div class="alert alert-primary" role="alert">
-		   Berhasil Tambah Keranjang
-	     </div>');
+		 $this->session->set_flashdata('success','Action Completed');
+		 
 		 redirect('halaman_utama');
 		
 

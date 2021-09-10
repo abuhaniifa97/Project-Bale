@@ -6,22 +6,16 @@
 <!-- JS DATA TABLES -->
 
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <?php $this->load->view('admin/partial/sidebar') ?>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
             <!-- Main Content -->
             <div id="content" style="position: relative;">
-
                 <!-- Topbar -->
-
                 <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow" style="background: #0049A8; position: relative;">
                     <?php $this->load->view('admin/partial/topbar')  ?>
                 </nav>
@@ -282,7 +276,7 @@
 									<div class="form-group" style="display:none" id="tampil_var">
 										<label for="">Varian</label>
 										<select name="nama_varian" class="form-control" id="id_var" onchange="show_ukuran()">
-											<option >Pilih Varian</option>
+											<option value="">Pilih Varian</option>
 											<option value="Warna" >Warna</option>
 											<option value="Ukuran" >Ukuran</option>
 										</select>
@@ -306,7 +300,7 @@
 									<div class="form-group" style="display:none" id="tampil_var_dua">
 										<label for="">Varian</label>
 										<select name="nama_varian_dua" class="form-control" id="id_var_dua" onchange="show_variandua()">
-											<option >Pilih Varian</option>
+											<option value="">Pilih Varian</option>
 											<option value="Warna" >Warna</option>
 											<option value="Ukuran" >Ukuran</option>
 										</select>
