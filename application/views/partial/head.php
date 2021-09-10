@@ -111,23 +111,72 @@
 			/* css/hover rekomendasi*/
 				.card_hom:hover{
 					width: 100%;
-					height: 100%;
+					height: 260px;
 					background-color: rgb(221 217 217 / 15%);
 					border-radius: 15px;
 					transition: all 0.50s ease;
 				}
 			/* akhir css/hover rekomendasi */
 			/* awal hover btn */
-			.btn_hom:hover{
-					width:80px;
-					height:80px;
-					border-radius:100%;
-					transform:translate(60px); 
-					background: #FDD922; 
-					border: 2px solid #FAFAFA; 
-					transition: all 0.100s ease; */
-				
-			}	
+					@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+					Roboto; ; margin: 0;}
+
+					#holder{
+					-moz-user-select: -moz-none;
+					-khtml-user-select: none;
+					-webkit-user-select: none;
+					background: white;
+					padding: 10px;
+					width: 250px;
+					margin: 0 auto;
+					position: relative;
+					top: 50%;
+					transform: translateY(-65%);
+					box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+					border-radius: 2px;
+					}
+					.button {
+					background: #FDD922;
+					margin : 20px auto;
+					width : 100%;
+					height : 100%;
+					overflow: hidden;
+					text-align : center;
+					transition : .2s;
+					cursor : pointer;
+					border-radius: 3px;
+					box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+					transition: all 0.50s ease;
+					}
+					.btnTwo {
+					position : relative;
+					width : 200px;
+					height : 100px;
+					margin-top: -100px;
+					padding-top: 2px;
+					background : #0049A8;
+					left : -250px;
+					transition : .3s;
+					}
+					.btnText {
+					color : white;
+					transition : .3s;
+					margin bottom: 1px;
+					}
+					.btnText2 {
+					margin-top : 63px;
+					margin-right : -130px;
+					color : #FFF;
+					}
+					.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+					left: -130px;
+					}
+					.button:hover .btnText{ /*When hovering over .button change .btnText*/
+					margin-left : 65px;
+					}
+					.button:active { /*Clicked and held*/
+					box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+					}
 			/* akhir hover btn */
 			/* not found */
 

@@ -62,7 +62,7 @@
         </div>
     </li>
     <li class="nav-item">
-        <a class="nav-link collapsed" href="<?php echo base_url('admin/blog') ?>"  data-target="#transaksi" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="<?php echo base_url('admin/slide_bar') ?>"  data-target="#transaksi" aria-expanded="true" aria-controls="collapseUtilities">
             <!-- <i class="fas fa-book"></i> -->
             <span>Banner Promo</span>
         </a>
