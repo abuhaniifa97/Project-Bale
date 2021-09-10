@@ -24,10 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 7e858eb698fb44947b76822b7556e131b0248cf9
 $config['base_url'] = 'http://localhost:/Project-Bale';
 
 
