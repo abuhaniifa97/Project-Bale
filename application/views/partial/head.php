@@ -98,7 +98,7 @@
 				border-color: transparent;
 				z-index: 20px;
 			}
-<<<<<<< HEAD
+
             /* css/hover */
 			  .card_home:hover{
 				  width: 100%;
@@ -108,11 +108,32 @@
 				  transition: all 0.50s ease;
 			  }
 			/* akhir css/hover */
+			/* css/hover rekomendasi*/
+				.card_hom:hover{
+					width: 100%;
+					height: 100%;
+					background-color: rgb(221 217 217 / 15%);
+					border-radius: 15px;
+					transition: all 0.50s ease;
+				}
+			/* akhir css/hover rekomendasi */
+			/* awal hover btn */
+			.btn_hom:hover{
+					width:80px;
+					height:80px;
+					border-radius:100%;
+					transform:translate(60px); 
+					background: #FDD922; 
+					border: 2px solid #FAFAFA; 
+					transition: all 0.100s ease; */
+				
+			}	
+			/* akhir hover btn */
 			/* not found */
-=======
+
 
 			/* CSS font All Class */
->>>>>>> 519ff8fabcca791c33ea7f630cdeadd3b418d55b
+
 			*
 			{
 			font-family: 'PT Sans Caption', sans-serif, 'arial', 'Times New Roman';

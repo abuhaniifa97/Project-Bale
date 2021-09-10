@@ -77,91 +77,105 @@
 				<!-- Rekomendasi 1 -->
                 <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk1">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<!-- <img src="<?php echo base_url().'assets/img/discon.jpg'  ?>" style="position: absolute;left: 12px;top: 15px"  alt="img-fluid"> -->
-                           <span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span> -->
+                    <div class="card_hom">
+						<div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
+							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
 						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
                             <img src="<?php echo base_url('assets/gambar_utama/bergo4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
+                        <div class="btn_hom">
+                            <br>
+							<i class="fa fa-shopping-cart"></i>
 						</div> 
+                    </div>    
                     </a>
 				</div>
 				<!-- Rekomendasi 2 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk2">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
+                    <div class="card_hom"> 
+                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
+							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
 						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                       
                             <img src="<?php echo base_url().'assets/gambar_utama/c2QxLnBuZw==.png'  ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
+                        
+                        <div class="btn_hom">
+                            <br>
+							<i class="fa fa-shopping-cart"></i>
 						</div> 
+                    </div>
                     </a>
 				</div>
 				<!-- Rekomendasi 3 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk3">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
+                    <div class="card_hom">
+                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
+							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
 						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                        
                             <img src="<?php echo base_url('assets/gambar_utama/p3.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
+                        <div class="btn_hom">
+                            <br>
+							<i class="fa fa-shopping-cart"></i>
 						</div> 
+                     </div>
                     </a>
 				</div>
 				<!-- Rekomendasi 4 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk4">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
+                    <div class="card_hom">
+                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
+							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
 						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
                             <img src="<?php echo base_url('assets/gambar_utama/SkIxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                        <div class="btn_hom">
+                            <br>
+							<i class="fa fa-shopping-cart"></i>
+						</div>  
+                     </div>    
                     </a>
 				</div>
 				<!-- Rekomendasi 5 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk5">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
+                     <div class="card_hom">
+                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
+							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
 						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                        <div style="width:100%; position:initial; border-radius:0px 0px 80px 80px; height:250px">
                             <img src="<?php echo base_url('assets/gambar_utama/YnQxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                         </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
+                        <div class="btn_hom">
+                            <br>
+							<i class="fa fa-shopping-cart"></i>
 						</div> 
+                     </div>    
                     </a>
 				</div>
 				<!-- Rekemondasi 6 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk6">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
+                     <div class="card_hom">
+                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
+							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
 						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                        <div style="width:100%; position:initial; border-radius:0px 0px 80px 80px; height:250px">
                             <img src="<?php echo base_url('assets/gambar_utama/kaki4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                         </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
+						<div class="btn_hom">
+                            <br>
+							<i class="fa fa-shopping-cart"></i>
 						</div> 
+                     </div>  
                     </a>
 				</div>
             </div>
         </div>
     </section>
+    <br>
+    <br>
     <!-- Akhir Yang kita suka -->
 
     
