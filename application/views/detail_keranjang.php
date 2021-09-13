@@ -21,9 +21,19 @@
     }
   ?>  
   <!-- Akhir Id Generate -->
+
+       
+<!-- Loading -->
+  <div id="viewDiv">
+    <img id='loading' src="https://i.stack.imgur.com/qq8AE.gif"/>
+  </div>
+<!--Akhir Loading -->
+
+
+  
         
       <!-- awal detail keranjang -->
-      <div class="card shadow mt-5 container" style="max-width: 1310px;">
+    <div class="card shadow mt-5 container" style="max-width: 1310px;">
     <div class="card">
         <div class="col-md-12">
           <div class="card-header">
@@ -118,7 +128,7 @@
           <a href="<?php echo base_url('halaman_utama'); ?>" style="width: 180px;" class="btn btn-outline-dark">Kembali Belanja</a>
         </div>
         <div class="col-md-12 text-right">
-          <button class="btn btn-dark mt-3" name="buy_detail_cart" type="submit" style="width: 180px;"><span style="color:ffff;">Bayar</span></button>
+          <button class="btn btn-dark mt-3" name="buy_detail_cart" id="form_button_submit" type="submit" style="width: 180px;"><span style="color:ffff;">Bayar</span></button>
         </div>
         <div class="col-md-12 text-right">
         <p class="font-italic" style="color:#FC185A;margin-top:8px">Ini Belum Termasuk Ongkir</p>
@@ -136,7 +146,7 @@
           </div>
         </div>
 	  </section>
-      
+    
        <div class="">
            <!-- footer -->
         <?php $this->load->view('partial/footer') ?>       
@@ -153,6 +163,48 @@
 
           </script>
        <?php endif; ?>
+
+       <!-- sweetalert -->
+       <script>
+            $('#form_button_submit').click(function(){
+
+                swal({
+                    title:"", 
+                    text:"Loading...",
+                    icon: "https://www.boasnotas.com/img/loading2.gif",
+                    buttons: false,      
+                    closeOnClickOutside: false,
+                    timer: 9000,
+                    //icon: "success"
+                });
+
+
+                });
+        </script>
+
+        <script>
+         $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+          $(window).on('load', function(){
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+          });
+          function removeLoader(){
+              $( "#loadingDiv" ).fadeOut(500, function() {
+                // fadeOut complete. Remove the loading div
+                $( "#loadingDiv" ).remove(); //makes page more lightweight 
+            });  
+          }
+        </script>
+        <script>
+         setTimeout(function(){ 
+          $("#loading").hide();
+          
+          }, 3000);
+        </script>
+
+
+
+
+       <!-- akhir sweetalert -->
 </body>
 
 

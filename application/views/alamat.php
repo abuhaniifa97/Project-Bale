@@ -91,7 +91,7 @@
                                 <!-- validasi IP -->
                                 
                                 <!-- Akhir Validasi IP -->
-								<button type="submit" name="tambah" class="btn btn-dark" value="tambah">Confirm Alamat</button>
+								<button type="submit" name="tambah" id="form_button_submit" class="btn btn-dark" value="tambah">Confirm Alamat</button>
 								<a href="<?php echo base_url('halaman_utama'); ?>" class="btn btn-outline-dark">Kembali Belanja</a>
                             </div>
                         </form>
@@ -115,9 +115,9 @@
 	</section>
 	<!-- Akhir Paralax -->
       
-      <div class="">
+     
         <?php $this->load->view('partial/footer') ?>
-      </div>
+ 
 
         <!-- sweetalert -->
         <?php if ($this->session->flashdata('success')): ?>
@@ -129,6 +129,23 @@
                 )           
             </script>
         <?php endif; ?>
+
+        <script>
+            $('#form_button_submit').click(function(){
+
+                swal({
+                    title:"", 
+                    text:"Loading...",
+                    icon: "https://www.boasnotas.com/img/loading2.gif",
+                    buttons: false,      
+                    closeOnClickOutside: false,
+                    timer: 3000,
+                    //icon: "success"
+                });
+
+
+                });
+        </script>
         
         
       

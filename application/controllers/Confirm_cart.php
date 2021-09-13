@@ -42,6 +42,8 @@ class Confirm_cart extends CI_Controller {
 		
 
 		// Funnction Validasi Masuk berhasil
+		
+		// $id = ('id_keranjang');
 		$ip= $_SERVER['REMOTE_ADDR'];
 		$this->db->select('ip');
 		$this->db->where('ip',$ip);
@@ -52,13 +54,19 @@ class Confirm_cart extends CI_Controller {
 			// $this->session->set_flashdata('success','Action Completed');
 			// echo base_url('alamat');
 			
-			echo "<script>console.log('Tidak berhasil upload akhir')</script>";
+			echo "<script>console.log('Tidak berhasil')</script>";
+			redirect('alamat');
 			
 		}
+		
+		
+		
 		else{
-				// $this->session->set_flashdata('success','Action Completed');
+			
 				// redirect('confirm_cart');
-			echo "<script>console.log('Berhasil upload akhir')</script>";
+			// echo "<script>console.log('Berhasil')</script>";
+			$this->session->set_flashdata('success','Action Completed');
+			$this->load->view('confirm_cart',$data);
 		}
 		//Funnction Validasi Masuk
 	}

@@ -21,12 +21,36 @@ class Alamat extends CI_Controller {
 		$data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();
 		
 		
+		
 			
 		$data['path'] = base_url('assets');
 		
 		// $this->session->set_flashdata('success','Action Completed');
 		// $this->load->view('edit_alamat', $data);
-		$this->load->view('alamat', $data);
+		$ip= $_SERVER['REMOTE_ADDR'];
+		$this->db->select('ip');
+		$this->db->where('ip',$ip);
+		$query = $this->db->get('keranjang');
+		$num = $query->num_rows();
+		if($num < 1)
+		{
+			// $this->session->set_flashdata('success','Action Completed');
+			// echo base_url('alamat');
+			
+			$this->session->set_flashdata('error','Action Completed');
+			redirect('halaman_utama');
+			
+		}
+		
+		
+		
+		else{
+				// $this->session->set_flashdata('success','Action Completed');
+				// redirect('confirm_cart');
+			echo "<script>console.log('Berhasil')</script>";
+			$this->load->view('alamat',$data);
+		}
+		
 	}
 
 	// FUNCTION UNTUK MENAMPILKAN KABUPATEN	
@@ -127,7 +151,7 @@ class Alamat extends CI_Controller {
 								$this->model_pembeli->input_data($data3,'tb_kota');
 								$this->model_pembeli->input_data($data4,'tb_kecamatan');
 								$this->session->set_flashdata('success','Action Completed');
-								redirect('confirm_cart');
+								redirect('confirm_cart',$data);
 			// echo "<script>console.log('Berhasil upload akhir')</script>";
 		}
 		//Akhir cek alamat IP
@@ -138,6 +162,8 @@ class Alamat extends CI_Controller {
 	{
 		// $data['berat'] = $this->model_keranjang->tampil_detail_pesanan()->result();
 		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
+		$data['show_detail'] = $this->model_confirm->show_detail()->result();
+		$data['show_edit'] = $this->model_confirm->show_edit()->result();
 		// $data['provinsi']=$this->model_pembeli->get_all_provinsi();
 		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
 		// $data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();

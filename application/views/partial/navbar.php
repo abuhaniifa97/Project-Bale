@@ -10,25 +10,25 @@
 			
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
-				   
+				    <li class="nav-item" style="margin-right: 20px;">
+							<a class="fa fa-shopping-cart" style="color:white; transform: translate(10px, 10px);" href="<?php echo base_url('detail_keranjang'); ?>"></i>
+							<?php 
+							foreach($jml_qty as $row):?>
+							<?php if($row->qty == ""){
+								echo "<span class='badge badge-pill badge-danger' id='hasil' style='transform:translateY(-10px);display:none'></span>";
+							}else{
+								echo "<span class='badge badge-pill badge-danger' id='hasil' style='transform: translate(10px, -30px);display:block'>$row->qty</span>";
+							} ?>
+								
+							<?php endforeach ?> </span><input type="text" style="display:none" id="number" value="0"/></a>
+					 </li>
 					<li class="nav-item">
 						<a class="nav-link" style="color:#fff" href="<?php echo base_url('cek_resi'); ?>">Cek Resi</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" style="color:#fff" href="<?php echo base_url('blog'); ?>">Blog</a>
 					</li>
-					<li class="nav-item" style="margin-right: 20px;">
-			    		<a class="fa fa-shopping-cart" style="color:white; transform: translate(10px, 10px);" href="<?php echo base_url('detail_keranjang'); ?>"></i>
-						<?php 
-						foreach($jml_qty as $row):?>
-						<?php if($row->qty == ""){
-							echo "<span class='badge badge-pill badge-danger' id='hasil' style='transform:translateY(-10px);display:none'></span>";
-						}else{
-							echo "<span class='badge badge-pill badge-danger' id='hasil' style='transform: translate(10px, -30px);display:block'>$row->qty</span>";
-						} ?>
-						    
-						<?php endforeach ?> </span><input type="text" style="display:none" id="number" value="0"/></a>
-					</li>
+					
 					<br>
 					<li class="nav-item">
 						<a class="btn btn-dark" style="color:#fff" href="<?php echo base_url('auth'); ?>">Masuk</a>

@@ -9,7 +9,7 @@
 	
 	<!-- lazy load -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 	
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script> -->
 
@@ -30,6 +30,12 @@
             data-client-key="SB-Mid-client-a9PQJKTR3yqXNlJ5"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+	<!-- loading -->
+	<!-- <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://js.arcgis.com/4.10/"></script> -->
+	<!-- akhir loading -->
+
 
 	<!--sweet alert -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -42,7 +48,10 @@
 	<!-- akhir sweet alert -->
 
 	<!-- sweetalert -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  -->
     <!-- Akhir Sweet Alert -->
 
 	<!-- sweetalert -->
@@ -98,7 +107,7 @@
 				border-color: transparent;
 				z-index: 20px;
 			}
-<<<<<<< HEAD
+
             /* css/hover */
 			  .card_home:hover{
 				  width: 100%;
@@ -108,11 +117,32 @@
 				  transition: all 0.50s ease;
 			  }
 			/* akhir css/hover */
+			/* css/hover rekomendasi*/
+				.card_hom:hover{
+					width: 100%;
+					height: 100%;
+					background-color: rgb(221 217 217 / 15%);
+					border-radius: 15px;
+					transition: all 0.50s ease;
+				}
+			/* akhir css/hover rekomendasi */
+			/* awal hover btn */
+			.btn_hom:hover{
+					width:80px;
+					height:80px;
+					border-radius:100%;
+					transform:translate(60px); 
+					background: #FDD922; 
+					border: 2px solid #FAFAFA; 
+					transition: all 0.100s ease; */
+				
+			}	
+			/* akhir hover btn */
 			/* not found */
-=======
+
 
 			/* CSS font All Class */
->>>>>>> 519ff8fabcca791c33ea7f630cdeadd3b418d55b
+
 			*
 			{
 			font-family: 'PT Sans Caption', sans-serif, 'arial', 'Times New Roman';
@@ -175,5 +205,24 @@
 				color: #4E4C48;
 				font-size: 1.5em;
 				} */
+
+				/* Load */
+				#viewDiv {
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				overflow: hidden;
+				}
+
+				#loading {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				}
+
+				/* Akhir Load */
 		</style>
+
 </head>

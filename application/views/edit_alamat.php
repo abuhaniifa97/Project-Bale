@@ -1,10 +1,10 @@
 
-<?php $this->load->view('partial/head') ?>
-
+<?php $this->load->view('partial/head'); ?>
+<!-- navbar -->
+<?php $this->load->view('partial/navbar'); ?>
 
 <body>
-      <!-- navbar -->
-      <?php $this->load->view('partial/navbar') ?>
+      
 
       <!-- section alamat -->
       <section>
@@ -16,19 +16,16 @@
                         <!-- FORM UNTUK MENAMBAHKAN DATA -->
                        
                         <form action="<?php echo base_url('alamat/update'); ?>" method="POST">
-                        <?php foreach ($editt as $edit) :?>
+                        <?php foreach ($show_edit as $edit) :?>
 							<!-- String ID PRODUK-->
-							<?php foreach($berat as $weight) :?>
-								<input type="hidden" name="total_berat" value="<?php echo $weight->total_berat ?>">
-							<?php endforeach?>
 
 							<!-- Akhir  STRING ID PRODUK -->
                             <div class="form-group">
                             
                                 <label for="inputAddress">Kontak</label>
-                                <!-- <input type="hidden" name="ip_detail" value="<?php echo $edit= $_SERVER['REMOTE_ADDR']; ?>"> -->
-								<input type="hidden" name="ip_alamat" value="<?php echo $_SERVER['REMOTE_ADDR'];?>">
-                                <!-- <input type="hidden" name="id_pembeli" value="<?php echo id_pembeli()?>"> -->
+                    
+								
+                            
                                 <input type="number" name="no_telepon" class="form-control" value="<?php echo $edit->no_telepon?>" id="telepon" placeholder="Masukan no.telepon" required>
                             
                             </div>
@@ -73,7 +70,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress">Alamat</label>
-                                <textarea value="alamat" name="alamat" id="alamat" value="<?php echo $edit->alamat ?>" cols="30" rows="10" placeholder="Masukan alamat lengkap (Jln,Kelurahan,RT/RW, Kecamatan, kota, provinsi, dan kodepos )" class="form-control"></textarea>
+                                
+                                <textarea  name="alamat" id="alamat" cols="30" rows="10" placeholder="Masukan alamat lengkap (Jln,Kelurahan,RT/RW, Kecamatan, kota, provinsi, dan kodepos )" class="form-control"><?php echo $edit->alamat ?></textarea>
                             </div>
                             <div>
                                 <!-- validasi IP -->
@@ -82,8 +80,9 @@
 								<button type="submit" name="tambah" class="btn btn-dark" value="tambah">Confirm Alamat</button>
 								<a href="<?php echo base_url('halaman_utama'); ?>" class="btn btn-outline-dark">Kembali Belanja</a>
                             </div>
+                            <?php endforeach ?>
                         </form>
-                        <?php endforeach ?>
+                        
                     </div>
                     <div class="col-md-6 text-center">
                          <span class="responsive"><img src="<?php echo base_url('assets/gambar/maps.jpg') ?>" class="rounded" width="330px"></span>
