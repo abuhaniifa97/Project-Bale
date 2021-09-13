@@ -1,4 +1,6 @@
 <?php $this->load->view('partial/head'); ?>
+<!-- loading -->
+<div id="load_cart">Loading...</div>
 <?php $this->load->view('partial/navbar'); ?>
 
 <body> 
@@ -230,5 +232,14 @@
 			)           
 		</script>
 	<?php endif; ?>
+
+	<!-- load js -->
+	<!-- load JS -->
+		<script>
+          $(document).ready(function(){
+            $("#load_cart").fadeOut(3000);
+
+          });
+        </script>
 
 </body>

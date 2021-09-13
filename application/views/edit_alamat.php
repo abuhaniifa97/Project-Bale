@@ -23,9 +23,8 @@
                             <div class="form-group">
                             
                                 <label for="inputAddress">Kontak</label>
-                    
-								
-                            
+                                <input type="hidden" name="ip_alamat" value="<?php echo $edit->ip ?>">
+                                <input type="hidden" name="id_pembeli" value="<?php echo $edit->id_pembeli ?>"> 
                                 <input type="number" name="no_telepon" class="form-control" value="<?php echo $edit->no_telepon?>" id="telepon" placeholder="Masukan no.telepon" required>
                             
                             </div>
@@ -37,7 +36,7 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                 <label for="inputCity">Provinsi</label>
-                                <select id="provinsi" name="provinsi" class="form-control" required>
+                                <select id="provinsi" name="provinsi" class="form-control">
                                     <option value="">Pilih Provinsi</option>
 
                                     <?php foreach($provinsi as $prov){
@@ -49,7 +48,7 @@
 
                                 <div class="form-group col-md-6">
                                 <label for="inputState">Kota</label>
-                                <select id="kota" name="kota" class="form-control" required>
+                                <select id="kota" name="kota" class="form-control">
                                     <option value="">Pilih kota/kabupaten</option>
                                 </select>
                                 </div>  

@@ -1,10 +1,13 @@
-<?php $this->load->view('partial/head') ?>
+<?php $this->load->view('partial/head'); ?>
+
+<!-- loading -->
+<div id="load_keranjang">Loading...</div>
+
+  <!-- navbar -->
+<?php $this->load->view('partial/navbar'); ?>
 
 
 <body>
-      <!-- navbar -->
-      <?php $this->load->view('partial/navbar') ?>
-
       <!-- section alamat -->
       <section>
           <div class="container" style="max-width: 1340px;"> 
@@ -14,7 +17,7 @@
 
                         <!-- FORM UNTUK MENAMBAHKAN DATA -->
 
-                        <form action="<?php echo base_url('alamat/tambah_aksi'); ?>" method="POST">
+                        <form action="<?php echo base_url('alamat/tambah_aksi'); ?>" id="result" method="POST">
 							<!-- String ID PRODUK-->
 							<?php foreach($berat as $weight) :?>
 								<input type="hidden" name="total_berat" value="<?php echo $weight->total_berat ?>">
@@ -130,7 +133,7 @@
             </script>
         <?php endif; ?>
 
-        <script>
+        <!-- <script>
             $('#form_button_submit').click(function(){
 
                 swal({
@@ -145,11 +148,32 @@
 
 
                 });
-        </script>
-        
-        
-      
+        </script> -->
        <!-- akhir sweetalert -->
+
+        <!-- sweetalert 2 -->
+        <script>
+            $('#form_button_submit').click(function(){
+                swal({
+                title: "Berhasil!",
+                text: "Alamat berhasil di simpan",
+                type: "success",
+                timer: 3000,
+                showConfirmButton: true
+                }, function(){
+                     
+                    window.location.href = "<?php echo base_url('Confirm_cart'); ?>";
+                });
+            });
+        </script>
+
+
+       <!-- load JS -->
+       <script>
+          $(document).ready(function(){
+            $("#load_keranjang").fadeOut(1000);
+          });
+        </script>
 
 </body>
 

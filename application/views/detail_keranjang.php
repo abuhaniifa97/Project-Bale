@@ -1,7 +1,15 @@
 <?php $this->load->view('partial/head'); ?>
-<?php $this->load->view('partial/navbar'); ?>
+
+<!-- loading -->
+<div id="load">Loading...</div>
+
+ <!-- navbar -->
+ <?php $this->load->view('partial/navbar'); ?>
+
+
 
 <body>
+ 
   <!-- Id Generate -->
   <?php
     function id_detail_keranjang($length = 9, $chars = '1234567890abcdefghijklmnopqrstuvwxyz')
@@ -100,7 +108,7 @@
           </div>
           </div>
           <div class="col-md-12 text-right container mb-5">
-          <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" method="post">
+          <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" id="bayarr" method="post">
           <?php foreach ($total as $tot) : ?>
             <hr style="width: 100%;margin-top:10px; margin-bottom:7px">
                
@@ -128,7 +136,7 @@
           <a href="<?php echo base_url('halaman_utama'); ?>" style="width: 180px;" class="btn btn-outline-dark">Kembali Belanja</a>
         </div>
         <div class="col-md-12 text-right">
-          <button class="btn btn-dark mt-3" name="buy_detail_cart" id="form_button_submit" type="submit" style="width: 180px;"><span style="color:ffff;">Bayar</span></button>
+          <button class="btn btn-dark mt-3" name="buy_detail_cart" type="submit" style="width: 180px;"><span style="color:ffff;">Bayar</span></button>
         </div>
         <div class="col-md-12 text-right">
         <p class="font-italic" style="color:#FC185A;margin-top:8px">Ini Belum Termasuk Ongkir</p>
@@ -174,13 +182,15 @@
                     icon: "https://www.boasnotas.com/img/loading2.gif",
                     buttons: false,      
                     closeOnClickOutside: false,
-                    timer: 9000,
+                    timer: 5000,
                     //icon: "success"
                 });
 
 
                 });
         </script>
+        <!-- akhir sweetalert -->
+
 
         <script>
          $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
@@ -194,6 +204,10 @@
             });  
           }
         </script>
+
+
+
+
         <script>
          setTimeout(function(){ 
           $("#loading").hide();
@@ -203,8 +217,18 @@
 
 
 
+        <!-- loading yt -->
+        <script>
+          $(document).ready(function(){
+            $("#load").fadeOut(3000);
 
-       <!-- akhir sweetalert -->
+          });
+        </script>
+
+
+
+
+       
 </body>
 
 

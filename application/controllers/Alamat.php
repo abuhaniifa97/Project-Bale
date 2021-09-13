@@ -191,8 +191,7 @@ class Alamat extends CI_Controller {
 		
 		
 			$data = array(
-				'ip'         =>$ip_alamat,
-				'id_pembeli' => $id_pembeli,
+				
 				'no_telepon' => $no_telepon,
 				'nama_pembeli' => $nama_pembeli,
 				'alamat' => $alamat,
@@ -218,16 +217,16 @@ class Alamat extends CI_Controller {
 	
 						// data kecamatan
 						$data4 = array(
-							'id_pembeli' => $id_pembeli,
+							// 'id_pembeli' => $id_pembeli,
 							'id_kecamatan'=>$kecamatan,
 							);
 	
-								$this->model_pembeli->input_data($data,'pembeli');
-								$this->model_pembeli->input_data($data2,'tb_provinsi');
-								$this->model_pembeli->input_data($data3,'tb_kota');
-								$this->model_pembeli->input_data($data4,'tb_kecamatan');
+								$this->model_pembeli->ubah_alamat($data,'pembeli');
+								$this->model_pembeli->ubah_alamat($data2,'tb_provinsi');
+								$this->model_pembeli->ubah_alamat($data3,'tb_kota');
+								$this->model_pembeli->ubah_alamat($data4,'tb_kecamatan');
 								$this->session->set_flashdata('success','Action Completed');
-								redirect('edit_alamat');
+								redirect('confirm_cart');
 		
 								
 			// echo "<script>console.log('Berhasil upload akhir')</script>";
