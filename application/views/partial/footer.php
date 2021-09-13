@@ -73,8 +73,7 @@
 					<div class="col-md-10">
 							<table>
 								<tr>
-									<td><div class="col"></td>
-									<td><div class="col-md-2"></div></td>
+									<td><div class="col-md-2 text right"></div></td>
 									<td>
 										<img class="responsive" style=" width: 60px;" src="<?php echo base_url('assets/img/JNE.png') ?>" style="width:10px">
 									</td>

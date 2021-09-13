@@ -78,14 +78,19 @@
                 <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk1">
                     <div class="card_hom">
-						<div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
-						</div>
+                         <span class="fa-layers fa-fw"> 
+                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
+                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                         </span>
                             <img src="<?php echo base_url('assets/gambar_utama/bergo4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        <div class="btn_hom">
-                            <br>
-							<i class="fa fa-shopping-cart"></i>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
                     </div>    
                     </a>
 				</div>
@@ -93,16 +98,19 @@
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk2">
                     <div class="card_hom"> 
-                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
-						</div>
-                       
+                        <span class="fa-layers fa-fw"> 
+                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
+                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                         </span>
                             <img src="<?php echo base_url().'assets/gambar_utama/c2QxLnBuZw==.png'  ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        
-                        <div class="btn_hom">
-                            <br>
-							<i class="fa fa-shopping-cart"></i>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
                     </div>
                     </a>
 				</div>
@@ -110,15 +118,19 @@
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk3">
                     <div class="card_hom">
-                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
-						</div>
-                        
+                          <span class="fa-layers fa-fw"> 
+                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
+                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                          </span>
                             <img src="<?php echo base_url('assets/gambar_utama/p3.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        <div class="btn_hom">
-                            <br>
-							<i class="fa fa-shopping-cart"></i>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
                      </div>
                     </a>
 				</div>
@@ -126,56 +138,67 @@
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk4">
                     <div class="card_hom">
-                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
-						</div>
+                          <span class="fa-layers fa-fw"> 
+                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
+                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                          </span>
                             <img src="<?php echo base_url('assets/gambar_utama/SkIxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        <div class="btn_hom">
-                            <br>
-							<i class="fa fa-shopping-cart"></i>
-						</div>  
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
                      </div>    
                     </a>
 				</div>
 				<!-- Rekomendasi 5 -->
-				<div class="col-6 col-md-2">
+				  <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk5">
-                     <div class="card_hom">
-                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
-						</div>
-                        <div style="width:100%; position:initial; border-radius:0px 0px 80px 80px; height:250px">
+                    <div class="card_hom">
+                          <span class="fa-layers fa-fw"> 
+                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
+                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                          </span>
                             <img src="<?php echo base_url('assets/gambar_utama/YnQxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-                        <div class="btn_hom">
-                            <br>
-							<i class="fa fa-shopping-cart"></i>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
                      </div>    
                     </a>
 				</div>
 				<!-- Rekemondasi 6 -->
-				<div class="col-6 col-md-2">
+                <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk6">
-                     <div class="card_hom">
-                        <div style="width: 50px;height:50px;50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							 <img src="<?php echo base_url().'assets/img/discon.png'  ?>" style="position: absolute; left: -10px;"  alt="img-fluid">    
-						</div>
-                        <div style="width:100%; position:initial; border-radius:0px 0px 80px 80px; height:250px">
-                            <img src="<?php echo base_url('assets/gambar_utama/kaki4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
+                    <div class="card_hom">
+                        <div>
+                         <span class="fa-layers fa-fw"> 
+                           <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
+                           <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                         </span>
                         </div>
-						<div class="btn_hom">
-                            <br>
-							<i class="fa fa-shopping-cart"></i>
-						</div> 
-                     </div>  
+                            <img src="<?php echo base_url('assets/gambar_utama/d24xLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                     </div>    
                     </a>
 				</div>
-            </div>
-        </div>
     </section>
     <br>
-    <br>
+    
     <!-- Akhir Yang kita suka -->
 
     

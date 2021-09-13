@@ -1,5 +1,3 @@
-
-    
 		
 		<!-- Navbar Baru -->
 		<nav class="navbar navbar-expand-lg navbar-dark" style=" background-color: #0049A8;color:#fff;margin-bottom:20px">
@@ -10,7 +8,7 @@
 			
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
-				    <li class="nav-item" style="margin-right: 20px;">
+				    <li class="nav-item" style="margin-right: 15px;">
 							<a class="fa fa-shopping-cart" style="color:white; transform: translate(10px, 10px);" href="<?php echo base_url('detail_keranjang'); ?>"></i>
 							<?php 
 							foreach($jml_qty as $row):?>
@@ -22,14 +20,15 @@
 								
 							<?php endforeach ?> </span><input type="text" style="display:none" id="number" value="0"/></a>
 					 </li>
+					 <li>
+
+					 </li>
 					<li class="nav-item">
 						<a class="nav-link" style="color:#fff" href="<?php echo base_url('cek_resi'); ?>">Cek Resi</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" style="color:#fff" href="<?php echo base_url('blog'); ?>">Blog</a>
 					</li>
-					
-					<br>
 					<li class="nav-item">
 						<a class="btn btn-dark" style="color:#fff" href="<?php echo base_url('auth'); ?>">Masuk</a>
 					</li>
