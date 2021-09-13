@@ -37,6 +37,9 @@ class Detail_keranjang extends CI_Controller {
 		$jml_qty_detail                       = $this->input->post('jml_qty');
         $total_harga_detail                   = $this->input->post('tot_harga');
 		$total_berat_detail					  = $this->input->post('tot_berat');
+
+		// Proses Pengurangan keranjang
+		$update_keranjang = $jml_qty  - $id_detail_keranjang;
 			   
 		 $dataa = array(
 			    'id_detail_keranjang'       => $id_detail_keranjang,
@@ -46,9 +49,16 @@ class Detail_keranjang extends CI_Controller {
 				'total_berat'               => $berat_detail_keranjang,
 				
 		         
-			);    
+			);
+			
+			$data_produk = array(
+				'jml_qty'          =>$update_keranjang
+			);
+			$where_stok = array(
+						'id_detail_keranjang'     =>$id_detail_keranjang
+			);
 
-
+		 $this->model_barang->update_stok($where_stok,$data_produk,'detail_keranjang');
 		 $this->model_keranjang->add_cart_m($dataa,'detail_keranjang'); 
 		 echo "<script>console.log('Data Berhasil Di Simpan')</script>";
 		 redirect('alamat');

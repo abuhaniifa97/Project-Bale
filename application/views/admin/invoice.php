@@ -45,7 +45,7 @@
 										<div class="col-md-12">
 											<span style="font-weight: bold;">Pembeli</span>
 											<br>
-                                            <span style="font-weight: bold;"><?php echo $buy->ip?></span>
+                                            <span style="font-weight: bold; display:none;"><?php echo $buy->ip?></span>
                                             <br>
 											<span style="font-weight: bold;"><?php echo $buy->nama_pembeli?></span>
 										</div>
@@ -65,15 +65,15 @@
                                             <br>
 											<span style="font-weight: bold;"></span>
 											<br>
-											<span style="font-weight: bold;"><?php echo $buy->nama_produk?></span>
+											<span style="font-weight: bold;">Nama produk <?php echo $buy->nama_produk?></span>
                                             <br>
 											<span style="font-weight: bold;">qty <?php echo $buy->qty?></span>
 										</div>
 										<div class="col-md-12">
-											<span><?php echo $buy->harga?></span>
+											<span style="font-weight: bold;">Harga <?php echo $buy->harga?></span>
 										</div>
 										<div class="col-md-12">
-											<p><?php echo $buy->total_harga?></p>
+											<p style="font-weight: bold;">Total Harga <?php echo $buy->total_harga?></p>
 										</div>
 									</div>
 								</div>

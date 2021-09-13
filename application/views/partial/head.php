@@ -9,7 +9,7 @@
 	
 	<!-- lazy load -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 	
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script> -->
 
@@ -30,6 +30,12 @@
             data-client-key="SB-Mid-client-a9PQJKTR3yqXNlJ5"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+	<!-- loading -->
+	<!-- <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css"> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+	<!-- <script src="https://js.arcgis.com/4.10/"></script> -->
+	<!-- akhir loading -->
+
 
 	<!--sweet alert -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -42,8 +48,16 @@
 	<!-- akhir sweet alert -->
 
 	<!-- sweetalert -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  -->
     <!-- Akhir Sweet Alert -->
+
+	<!-- sweetalert 22 -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 
 	<!-- sweetalert -->
 	<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
@@ -248,5 +262,36 @@
 				color: #4E4C48;
 				font-size: 1.5em;
 				} */
+
+				/* Load */
+				#viewDiv {
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				overflow: hidden;
+				}
+
+				#loading {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				}
+
+
+				#load,#load_cart {
+					width: 100%;
+					height: 100%;
+					position: fixed;
+					text-indent: 100%;
+					background: #e0e0e0 url('./assets/img/loading.gif') no-repeat center;
+					z-index: 1;
+					opacity: 0.6;
+					background-size: 8%;
+				}
+
+				/* Akhir Load */
 		</style>
+
 </head>

@@ -1691,6 +1691,18 @@
         <?php endif; ?>
         <!--akhir sweetalert -->
 
+        <!-- sweet alert validasi keranjang -->
+        <?php if ($this->session->flashdata('error')): ?>
+        <script>
+            Swal.fire(
+            'Maaf',
+            'masukan dulu produk ke keranjang',
+            'error'
+            )           
+        </script>
+        <?php endif; ?>
+        <!-- sweet alert validasi keranjang -->
+
 
   </body>
 
