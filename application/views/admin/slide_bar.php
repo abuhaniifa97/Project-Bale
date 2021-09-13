@@ -27,6 +27,23 @@
                 </nav>
 
                 <!-- End of Topbar -->
+                                     <?php
+											function id_banner($length = 10, $chars = '1234567890abcdefghijklmnopqrstuvwxyz')
+											{
+												if($length > 0)
+												{
+													$len_chars = (strlen($chars) - 1);
+													$the_chars = $chars{rand(0, $len_chars)};
+													for ($i = 1; $i < $length; $i = strlen($the_chars))
+													{
+														$r = $chars{rand(0, $len_chars)};
+														if ($r != $the_chars{$i - 1}) $the_chars .=  $r;
+													}
+
+													return $the_chars;
+												}
+											}
+									  ?>
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -45,7 +62,7 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">No</th>
-                                                <th scope="col">Nama Banner</th>
+                                                <th scope="col">Nama Promo </th>
                                                 <th scope="col">Banner</th>
                                                 <th scope="col">Aksi</th>
                                             </tr>
@@ -82,13 +99,7 @@
                         </div>
                         <div class="modal-body">
                         <form action="<?php echo base_url().'admin/slide_bar/tambah_banner'?>" method="post" enctype="multipart/form-data">
-                               <center><h5>banner</h5></center>
-                
-                                    <div class="form-group">
-                                       <label>ID banner</label>
-                                       <input type="text" name="id_banner" class="form-control">
-                                     </div>
-                                    
+                               <input type="hidden" name="id_banner" value="<?php echo id_banner()?>">
                                     <label>Nama banner</label>
                                       <input type="text" name="nama_banner" class="form-control">
                                        <div class="form-group">

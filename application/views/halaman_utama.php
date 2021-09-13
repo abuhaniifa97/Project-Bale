@@ -42,18 +42,20 @@
     <!-- Section Slide -->
     <section class=""  >
 		<div class="container" style="max-width: 1340px;">
+        
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-					<span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
+			
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+					  <span class="responsive" ><img src="<?php echo base_url(). '/assets/img/banner53.jpg' ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
                     </div>
+            <?php foreach ($kuat as $bnr) : ?>
 					<div class="carousel-item">
-					<span class="responsive" ><img src="<?php echo base_url('assets/img/banner_slide.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-					</div>
-					<div class="carousel-item">
-					<span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-					</div>
+					  <span class="responsive" ><img src="<?php echo base_url(). '/assets/img/'. $bnr->gambar_banner ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
+                    </div>
+                    <?php endforeach ?>
 				</div>
+                
 				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
@@ -63,6 +65,7 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+        
 		</div>
     </section>
     <!-- Akhir Section slide -->
@@ -78,9 +81,9 @@
                 <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk1">
                     <div class="card_hom">
-                         <span class="fa-layers fa-fw"> 
-                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
-                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                         <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
                          </span>
                             <img src="<?php echo base_url('assets/gambar_utama/bergo4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                             <div id="holder">
@@ -98,10 +101,10 @@
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk2">
                     <div class="card_hom"> 
-                        <span class="fa-layers fa-fw"> 
-                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
-                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
-                         </span>
+                          <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                          </span>
                             <img src="<?php echo base_url().'assets/gambar_utama/c2QxLnBuZw==.png'  ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                             <div id="holder">
                                 <div class="button">
@@ -118,10 +121,10 @@
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk3">
                     <div class="card_hom">
-                          <span class="fa-layers fa-fw"> 
-                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
-                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
-                          </span>
+                        <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                         </span>
                             <img src="<?php echo base_url('assets/gambar_utama/p3.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                             <div id="holder">
                                 <div class="button">
@@ -138,9 +141,9 @@
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk4">
                     <div class="card_hom">
-                          <span class="fa-layers fa-fw"> 
-                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
-                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                          <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
                           </span>
                             <img src="<?php echo base_url('assets/gambar_utama/SkIxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                             <div id="holder">
@@ -158,10 +161,10 @@
 				  <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk5">
                     <div class="card_hom">
-                          <span class="fa-layers fa-fw"> 
-                            <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
-                            <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
-                          </span>
+                        <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                         </span>
                             <img src="<?php echo base_url('assets/gambar_utama/YnQxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
                             <div id="holder">
                                 <div class="button">
@@ -173,15 +176,15 @@
                             </div>
                      </div>    
                     </a>
-				</div>
+				  </div>
 				<!-- Rekemondasi 6 -->
                 <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk6">
                     <div class="card_hom">
                         <div>
-                         <span class="fa-layers fa-fw"> 
-                           <i class="fa fa-tag fa-3x =20%" aria-hidden="true" style="position: absolute; right: 10px; color: red;"></i>
-                           <span style="right: 7px; position: absolute; width: 35px; height: 50px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #FCFCFC; transform: rotate(20deg)">20%</span>
+                        <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
                          </span>
                         </div>
                             <img src="<?php echo base_url('assets/gambar_utama/d24xLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">

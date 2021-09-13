@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow" style="background: #0049A8; position: fixed; z-index: 1; width: 100%;">
 <a class="navbar-brand" href="<?= base_url() ?>halaman_utama" style="font-weight: bold;font-family:Poppins;font-style:normal;color:#fff"></a>
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3" style="color:black;">
-        <i class="fa fa-bars" style="color:darkblue;"></i>
+        <i class="fa fa-bar" style="color:darkblue;"></i>
     </button>
 
     <!-- Topbar Navbar -->
