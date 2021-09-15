@@ -69,14 +69,13 @@
 											<th style="width:200px">Jumlah</th>
 										</tr>
 									</thead>
-									
 										<?php foreach ($query as $prd) :?>
 										<tr>
 											<td style="width:400px"><?php echo $prd->nama_produk ?></td>
 											<td style="width:200px">
-												(<span><?php echo $prd->isi_varian_satu?></span>
+												<span><?php echo $prd->isi_varian_satu?></span>
 												<br>
-												<span><?php echo $prd->isi_varian_dua?></span>)
+												<span><?php echo $prd->isi_varian_dua?></span>
 											</td>
 											<td style="width:200px"><?php echo $prd->qty?></td>
 										</tr>

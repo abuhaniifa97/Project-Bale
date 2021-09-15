@@ -63,7 +63,7 @@ class Alamat extends CI_Controller {
 	// FUNCTION TAMBAH DATA
 	public function tambah_aksi(){
 		// Deklrasi Manual
-		$destination = 'Kota Bandung';
+		$original = 23;
 		$berat = $this->input->post('total_berat');
 		// Akhir Deklrasi Manual
 		// Deklarasi Varible
@@ -77,7 +77,36 @@ class Alamat extends CI_Controller {
 		$kecamatan = $this->input->post('kecamatan');
 		$kodepos = $this->input->post('kodepos');
 		// Akhir Deklarasi
-		
+		// Cek Ongkir
+		$curl = curl_init();
+		var_dump($berat,$kota,$original);
+
+		curl_setopt_array($curl, array(
+		CURLOPT_URL => "https://api.rajaongkir.com/starter/cost",
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_ENCODING => "",
+		CURLOPT_MAXREDIRS => 10,
+		CURLOPT_TIMEOUT => 30,
+		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		CURLOPT_CUSTOMREQUEST => "POST",
+		CURLOPT_POSTFIELDS => "origin=$original&destination=$kota&weight=$berat&courier=jne",
+		CURLOPT_HTTPHEADER => array(
+			"content-type: application/x-www-form-urlencoded",
+			"key: 489a7ec53f6372dc09e2d1e0821e0598"
+		),
+		));
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+		echo "cURL Error #:" . $err;
+		} else {
+		var_dump($response);
+		}
+		// Akhir Cek Ongkir
 		//cek alamat IP
 		$this->db->select('ip');
 		$this->db->where('ip',$ip_alamat);
@@ -127,7 +156,7 @@ class Alamat extends CI_Controller {
 								$this->model_pembeli->input_data($data3,'tb_kota');
 								$this->model_pembeli->input_data($data4,'tb_kecamatan');
 								$this->session->set_flashdata('success','Action Completed');
-								redirect('confirm_cart');
+								// redirect('confirm_cart');
 			// echo "<script>console.log('Berhasil upload akhir')</script>";
 		}
 		//Akhir cek alamat IP
@@ -162,6 +191,10 @@ class Alamat extends CI_Controller {
 		$kecamatan = $this->input->post('kecamatan');
 		$kodepos = $this->input->post('kodepos');
 		// Akhir Deklarasi
+
+		// Menghitung Total Bayar Ongkir
+		
+		// Akhir Total Bayar Ongkir 
 		
 		
 			$data = array(
@@ -210,6 +243,40 @@ class Alamat extends CI_Controller {
 		
 		//Akhir cek alamat IP
 	}
+	// Test Kota
+	public function kota($provinsi){
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+		CURLOPT_URL => "https://api.rajaongkir.com/starter/city?&province=".$provinsi,
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_ENCODING => "",
+		CURLOPT_MAXREDIRS => 10,
+		CURLOPT_TIMEOUT => 30,
+		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		CURLOPT_CUSTOMREQUEST => "GET",
+		CURLOPT_HTTPHEADER => array(
+			"key: 489a7ec53f6372dc09e2d1e0821e0598"
+		),
+		));
+
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+
+		curl_close($curl);
+
+		if ($err) {
+		echo "cURL Error #:" . $err;
+		} else {
+		$d_kota = json_decode($response,true);
+			if ($d_kota['rajaongkir']['status']['code'] == '200') {
+				foreach ($d_kota['rajaongkir']['results'] as $kt){
+					
+					echo "<option value='$kt[city_id]'>$kt[city_name]</option>";
+				}
+			}
+		}
+	}
+	// Akhir Kota
 
 		
 
