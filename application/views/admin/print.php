@@ -69,9 +69,13 @@
             </div>
             <hr style="width:100%">
         </div>
-    </div> 
+    </div>
+
+    
     <script>
 		window.print();
 	</script>
+    
 </body>
+<button class="btn btn-primary">kembali</button>
                     <!-- End of Page Wrapper -->

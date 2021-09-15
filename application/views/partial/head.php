@@ -9,7 +9,7 @@
 	
 	<!-- lazy load -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 	
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script> -->
 
@@ -30,6 +30,12 @@
             data-client-key="SB-Mid-client-a9PQJKTR3yqXNlJ5"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+	<!-- loading -->
+	<!-- <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css"> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+	<!-- <script src="https://js.arcgis.com/4.10/"></script> -->
+	<!-- akhir loading -->
+
 
 	<!--sweet alert -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -42,8 +48,16 @@
 	<!-- akhir sweet alert -->
 
 	<!-- sweetalert -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  -->
     <!-- Akhir Sweet Alert -->
+
+	<!-- sweetalert 22 -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 
 	<!-- sweetalert -->
 	<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
@@ -98,7 +112,7 @@
 				border-color: transparent;
 				z-index: 20px;
 			}
-<<<<<<< HEAD
+
             /* css/hover */
 			  .card_home:hover{
 				  width: 100%;
@@ -108,11 +122,84 @@
 				  transition: all 0.50s ease;
 			  }
 			/* akhir css/hover */
+			/* css/hover rekomendasi*/
+				.card_hom:hover{
+					width: 100%;
+					height: 260px;
+					background-color: rgb(221 217 217 / 15%);
+					border-radius: 15px;
+					transition: all 0.50s ease;
+				}
+			/* akhir css/hover rekomendasi */
+			/* awal hover btn */
+					@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+					Roboto; ; margin: 0;}
+
+					#holder{
+					-moz-user-select: -moz-none;
+					-khtml-user-select: none;
+					-webkit-user-select: none;
+					background: white;
+					padding: 10px;
+					width: 250px;
+					margin: 0 auto;
+					position: relative;
+					top: 50%;
+					transform: translateY(-65%);
+					box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+					border-radius: 2px;
+					}
+					.button {
+					background: #FDD922;
+					margin : 20px auto;
+					width : 100%;
+					height : 100%;
+					overflow: hidden;
+					text-align : center;
+					transition : .2s;
+					cursor : pointer;
+					border-radius: 3px;
+					box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+					transition: all 0.50s ease;
+					}
+					.btnTwo {
+					position : relative;
+					width : 200px;
+					height : 100px;
+					margin-top: -100px;
+					padding-top: 2px;
+					background : #0049A8;
+					left : -250px;
+					transition : .3s;
+					}
+					.btnText {
+					color : white;
+					transition : .3s;
+					margin bottom: 1px;
+					}
+					.btnText2 {
+					margin-top : 63px;
+					margin-right : -130px;
+					color : #FFF;
+					}
+					.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+					left: -130px;
+					}
+					.button:hover .btnText{ /*When hovering over .button change .btnText*/
+					margin-left : 65px;
+					}
+					.button:active { /*Clicked and held*/
+					box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+					}
+			/* akhir hover btn */
+			/* awal */
+			
+			/* akhir */
 			/* not found */
-=======
+
 
 			/* CSS font All Class */
->>>>>>> 519ff8fabcca791c33ea7f630cdeadd3b418d55b
+
 			*
 			{
 			font-family: 'PT Sans Caption', sans-serif, 'arial', 'Times New Roman';
@@ -175,5 +262,36 @@
 				color: #4E4C48;
 				font-size: 1.5em;
 				} */
+
+				/* Load */
+				#viewDiv {
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				overflow: hidden;
+				}
+
+				#loading {
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				}
+
+
+				#load,#load_cart {
+					width: 100%;
+					height: 100%;
+					position: fixed;
+					text-indent: 100%;
+					background: #e0e0e0 url('./assets/img/loading.gif') no-repeat center;
+					z-index: 1;
+					opacity: 0.6;
+					background-size: 8%;
+				}
+
+				/* Akhir Load */
 		</style>
+
 </head>

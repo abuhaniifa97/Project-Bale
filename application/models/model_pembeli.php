@@ -34,6 +34,14 @@ class Model_pembeli extends CI_Model{
     function edit_alamat($where,$table){		
         return $this->db->get_where($table,$where);
     }
+
+    // UPDATE PRODUK
+    public function ubah_alamat($data){
+        $ip= $_SERVER['REMOTE_ADDR'];
+        $this->db->where('ip',$ip);
+        $this->db->update('pembeli',$data);
+        return TRUE;
+    }
 }
 
 

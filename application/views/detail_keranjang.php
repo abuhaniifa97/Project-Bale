@@ -1,7 +1,15 @@
 <?php $this->load->view('partial/head'); ?>
-<?php $this->load->view('partial/navbar'); ?>
+
+<!-- loading -->
+<div id="load">Loading...</div>
+
+ <!-- navbar -->
+ <?php $this->load->view('partial/navbar'); ?>
+
+
 
 <body>
+ 
   <!-- Id Generate -->
   <?php
     function id_detail_keranjang($length = 9, $chars = '1234567890abcdefghijklmnopqrstuvwxyz')
@@ -21,9 +29,19 @@
     }
   ?>  
   <!-- Akhir Id Generate -->
+
+       
+<!-- Loading -->
+  <div id="viewDiv">
+    <img id='loading' src="https://i.stack.imgur.com/qq8AE.gif"/>
+  </div>
+<!--Akhir Loading -->
+
+
+  
         
       <!-- awal detail keranjang -->
-      <div class="card shadow mt-5 container" style="max-width: 1310px;">
+    <div class="card shadow mt-5 container" style="max-width: 1310px;">
     <div class="card">
         <div class="col-md-12">
           <div class="card-header">
@@ -90,7 +108,7 @@
           </div>
           </div>
           <div class="col-md-12 text-right container mb-5">
-          <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" method="post">
+          <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" id="bayarr" method="post">
           <?php foreach ($total as $tot) : ?>
             <hr style="width: 100%;margin-top:10px; margin-bottom:7px">
                
@@ -136,7 +154,7 @@
           </div>
         </div>
 	  </section>
-      
+    
        <div class="">
            <!-- footer -->
         <?php $this->load->view('partial/footer') ?>       
@@ -153,6 +171,64 @@
 
           </script>
        <?php endif; ?>
+
+       <!-- sweetalert -->
+       <script>
+            $('#form_button_submit').click(function(){
+
+                swal({
+                    title:"", 
+                    text:"Loading...",
+                    icon: "https://www.boasnotas.com/img/loading2.gif",
+                    buttons: false,      
+                    closeOnClickOutside: false,
+                    timer: 5000,
+                    //icon: "success"
+                });
+
+
+                });
+        </script>
+        <!-- akhir sweetalert -->
+
+
+        <script>
+         $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+          $(window).on('load', function(){
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+          });
+          function removeLoader(){
+              $( "#loadingDiv" ).fadeOut(500, function() {
+                // fadeOut complete. Remove the loading div
+                $( "#loadingDiv" ).remove(); //makes page more lightweight 
+            });  
+          }
+        </script>
+
+
+
+
+        <script>
+         setTimeout(function(){ 
+          $("#loading").hide();
+          
+          }, 3000);
+        </script>
+
+
+
+        <!-- loading yt -->
+        <script>
+          $(document).ready(function(){
+            $("#load").fadeOut(3000);
+
+          });
+        </script>
+
+
+
+
+       
 </body>
 
 

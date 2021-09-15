@@ -42,18 +42,20 @@
     <!-- Section Slide -->
     <section class=""  >
 		<div class="container" style="max-width: 1340px;">
+        
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-					<span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
+			
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+					  <span class="responsive" ><img src="<?php echo base_url(). '/assets/img/banner53.jpg' ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
                     </div>
+            <?php foreach ($kuat as $bnr) : ?>
 					<div class="carousel-item">
-					<span class="responsive" ><img src="<?php echo base_url('assets/img/banner_slide.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-					</div>
-					<div class="carousel-item">
-					<span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-					</div>
+					  <span class="responsive" ><img src="<?php echo base_url(). '/assets/img/'. $bnr->gambar_banner ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
+                    </div>
+                    <?php endforeach ?>
 				</div>
+                
 				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
@@ -63,6 +65,7 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+        
 		</div>
     </section>
     <!-- Akhir Section slide -->
@@ -77,91 +80,128 @@
 				<!-- Rekomendasi 1 -->
                 <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk1">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<!-- <img src="<?php echo base_url().'assets/img/discon.jpg'  ?>" style="position: absolute;left: 12px;top: 15px"  alt="img-fluid"> -->
-                           <span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span> -->
-						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                    <div class="card_hom">
+                         <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                         </span>
                             <img src="<?php echo base_url('assets/gambar_utama/bergo4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>    
                     </a>
 				</div>
 				<!-- Rekomendasi 2 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk2">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
-						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                    <div class="card_hom"> 
+                          <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                          </span>
                             <img src="<?php echo base_url().'assets/gambar_utama/c2QxLnBuZw==.png'  ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
                     </a>
 				</div>
 				<!-- Rekomendasi 3 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk3">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
-						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                    <div class="card_hom">
+                        <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                         </span>
                             <img src="<?php echo base_url('assets/gambar_utama/p3.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                     </div>
                     </a>
 				</div>
 				<!-- Rekomendasi 4 -->
 				<div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk4">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
-						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                    <div class="card_hom">
+                          <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                          </span>
                             <img src="<?php echo base_url('assets/gambar_utama/SkIxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                     </div>    
                     </a>
 				</div>
 				<!-- Rekomendasi 5 -->
-				<div class="col-6 col-md-2">
+				  <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk5">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
-						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
+                    <div class="card_hom">
+                        <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                         </span>
                             <img src="<?php echo base_url('assets/gambar_utama/YnQxLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
-                        </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                     </div>    
                     </a>
-				</div>
+				  </div>
 				<!-- Rekemondasi 6 -->
-				<div class="col-6 col-md-2">
+                <div class="col-6 col-md-2">
                     <a href="" class="" data-toggle="modal" data-target="#mdl_produk6">
-						<div style="width: 50px;height:50px;background-color:#FC185A;border-radius:50%;position:relative;color:#fff;float: right;transform: translateY(15px);">
-							<span style="position: absolute;left: 12px;top: 15px;font-family:Poppins;font-weight:700">20%</span>
-						</div>
-                        <div class="card" style="width:100%; position:initial; border-radius:0px 0px 80px 80px; background: #FAFAFA;height:250px">
-                            <img src="<?php echo base_url('assets/gambar_utama/kaki4.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
+                    <div class="card_hom">
+                        <div>
+                        <span class="fa-layers fa-fw">
+                            <i class="fa fa-bookmark fa-3x" style="position: absolute; right: 15px; color: #F40808;" aria-hidden="true"></i>
+                            <span style="right: 7px; position: absolute; width: 37px; height: 31px; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 15px;line-height: 22px; display: flex; align-items: center; text-align: center; color: #F3F7F9;">20%</span>
+                         </span>
                         </div>
-						<div>
-							<button class="btn btn-warning" style="width:80px;height:80px;border-radius:100%;transform:translateY(-35px); background: #FDD922; border: 2px solid #FAFAFA; box-shadow: 0px 134px 195px rgba(0, 0, 0, 0.07), 0px 48.9122px 71.1782px rgba(0, 0, 0, 0.0482987), 0px 23.746px 34.5557px rgba(0, 0, 0, 0.0389404), 0px 11.6407px 16.9398px rgba(0, 0, 0, 0.0310596), 0px 4.60276px 6.69804px rgba(0, 0, 0, 0.0217013);"><i class="fa fa-shopping-cart"></i></button>
-						</div> 
+                            <img src="<?php echo base_url('assets/gambar_utama/d24xLnBuZw==.png') ?>"  class="card-img-top" style="object-fit: cover;width: 100%;height: 180px;object-fit: cover;" alt="...">
+                            <div id="holder">
+                                <div class="button">
+                                    <p class="btnText">Beli Sekarang</p>
+                                  <div class="btnTwo">
+                                    <p class="btnText2"><i class="fa fa-shopping-cart" style="color: white;"></i></p>
+                                  </div>
+                                </div>
+                            </div>
+                     </div>    
                     </a>
 				</div>
-            </div>
-        </div>
     </section>
+    <br>
+    
     <!-- Akhir Yang kita suka -->
 
     
@@ -1650,6 +1690,18 @@
         </script>
         <?php endif; ?>
         <!--akhir sweetalert -->
+
+        <!-- sweet alert validasi keranjang -->
+        <?php if ($this->session->flashdata('error')): ?>
+        <script>
+            Swal.fire(
+            'Maaf',
+            'masukan dulu produk ke keranjang',
+            'error'
+            )           
+        </script>
+        <?php endif; ?>
+        <!-- sweet alert validasi keranjang -->
 
 
   </body>

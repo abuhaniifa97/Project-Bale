@@ -35,6 +35,13 @@ class Model_confirm extends CI_Model{
   public function input_data($data,$table){
 	$this->db->insert($table, $data);
   }
+
+  //fungsi edit alamat
+  public function show_edit(){
+	$ip= $_SERVER['REMOTE_ADDR'];
+	  $show_edit = $this->db->query("SELECT * FROM pembeli WHERE ip = '$ip'");
+	  return $show_edit;
+  }
   public function show_detail(){
 	  $show = $this->db->query("SELECT pembeli.nama_pembeli,pembeli.no_telepon,pembeli.alamat,detail_keranjang.total_harga,detail_keranjang.total_berat
 	  FROM (pembeli
