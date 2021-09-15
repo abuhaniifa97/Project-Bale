@@ -34,6 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$data["gabung"] = $this->model_barang->tampil_data()->result();
 		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		$data["gabung"] = $this->model_barang->join()->result();
+		$data['kuat'] = $this->model_banner->tampil_banner()->result();
 		$this->load->view('halaman_utama',$data);
 		
 		//inisialisasi
