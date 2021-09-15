@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+<?php $this->load->view('partial/head') ?>
+<!-- Provinsi -->
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://api.rajaongkir.com/starter/province",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => array(
+    "key: 489a7ec53f6372dc09e2d1e0821e0598"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  $d_provinsi = json_decode($response,true);
+  
+}
+?>
+<!-- Akhir Provinsi -->
+=======
 <?php $this->load->view('partial/head'); ?>
 
 <!-- loading -->
@@ -5,6 +39,7 @@
 
   <!-- navbar -->
 <?php $this->load->view('partial/navbar'); ?>
+>>>>>>> e16141ee0a2fa309ef4bf53a97e65717d0bd8699
 
 
 <body>
@@ -54,19 +89,20 @@
                             
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                <label for="inputCity">Provinsi</label>
+                                <label for="">Provinsi</label>
                                 <select id="provinsi" name="provinsi" class="form-control" required>
-                                    <option value="">Pilih Provinsi</option>
-
-                                    <?php foreach($provinsi as $prov){
-                                        echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
-                                    } ?>
-                                    
+									<option value="">Pilih Provinsi</option>
+									<?php 
+									if ($d_provinsi['rajaongkir']['status']['code'] == '200'){
+										foreach($d_provinsi['rajaongkir']['results'] as $pv){
+											echo "<option value='$pv[province_id]'>$pv[province]</option>";
+										}
+									}
+									?>
                                 </select>
                                 </div>
-
                                 <div class="form-group col-md-6">
-                                <label for="inputState">Kota</label>
+                                <label for="">Kota</label>
                                 <select id="kota" name="kota" class="form-control" required>
                                     <option value="">Pilih kota/kabupaten</option>
                                 </select>
@@ -76,9 +112,7 @@
 
                                 <div class="form-group col-md-6">
                                 <label for="inputCity">Kecamatan</label>
-                                <select id="kecamatan" name="kecamatan" class="form-control">
-                                    <option selected>Pilih Kecamatan</option>
-                                </select>
+                                <input type="text" name="kecamatan" placeholder="Kecamatan" class="form-control">
                                 </div>
                                 
                                 <div class="form-group col-md-6">
@@ -132,6 +166,22 @@
                 )           
             </script>
         <?php endif; ?>
+<<<<<<< HEAD
+        
+        
+      <script>
+		  document.getElementById('provinsi').addEventListener('change',function(){
+			  fetch("<?php echo base_url('alamat/kota/') ?>"+this.value,{
+				  method:'GET',
+			  })
+			  .then((response)=>response.text())
+			  .then((data)=>{
+				  console.log(data)
+				  document.getElementById('kota').innerHTML= data
+			  })
+		  })
+	  </script>
+=======
 
         <!-- <script>
             $('#form_button_submit').click(function(){
@@ -149,6 +199,7 @@
 
                 });
         </script> -->
+>>>>>>> e16141ee0a2fa309ef4bf53a97e65717d0bd8699
        <!-- akhir sweetalert -->
 
         <!-- sweetalert 2 -->
