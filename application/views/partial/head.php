@@ -127,74 +127,80 @@
 					width: 100%;
 					height: 260px;
 					background-color: rgb(221 217 217 / 15%);
-					border-radius: 15px;
+					border-radius:0px 0px 80px 80px;
 					transition: all 0.50s ease;
+					position:initial;
 				}
 			/* akhir css/hover rekomendasi */
-			/* awal hover btn */
-					@import url(https://fonts.googleapis.com/css?family=Roboto:700);
-					Roboto; ; margin: 0;}
+			/* awal btn */
+					.social-buttons {
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: center;
+							margin-top: -10px;
+					}
+					.social-buttons__button {
+							margin: 10px 5px 0;
+					}
+					.social-button {
+						position: relative;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						outline: none;
+						width: 70px;
+						height: 70px;
+						text-decoration: none;
+						border-radius: 100%;
+						background: #fff;
+						text-align: center;
+					}
+					.social-button::after {
+						content: '';
+						position: absolute;
+						top: -1px;
+						left: 50%;
+						display: block;
+						width: 0;
+						height: 0;
+						border-radius: 100%;
+						transition: 0.3s;
+					}
+					.social-button:focus, .social-button:hover {
+						color: #fff;
+					}
+					.social-button:focus::after, .social-button:hover::after {
+						width: calc(100% + 2px);
+						height: calc(100% + 2px);
+						margin-left: calc(-50% - 1px);
+					}
+					.social-button i, .social-button svg {
+						position: relative;
+						z-index: 1;
+						transition: 0.3s;
+					}
+					.social-button i {
+						font-size: 28px;
+					}
+					.social-button svg {
+						height: 30%;
+						width: 30%;
+					}
+					.social-button--snapchat {
+						color: #FDD922;
+					}
+					.social-button--snapchat::after {
+						background: #FDD922;
+					}
+					#cart:hover{
+						opacity: 1;
+					}
+					#cart{
+						opacity: 0;
+					}
 
-					#holder{
-					-moz-user-select: -moz-none;
-					-khtml-user-select: none;
-					-webkit-user-select: none;
-					background: white;
-					padding: 10px;
-					width: 250px;
-					margin: 0 auto;
-					position: relative;
-					top: 50%;
-					transform: translateY(-65%);
-					box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
-					border-radius: 2px;
-					}
-					.button {
-					background: #FDD922;
-					margin : 20px auto;
-					width : 100%;
-					height : 100%;
-					overflow: hidden;
-					text-align : center;
-					transition : .2s;
-					cursor : pointer;
-					border-radius: 3px;
-					box-shadow: 0px 1px 2px rgba(0,0,0,.2);
-					transition: all 0.50s ease;
-					}
-					.btnTwo {
-					position : relative;
-					width : 200px;
-					height : 100px;
-					margin-top: -100px;
-					padding-top: 2px;
-					background : #0049A8;
-					left : -250px;
-					transition : .3s;
-					}
-					.btnText {
-					color : white;
-					transition : .3s;
-					margin bottom: 1px;
-					}
-					.btnText2 {
-					margin-top : 63px;
-					margin-right : -130px;
-					color : #FFF;
-					}
-					.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
-					left: -130px;
-					}
-					.button:hover .btnText{ /*When hovering over .button change .btnText*/
-					margin-left : 65px;
-					}
-					.button:active { /*Clicked and held*/
-					box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
-					}
-			/* akhir hover btn */
-			/* awal */
-			
-			/* akhir */
+			/* akhir btn */
+		
 			/* not found */
 
 

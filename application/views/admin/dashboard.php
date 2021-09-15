@@ -138,6 +138,7 @@
 													<th scope="col">Produk</th>
 													<th scope="col">Nama</th>
 													</tr>
+													
 												</thead>
 												<tbody style="width: 1%; padding: .5rem; vertical-align: top;">
 

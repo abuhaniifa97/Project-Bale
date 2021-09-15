@@ -1,6 +1,4 @@
-    
-    
-    <div class="container" style="max-width: 1340px; font-size:15px">
+	<div class="container" style="max-width: 1340px; font-size:15px">
 		<footer class="text-center text-lg-start bg-primary" style="background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
 			<!-- Section: Links  -->
 			<section class="pt-3" style="background: #015EB6;">
@@ -15,7 +13,7 @@
 						<h6 class="text-white fw-bold" style="font-weight: bold;"><i class="fas fa-gem me-3"></i>TENTANG KAMI</h6>
 						<hr class="mb-4" style="width:60px">
 						<p class="text-white" style="color: #f7f7f9e0!important; letter-spacing: 1px;">
-							Balesupply merupakan toko online yang sudah berdiri sejak?,
+							Balesupply merupakan toko online yang sudah berdiri sejak 2020,
 							visi utama kami adalah memudahkan konsumen dengan Transaksi
 							yang sederhana dan tidak menyulitkan bagi pembeli.
 						</p>
