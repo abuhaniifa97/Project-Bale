@@ -39,6 +39,12 @@
 	<!-- Raleway -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
 
+	<!-- Resources -->
+	<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+
 	<!-- Upload Gambar -->
 	<script>
 		function gambar_utama(input) {
@@ -83,14 +89,16 @@
 		})
 	</script>
 	<!-- Akhir Upload -->
+
+
+	<!-- Styles -->
+		<style>
+		#chartdiv {
+		width: 100%;
+		height: 500px;
+		}										
+		</style>
 </head>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-    
-
-</head>
 

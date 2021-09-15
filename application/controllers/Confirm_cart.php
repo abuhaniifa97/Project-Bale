@@ -159,6 +159,8 @@ class Confirm_cart extends CI_Controller {
 
     public function finish()
     {
+		$where = array('id_detail_keranjang');
+		$wheree = array('id_keranjang');
     	$result = json_decode($this->input->post('result_data'),true);
 		$ip = $_SERVER['REMOTE_ADDR'];
     	$data = [
@@ -171,12 +173,16 @@ class Confirm_cart extends CI_Controller {
 			'pdf_url'       => $result['pdf_url'],
 			'status_code'   => $result['status_code'],
 			'ip'            =>  $ip
+			
+			
 
 		];
-
+		
 		$this->model_pembeli->input_data($data,'payment');
-		echo "<script>alert('Succes')</script>";
-		redirect('halaman_utama');
+		$this->model_pembeli->delete_id_produk($where,'detail_keranjang');
+		$this->model_pembeli->delete_id_keranjang($wheree,'keranjang');
+		echo "<script>console.log('Succes');</script>";
+		redirect('halaman_utama',$data);
 
     }
 }

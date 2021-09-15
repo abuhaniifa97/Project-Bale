@@ -94,7 +94,7 @@
                                 <!-- validasi IP -->
                                 
                                 <!-- Akhir Validasi IP -->
-								<button type="submit" name="tambah" id="form_button_submit" class="btn btn-dark" value="tambah">Confirm Alamat</button>
+								<button type="submit" name="tambah" class="btn btn-dark" value="tambah">Confirm Alamat</button>
 								<a href="<?php echo base_url('halaman_utama'); ?>" class="btn btn-outline-dark">Kembali Belanja</a>
                             </div>
                         </form>
@@ -123,55 +123,48 @@
  
 
         <!-- sweetalert -->
+       
         <?php if ($this->session->flashdata('success')): ?>
-            <script>
-                Swal.fire(
-                'Di tambahkan',
-                'Berhasil di tambahkan',
-                'success'
-                )           
-            </script>
-        <?php endif; ?>
-
-        <!-- <script>
-            $('#form_button_submit').click(function(){
+        <script>
+           
 
                 swal({
                     title:"", 
                     text:"Loading...",
-                    icon: "https://www.boasnotas.com/img/loading2.gif",
+                    type:"success",
                     buttons: false,      
-                    closeOnClickOutside: false,
+                    closeOnClickOutside: True,
                     timer: 3000,
                     //icon: "success"
                 });
 
 
-                });
-        </script> -->
+        </script>
+         <?php endif; ?>
        <!-- akhir sweetalert -->
 
-        <!-- sweetalert 2 -->
-        <script>
-            $('#form_button_submit').click(function(){
-                swal({
-                title: "Berhasil!",
-                text: "Alamat berhasil di simpan",
-                type: "success",
-                timer: 3000,
-                showConfirmButton: true
-                }, function(){
-                     
-                    window.location.href = "<?php echo base_url('Confirm_cart'); ?>";
-                });
-            });
-        </script>
-
+        <!-- sweetalert data sudah ada -->
+        <?php if ($this->session->flashdata('error')): ?>
+            <script>
+                
+                    swal({
+                    title: "Alamat Sudah Ada !",
+                    text: "Alamat sebelum nya sudah ada",
+                    type: "error",
+                    timer: 3000,
+                    showConfirmButton: true
+                    }, function(){
+                        
+                        window.location.href = "<?php echo base_url('Confirm_cart'); ?>";
+                    });
+                
+            </script>
+         <?php endif; ?>
 
        <!-- load JS -->
        <script>
           $(document).ready(function(){
-            $("#load_keranjang").fadeOut(1000);
+            $("#load_keranjang").fadeOut(2000);
           });
         </script>
 

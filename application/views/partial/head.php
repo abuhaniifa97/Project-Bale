@@ -264,23 +264,7 @@
 				} */
 
 				/* Load */
-				#viewDiv {
-				padding: 0;
-				margin: 0;
-				height: 100%;
-				overflow: hidden;
-				}
-
-				#loading {
-				margin: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-right: -50%;
-				}
-
-
-				#load,#load_cart {
+				#load,#load_cart,#load_keranjang {
 					width: 100%;
 					height: 100%;
 					position: fixed;
@@ -291,6 +275,16 @@
 					background-size: 8%;
 				}
 
+				#load_edit {
+					width: 100%;
+					height: 100%;
+					position: fixed;
+					text-indent: 100%;
+					background: #e0e0e0 url('../assets/img/loading.gif') no-repeat center;
+					z-index: 1;
+					opacity: 0.6;
+					background-size: 8%;
+				}
 				/* Akhir Load */
 		</style>
 

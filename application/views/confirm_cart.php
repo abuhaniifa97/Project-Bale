@@ -148,7 +148,8 @@
 		</div>
 	</section>
     <!-- footer -->
-<?php $this->load->view('partial/footer') ?>   
+<?php $this->load->view('partial/footer') ?>
+   
   <!-- Checkout -->
   <script type="text/javascript">
   
@@ -222,24 +223,21 @@
 </script>
   <!-- Akhir Checkout -->
 
-  <!-- sweetalert -->
-  	<?php if ($this->session->flashdata('success')): ?>
-		<script>
-			Swal.fire(
-			'Di tambahkan',
-			'Berhasil di tambahkan',
-			'success'
-			)           
-		</script>
-	<?php endif; ?>
-
-	<!-- load js -->
-	<!-- load JS -->
+	<!-- load JS & sweetalert data tersimpan-->
+	<?php if ($this->session->flashdata('success')): ?>
 		<script>
           $(document).ready(function(){
-            $("#load_cart").fadeOut(3000);
+            $("#load_cart").fadeOut(5000);
+		  },
+			swal({
+				title: "Berhasil Di Simpan",
+				text: "Alamat berhasil di simpan",
+				type: "success",
+				timer: 2000,
+				showConfirmButton: true
+			}));
 
-          });
         </script>
+		<?php endif; ?>
 
 </body>
