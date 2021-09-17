@@ -30,13 +30,6 @@
   ?>  
   <!-- Akhir Id Generate -->
 
-       
-<!-- Loading -->
-  <div id="viewDiv">
-    <img id='loading' src="https://i.stack.imgur.com/qq8AE.gif"/>
-  </div>
-<!--Akhir Loading -->
-
 
   
         
@@ -72,14 +65,16 @@
 													echo "<th scope='col'>$var->nama_varian_dua</th>";
 												}
 											?>
-                    
+                     
 										
 										<?php endforeach?>
-                    
+
                     
               </tr>
             </thead>
+          
              <tbody>
+<<<<<<< HEAD
 								<?php foreach ($query as $kjr) : ?>
 									<?php 
 										$jml_belanja = $kjr->harga;
@@ -89,6 +84,10 @@
 										$total_berat = $berat_belanja * $qty_belanja;
 										?>
                     <tr> 
+=======
+                <?php foreach ($query as $kjr) : ?>
+                    <tr>
+>>>>>>> 64cf96730254345462beaa5bdf3b9cd23b41c0db
 											<td><a href="<?=site_url('detail_keranjang/hapus/').$kjr->id_keranjang ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>
                         <td><?php echo $kjr->nama_produk ?></td>
                         <td><?php echo $kjr->berat ?> Gram</td>
@@ -109,6 +108,7 @@
 													}
 												?>                                          
                     </tr>
+                   
                 <?php endforeach ?>    
              </tbody>
             </table>
@@ -117,6 +117,13 @@
           <div class="col-md-12 text-right container mb-5">
           <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" id="bayarr" method="post">
           <?php foreach ($total as $tot) : ?>
+
+            <!-- alert data tidak ada -->
+            <?php if ($this->session->flashdata('alert')): ?>
+            <div class="alert alert-secondary text-center" name="alert1" role="alert">Produk tidak ada</div>
+            <?php endif; ?>
+            <!--Akhir alert data tidak ada -->
+
             <hr style="width: 100%;margin-top:10px; margin-bottom:7px">
                
                <span style="font-weight:bold "> Total: Rp. <?php echo number_format($total_belanja) ?></span>
@@ -136,6 +143,8 @@
               <input type="hidden" name="total_berat" value="<?php echo ($brt->berat) ?>">
                
             <?php endforeach ?> 
+
+            
 						<hr style="width: 100%;margin-top:10px">  
 					</div>
 				

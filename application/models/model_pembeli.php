@@ -42,6 +42,20 @@ class Model_pembeli extends CI_Model{
         $this->db->update('pembeli',$data);
         return TRUE;
     }
+
+    // Fungsi delete produk di keranjang
+    public function delete_id_produk($data){
+        $ip= $_SERVER['REMOTE_ADDR'];
+        $this->db->where('ip',$ip);
+        $this->db->delete('detail_keranjang',$data);
+    }
+
+    // Fungsi delete keranjang
+    public function delete_id_keranjang($data){
+        $ip= $_SERVER['REMOTE_ADDR'];
+        $this->db->where('ip',$ip);
+        $this->db->delete('keranjang',$data);
+    }
 }
 
 

@@ -1,5 +1,9 @@
 
 <?php $this->load->view('partial/head'); ?>
+
+<!-- loading -->
+<div id="load_edit">Loading...</div>
+
 <!-- navbar -->
 <?php $this->load->view('partial/navbar'); ?>
 
@@ -76,7 +80,7 @@
                                 <!-- validasi IP -->
                                 
                                 <!-- Akhir Validasi IP -->
-								<button type="submit" name="tambah" class="btn btn-dark" value="tambah">Confirm Alamat</button>
+								<button type="submit" name="tambah" id="form_button_submit1" class="btn btn-dark" value="tambah">Confirm Alamat</button>
 								<a href="<?php echo base_url('halaman_utama'); ?>" class="btn btn-outline-dark">Kembali Belanja</a>
                             </div>
                             <?php endforeach ?>
@@ -106,20 +110,29 @@
         <?php $this->load->view('partial/footer') ?>
       </div>
 
-    <!-- sweetalert -->
-        
-        <!-- <?php if ($this->session->flashdata('success')): ?>
+
+    <!-- sweetalert edit -->
+        <!-- <?php if ($this->session->flashdata('error')): ?>
             <script>
-                swal({
-                title: "Good job!",
-                text: "You clicked the button!",
-                icon: "success",
-                button: "Aww yiss!",
-                });
+                
+                    swal({
+                    title: "Berhasil Di Edit",
+                    text: "Alamat berhasil di Edit",
+                    type: "success",
+                    timer: 4000,
+                    showConfirmButton: true
+                    });
+            
             </script>
-        <?php endif; ?> -->
-      
+         <?php endif; ?> -->
        <!-- akhir sweetalert -->
+
+        <!-- load JS -->
+        <script>
+          $(document).ready(function(){
+            $("#load_edit").fadeOut(3000);
+          });
+        </script>
 
 </body>
 

@@ -61,10 +61,10 @@
                                 <table class="table table-bordered" id="table_id" width="100%">
                                         <thead>
                                             <tr>
-                                                <th scope="col">No</th>
-                                                <th scope="col">Nama Promo </th>
-                                                <th scope="col">Banner</th>
-                                                <th scope="col">Aksi</th>
+                                                <th scope="col"  style="width: 20px;">No</th>
+                                                <th scope="col " style="width: 200px;">Nama Promo </th>
+                                                <th scope="col"  style="width: 200px;">Banner</th>
+                                                <th scope="col"  style="width: 50px;">Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -73,11 +73,16 @@
                                             <tr>
                                                 <td><?php echo $no++ ?></td>
                                                 <td><?php echo $bnr->nama_banner ?></td>
-                                                <td><img src="<?php echo base_url(). '/assets/img/'. $bnr->gambar_banner ?>" class="img-fluid" style="width: 100px; left: px; top: 454px" alt=""></td>
+                                                <td><img src="<?php echo base_url(). '/assets/img/'. $bnr->gambar_banner ?>" class="img-fluid" style="width: 200px; left: px; top: 454px" alt=""></td>
                                                 <td>   
                                                 <div class="row"> 
+<<<<<<< HEAD
                                                     <div class="col-md-2" style="padding:5px; margin-right: 30px;">
+                                                        <a href="<?=site_url().'admin/slide_bar/hapuss/'.$bnr->id_banner ;?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
+=======
+                                                    <div class="col-md-2 text-center" >
                                                         <a href="<?=site_url('admin/slide_bar/hapuss/'.$bnr->id_banner,) ;?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
+>>>>>>> a57ad5fa449d7e700203ee50adc57bcbba72fc15
                                                     </div>
                                                 </div>  
                                                 </td>
@@ -104,9 +109,11 @@
                                       <input type="text" name="nama_banner" class="form-control">
                                        <div class="form-group">
                                         <label>Gambar Banner</label>
-                                        <input type="file" name="gambar_banner" class="form-control">
+                                        <input type="file" id="imgInp"name="gambar_banner" class="form-control">
+                                        <br>
+                                        <img id="blah" src="<?php echo base_url().'assets/img/contoh.jpg'?>" alt="your image" style="max-width: 480px; max-height: 200px;"/>
                                        </div>
-                            
+                                       
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -214,6 +221,25 @@
 
                     <!-- Custom scripts for all pages-->
                     <script src="<?= base_url() ?>template_admin/js/sb-admin-2.min.js"></script>
+                    <!-- sc image preview -->
+                                          <script>
+                                                function readURL(input) {
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+                                                    
+                                                    reader.onload = function (e) {
+                                                        $('#blah').attr('src', e.target.result);
+                                                    }
+                                                    
+                                                    reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+                                            
+                                            $("#imgInp").change(function(){
+                                                readURL(this);
+                                            });
+                                        </script>
+	                                  <!-- akhir -->
                     <!-- data tabale -->
                     <script type="text/javascript">
                          $(document).ready( function () {

@@ -18,10 +18,14 @@ class Alamat extends CI_Controller {
 		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		$data['provinsi']=$this->model_pembeli->get_all_provinsi();
 		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
+<<<<<<< HEAD
 		$data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();
 		
 		
 			
+=======
+		$data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();	
+>>>>>>> 64cf96730254345462beaa5bdf3b9cd23b41c0db
 		$data['path'] = base_url('assets');
 		
 		// $this->session->set_flashdata('success','Action Completed');
@@ -123,7 +127,7 @@ class Alamat extends CI_Controller {
 		$num = $query->num_rows();
 		if($num > 0)
 		{
-			$this->session->set_flashdata('success','Action Completed');
+			$this->session->set_flashdata('error','Action not Completed');
 			redirect('alamat');
 			
 		}else{
@@ -241,12 +245,21 @@ class Alamat extends CI_Controller {
 							'id_kecamatan'=>$kecamatan,
 							);
 	
+<<<<<<< HEAD
 								$this->model_pembeli->input_data($data,'pembeli');
 								$this->model_pembeli->input_data($data2,'tb_provinsi');
 								$this->model_pembeli->input_data($data3,'tb_kota');
 								$this->model_pembeli->input_data($data4,'tb_kecamatan');
 								$this->session->set_flashdata('success','Action Completed');
 								redirect('edit_alamat');
+=======
+								$this->model_pembeli->ubah_alamat($data,'pembeli');
+								$this->model_pembeli->ubah_alamat($data2,'tb_provinsi');
+								$this->model_pembeli->ubah_alamat($data3,'tb_kota');
+								$this->model_pembeli->ubah_alamat($data4,'tb_kecamatan');
+								$this->session->set_flashdata('error','Action Completed');
+								redirect('confirm_cart');
+>>>>>>> 64cf96730254345462beaa5bdf3b9cd23b41c0db
 		
 								
 			// echo "<script>console.log('Berhasil upload akhir')</script>";
