@@ -88,12 +88,24 @@
 							<div class="col-md-12">
 								<div class="row">
 									<div class="col-md-12">
-										<span>Ongkir :</span>
+										<span style="font-weight:700">Ongkir :</span>
 										<br>
-										<span>JNE Rp.50.000</span>
+										<?php foreach($buyer as $buy) : ?>
+											<?php $tot_ongkir = $buy->cost?>
+										<span class="text-uppercase"><?php echo $buy->ekspedisi?>(<?php echo $buy->j_pengiriman ?>) : Rp.<?php echo number_format($buy->cost ) ?></span>
+										<?php endforeach?>
 									</div>
 								</div>
 								<hr style="width:100%">
+								<!-- Detail Keranjang -->
+								<?php $tot_belanja = $list->total_harga;
+									  $tot_all = $tot_belanja + $tot_ongkir;
+									  ?>
+									 <div class="text-center mt-3">
+										 <span class="text-center" style="font-style: italic;">Jumlah Yang Harus Di Bayar</span>
+										 <h5 style="font-weight: bold;" class="text-center">Rp.<?php echo number_format($tot_all)?></h5>
+									 </div>
+								<!-- Akhir Detail Keranjang -->
 							</div>
 							<div class="col-md-12">
 								<form id="payment-form" method="post" action="<?=site_url()?>confirm_cart/finish">

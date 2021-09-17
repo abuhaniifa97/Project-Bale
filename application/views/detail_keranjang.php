@@ -80,7 +80,14 @@
               </tr>
             </thead>
              <tbody>
-                <?php foreach ($query as $kjr) : ?>
+								<?php foreach ($query as $kjr) : ?>
+									<?php 
+										$jml_belanja = $kjr->harga;
+										$qty_belanja = $kjr->qty;
+										$total_belanja = $jml_belanja * $qty_belanja;
+										$berat_belanja = $kjr->berat;
+										$total_berat = $berat_belanja * $qty_belanja;
+										?>
                     <tr> 
 											<td><a href="<?=site_url('detail_keranjang/hapus/').$kjr->id_keranjang ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>
                         <td><?php echo $kjr->nama_produk ?></td>
@@ -112,13 +119,13 @@
           <?php foreach ($total as $tot) : ?>
             <hr style="width: 100%;margin-top:10px; margin-bottom:7px">
                
-               <span style="font-weight:bold "> Total: Rp. <?php echo number_format($tot->harga) ?></span>
+               <span style="font-weight:bold "> Total: Rp. <?php echo number_format($total_belanja) ?></span>
                <br>
-               <span style="font-weight:bold"> Berat: <?php echo number_format($tot->berat) ?> Gram</span>
+                <span style="font-weight:bold"> Berat: <?php echo number_format($total_berat) ?> Gram</span>
                 <input type="hidden" name="id_detail_keranjang" value="<?php echo id_detail_keranjang()?>">
                 <input type="hidden" name="ip_detail" value="<?php echo $ip= $_SERVER['REMOTE_ADDR']; ?>">
-               <input type="hidden" name="tot_harga" value="<?php echo ($tot->harga) ?>">
-               <input type="hidden" name="tot_berat" value="<?php echo ($tot->berat) ?>">
+               	<input type="hidden" name="tot_harga" value="<?php echo ($total_belanja) ?>">
+                <input type="hidden" name="tot_berat" value="<?php echo ($total_berat) ?>">
             <?php endforeach ?>
             <?php 
               foreach($jml_qty as $row):?>

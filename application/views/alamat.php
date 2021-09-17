@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php $this->load->view('partial/head') ?>
 <!-- Provinsi -->
 <?php
@@ -31,7 +31,7 @@ if ($err) {
 }
 ?>
 <!-- Akhir Provinsi -->
-=======
+
 <?php $this->load->view('partial/head'); ?>
 
 <!-- loading -->
@@ -39,7 +39,7 @@ if ($err) {
 
   <!-- navbar -->
 <?php $this->load->view('partial/navbar'); ?>
->>>>>>> e16141ee0a2fa309ef4bf53a97e65717d0bd8699
+
 
 
 <body>
@@ -57,7 +57,6 @@ if ($err) {
 							<?php foreach($berat as $weight) :?>
 								<input type="hidden" name="total_berat" value="<?php echo $weight->total_berat ?>">
 							<?php endforeach?>
-
 									<?php
 											function id_pembeli($length = 9, $chars = '1234567890abcdefghijklmnopqrstuvwxyz')
 											{
