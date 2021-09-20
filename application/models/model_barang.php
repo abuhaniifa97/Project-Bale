@@ -7,6 +7,10 @@ class Model_barang extends CI_Model{
     public function tampil_data(){
 
         return $this->db->get('produk');
+	}
+	public function tampil_data_kategori(){
+
+        return $this->db->get('kategori');
     }
 
 
@@ -82,6 +86,9 @@ class Model_barang extends CI_Model{
 			$this->db->update('produk', $array_edit);
 			return TRUE;
 		}
+		function input_data_kategori($data_kategori,$table){
+            $this->db->insert($table, $data_kategori);
+        }
        
 
 

@@ -18,6 +18,7 @@ class Tambah_produk extends CI_Controller {
 	{
 		$data['item'] = $this->model_produk->tampil_data()->result();
 		$data['join_produk'] = $this->model_produk->join_show_produk()->result();
+		$data['d_kategori'] = $this->model_barang->tampil_data_kategori()->result();
 		$this->load->view('admin/partial/head',$data);
 		$this->load->view('admin/tambah_produk',$data);
 
@@ -137,6 +138,8 @@ class Tambah_produk extends CI_Controller {
 			// Varian 2
 			$nama_varian_dua = $this->input->post('nama_varian_dua');
 			$isi_varian_dua = $this->input->post('isi_varian_dua');
+			// Kategori
+			$id_kategori = $this->input->post('list_kategori');
 
 			
 			// Foto 1
@@ -204,10 +207,17 @@ class Tambah_produk extends CI_Controller {
 				'isi_varian_dua'        => $isi_varian_dua,
 				'id_produk'  		    => $id_produk,
 			);
+			// Kategori
+			$data_kategori = array(
+				'id_produk'             => $id_produk,
+				'id_kategori'           => $id_kategori
+			);
 					
 					$this->model_barang->input_data($data,'produk');
 					// Insert Varian
 					$this->model_barang->input_data($data_varian,'varian');
+					// Insert Kategori
+					$this->model_barang->input_data($data_kategori,'detail_kategori');
 					$this->session->set_flashdata('success','Action Completed');
 					$this->session->set_flashdata('pesan','<div class="alert alert-primary" role="alert">
 		             Data berhasil di input

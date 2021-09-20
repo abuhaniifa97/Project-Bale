@@ -240,7 +240,15 @@
 										<input type="hidden" name="id_produk" value="<?php echo produk()?>">
 										<input type="text" name="nama_produk" class="form-control" >
 									</div>
-
+									<div class="form-group">
+										<label for="Kategori">Kategori</label>
+										<select name="list_kategori" id="list_kategori" class="form-control">
+											<option>Pilih Kategori</option>
+											<?php foreach ($d_kategori as $kat):?>
+												<option value="<?php echo $kat->id_kategori?>"><?php echo $kat->nama?></option>
+											<?php endforeach ?>
+										</select>
+									</div>
 									<div class="form-group">
 										<label>Deskripsi</label>
 										<textarea name="deskripsi" id="" cols="30" rows="10" class="form-control"></textarea>

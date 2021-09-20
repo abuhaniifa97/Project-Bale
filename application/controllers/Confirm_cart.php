@@ -80,27 +80,27 @@ class Confirm_cart extends CI_Controller {
 		$nama_pembeli  = $this->input->post('penerima_detail');
 		$no_detail     = $this->input->post('no_detail');
 		// $alamat_detail = $this->input->post('alamat_detail');
-		$produk_detail = $this->input->post('produk_detail');
+		$total = $this->input->post('total_detail');
 		// $harga_detail = $this->filter_input->post('harga_detail');
-		$qty_detail    = $this->input->post('qty_detail');
-		$total_detail  = $this->input->post('total_detail');
+		
+		$pay = $this->input->post('pay_all');
 		// var_dump($nama_pembeli);
 		// Required
 		$transaction_details = array(
 		  'order_id' => rand(),
-		  'gross_amount' => $total_detail, // no decimal allowed for creditcard
+		  'gross_amount' => $total, // no decimal allowed for creditcard
 		);
 
 		// Optional
-		$item1_details = array(
-		  'id'	 	 => 'a1',
-		  'price' 	 => $total_detail,
-		  'quantity' => $qty_detail,
-		  'name'	 => $produk_detail
-		);
+		// $item1_details = array(
+		//   'id'	 	 => 'a1',
+		//   'price' 	 => $total_detail,
+		//   'quantity' => $qty_detail,
+		//   'name'	 => $produk_detail
+		// );
 
 		// Optional
-		$item_details = array ($item1_details);
+		// $item_details = array ($item1_details);
 
 		// Optional
 		// $billing_address = array(
@@ -145,7 +145,6 @@ class Confirm_cart extends CI_Controller {
         
         $transaction_data = array(
             'transaction_details'=> $transaction_details,
-            'item_details'       => $item_details,
             'customer_details'   => $customer_details,
             'credit_card'        => $credit_card,
             'expiry'             => $custom_expiry

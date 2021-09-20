@@ -31,11 +31,8 @@ if ($err) {
 }
 ?>
 <!-- Akhir Provinsi -->
-<<<<<<< HEAD
-
 <?php $this->load->view('partial/head'); ?>
-=======
->>>>>>> 64cf96730254345462beaa5bdf3b9cd23b41c0db
+
 
 <!-- loading -->
 <div id="load_keranjang">Loading...</div>
@@ -161,11 +158,8 @@ if ($err) {
         <!-- sweetalert -->
        
         <?php if ($this->session->flashdata('success')): ?>
-<<<<<<< HEAD
         <script>
            
-=======
-            <script>
                 Swal.fire(
                 'Di tambahkan',
                 'Berhasil di tambahkan',
@@ -173,7 +167,6 @@ if ($err) {
                 )           
             </script>
         <?php endif; ?>
-<<<<<<< HEAD
         
         
       <script>
@@ -188,7 +181,6 @@ if ($err) {
 			  })
 		  })
 	  </script>
-=======
 
         <!-- <script>
             $('#form_button_submit').click(function(){
@@ -205,11 +197,10 @@ if ($err) {
                 });
 
 
-<<<<<<< HEAD
-=======
+
                 });
         </script> -->
->>>>>>> e16141ee0a2fa309ef4bf53a97e65717d0bd8699
+
        <!-- akhir sweetalert -->
 
         <!-- sweetalert 2 -->
@@ -226,9 +217,9 @@ if ($err) {
                     window.location.href = "<?php echo base_url('Confirm_cart'); ?>";
                 });
             });
->>>>>>> 75439ab5c1789c399203313bf02121039ca7f4d3
+
         </script>
-         <?php endif; ?>
+        
        <!-- akhir sweetalert -->
 
         <!-- sweetalert data sudah ada -->

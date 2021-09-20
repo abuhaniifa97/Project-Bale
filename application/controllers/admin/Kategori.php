@@ -32,4 +32,31 @@ class Kategori extends CI_Controller {
 		
 		$this->load->view('admin/kategori');
 	}
+	public function add(){
+		if (isset($_POST['btn_add_kategori'])) {
+			$nama_kategori = $this->input->post('nama_kategori');
+			$id_kategori = $this->input->post('id_kategori');
+
+			
+			
+
+			$data_kategori = array(
+				'id_kategori' 		    => $id_kategori,
+				'nama' 					=> $nama_kategori,
+			);
+					
+					// Insert Varian
+					$this->model_barang->input_data_kategori($data_kategori,'kategori');
+					$this->session->set_flashdata('success','Action Completed');
+					$this->session->set_flashdata('pesan','<div class="alert alert-primary" role="alert">
+		             Data berhasil di input
+	               </div>');
+					redirect('admin/kategori');
+					// echo "<script>console.log('Berhasil')</script>";
+
+
+		}else{
+
+		}
+	}
 }

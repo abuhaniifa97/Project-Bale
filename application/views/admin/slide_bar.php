@@ -76,13 +76,11 @@
                                                 <td><img src="<?php echo base_url(). '/assets/img/'. $bnr->gambar_banner ?>" class="img-fluid" style="width: 200px; left: px; top: 454px" alt=""></td>
                                                 <td>   
                                                 <div class="row"> 
-<<<<<<< HEAD
                                                     <div class="col-md-2" style="padding:5px; margin-right: 30px;">
                                                         <a href="<?=site_url().'admin/slide_bar/hapuss/'.$bnr->id_banner ;?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
-=======
                                                     <div class="col-md-2 text-center" >
                                                         <a href="<?=site_url('admin/slide_bar/hapuss/'.$bnr->id_banner,) ;?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
->>>>>>> a57ad5fa449d7e700203ee50adc57bcbba72fc15
+
                                                     </div>
                                                 </div>  
                                                 </td>

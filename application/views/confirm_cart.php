@@ -104,11 +104,13 @@
 									 <div class="text-center mt-3">
 										 <span class="text-center" style="font-style: italic;">Jumlah Yang Harus Di Bayar</span>
 										 <h5 style="font-weight: bold;" class="text-center">Rp.<?php echo number_format($tot_all)?></h5>
+										
 									 </div>
 								<!-- Akhir Detail Keranjang -->
 							</div>
 							<div class="col-md-12">
 								<form id="payment-form" method="post" action="<?=site_url()?>confirm_cart/finish">
+								<input type="text" value="" name="pay_all">
 								<input type="hidden" name="result_type" id="result-type" value="">
 									<input type="hidden" name="result_data" id="result-data" value="">
 										<!-- Pembeli -->
@@ -124,7 +126,7 @@
 										<?php endforeach?>
 										<!-- Akhir Keranjang -->
 										<!-- Detail Keranjang -->
-										<input type="hidden" value="<?php echo $list->total_harga ?>" name="total_detail" id="total_detail">
+										<input type="hidden" value="<?php echo $tot_all?>" name="total_detail" id="total_detail">
 										<!-- Detail Keranjang -->
 									<br>
 										<button class="btn btn-dark mt-2 mr-2" id="pay-button" style="width:210px;margin-bottom:10px">Lanjut Ke Pembayaran</button>
