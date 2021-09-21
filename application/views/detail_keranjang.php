@@ -109,6 +109,7 @@
           </div>
           <div class="col-md-12 text-right container mb-5">
           <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" id="bayarr" method="post">
+				
           <?php foreach ($total as $tot) : ?>
 
             <!-- alert data tidak ada -->

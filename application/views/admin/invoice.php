@@ -27,85 +27,70 @@
                 </nav>
 
                 <!-- End of Topbar -->
-            <div class="container-fluid" style="position: absolute;">
-                <H4 style="color: #222222;">Invoice pembelian produk</H4>
-                
-                <div class="card shadow mb-4">
-                    <div class="card-body">
-                    <?php foreach ($campur as $buy) :?>
-                        <div class="card-header">
-                            <p><?php echo $buy->transaction_time ?></p>
-                        </div>
-                        <div class="col-md-12">
-							<div class="row">
-                           
-								<div class="col-md-4">
-									
-									<div class="row">
-										<div class="col-md-12">
-											<span style="font-weight: bold;">Pembeli</span>
-											<br>
-                                            <span style="font-weight: bold; display:none;"><?php echo $buy->ip?></span>
-                                            <br>
-											<span style="font-weight: bold;"><?php echo $buy->nama_pembeli?></span>
-										</div>
-										<div class="col-md-12">
-											<span><?php echo $buy->no_telepon?></span>
-										</div>
-										<div class="col-md-12">
-											<p><?php echo $buy->alamat?></p>
-										</div>
-									</div>
-									
-								</div>
-								<div class="col-md-4">
-									<div class="row">
-										<div class="col-md-12">
-											<span style="font-weight: bold;">Detail Order</span>
-                                            <br>
-											<span style="font-weight: bold;"></span>
-											<br>
-											<span style="font-weight: bold;">Nama produk <?php echo $buy->nama_produk?></span>
-                                            <br>
-											<span style="font-weight: bold;">qty <?php echo $buy->qty?></span>
-										</div>
-										<div class="col-md-12">
-											<span style="font-weight: bold;">Harga <?php echo $buy->harga?></span>
-										</div>
-										<div class="col-md-12">
-											<p style="font-weight: bold;">Total Harga <?php echo $buy->total_harga?></p>
-										</div>
-									</div>
-								</div>
-                                <div class="col-md-4">
-									<div class="row">
-										<div class="col-md-12">
-											<span style="font-weight: bold;">Transaksi</span>
-                                            <br>
-											<span style="font-weight: bold;"></span>
-											<br>
-											<span style="font-weight: bold;">Metode pembayaran : <?php echo $buy->bank?></span>
-                                            <br>
-											<span style="font-weight: bold;"></span>
-										</div>
-										<div class="col-md-12">
-											<span></span>
-										</div>
-										<div class="col-md-12">
-											<p></p>
-										</div>
-									</div>
-								</div>
-							</div>
-                            <?php endforeach?>
-							<hr style="width: 100%;">
+				<div class="container-fluid" style="position: absolute;">
+					<div class="row">
+						<div class="col-md-12">
+							<h6>Daftar Pesanan</h6>
 						</div>
-                        <div class="col-md-12 text-right">
-                            <a href="cetak"><button class="btn btn-dark mt-3" data-target="_BLANK" style="width: 180px;"><span style="color:ffff;">Print</span></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+						<div class="col-md-12">
+							<div class="card_penjualan" style="width:100%;height:250px;background-color: #F5F6F8;border-radius:10px;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
+								<!-- Tab Bootstarp -->
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Belum Dibayar</a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Perlu Dikirim</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent" >
+									<div class="container">
+										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+											<div class="row">
+												<div class="col-md-12 mt-2">
+													<table>
+														<tr>
+															<td style="width: 400px;">
+																<div class="card_panding" style="padding:10px;background-color:#fff;border-radius:10px;width:100%;height:150px;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
+																	<table>
+																		<td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" style="width: 100px;" class="img-fluid" alt=""></td>
+																		<td style="width: 10px;"></td>
+																		<td>
+																			<div class="row">
+																				<div class="col-md-12"><h6 style="font-size: 19px;">Sepatu</h6></div>
+																				<div class="col-md-12"><p style="color:#999;font-size:13px">Varian</p></div>
+																				<div class="col-md-12"><p>x</p></div>
+																			</div>
+																		</td>
+																	</table>
+																</div>
+															</td>
+															<td style="width: 50px;"></td>
+															<td style="width: 400pxs;">
+																<div class="row">
+																	<div class="col-md-12 p-1">
+																		<button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Terima Pesanan</button>
+																	</div>
+																	<div class="col-md-12 p-1">
+																		<button type="button" class="btn btn-lg btn-outline-primary" style="width: 200px;">Tolak Pesanan</button>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														
+													</table>
+													<hr>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+									</div>
+								</div>
+								<!-- Akhir Bootstrap -->
+							</div>
+						</div>
+					</div>
+				</div>
                         
                         
                             <!-- End of Main Content -->

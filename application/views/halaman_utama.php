@@ -1263,6 +1263,7 @@
                                                     <input type="text" style="display:none" name="nama_produk" value="<?php echo $pdk->nama_produk ?>">
                                                     <b style="font-family: Poppins; font-style: normal; font-weight: 600; font-size: 45px; line-height: 75px; display: flex; align-items: center; color: #000000;">Rp.<?php echo number_format ($pdk->harga) ?> </b>
 													<input type="text" style="display:none" name="harga" value="<?php echo $pdk->harga ?>"> 
+													<input type="text" style="display:none" name="id_produk" value="<?php echo $pdk->id_produk ?>"> 
 													
                                                 <!-- row atribut 1 -->
                                                 <div class="row mt-3">

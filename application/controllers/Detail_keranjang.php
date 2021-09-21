@@ -63,7 +63,7 @@ class Detail_keranjang extends CI_Controller {
 		$total_berat_detail					  = $this->input->post('tot_berat');
 
 		// Proses Pengurangan keranjang
-		$update_keranjang = $jml_qty  - $id_detail_keranjang;
+		$update_keranjang = $jml_qty_detail  - $id_detail_keranjang;
 			   
 		 $dataa = array(
 			    'id_detail_keranjang'       => $id_detail_keranjang,

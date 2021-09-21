@@ -67,9 +67,11 @@ class Halaman_utama extends CI_Controller {
 		$stok				 = $this->input->post('stok');
 		// Proses Pengurangan Stok
 		$update_stok = $stok - $qty;
+		
 
 			   
 		 $dataa = array(
+			 	'id_produk'			 => $id_produk,
 			    'id_keranjang'       => $id_keranjang,
 			    'ip'                 => $ip,
 				'nama_produk'        => $nama_produk,

@@ -181,7 +181,7 @@ class Confirm_cart extends CI_Controller {
 		$this->model_pembeli->delete_id_produk($where,'detail_keranjang');
 		$this->model_pembeli->delete_id_keranjang($wheree,'keranjang');
 		echo "<script>console.log('Succes');</script>";
-		redirect('halaman_utama',$data);
+		redirect('my_order',$data);
 
     }
 }
