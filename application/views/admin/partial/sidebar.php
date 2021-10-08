@@ -83,6 +83,17 @@
                
             </div>
         </div>
+	</li>
+	<li class="nav-item" style="display:block">
+        <a class="nav-link collapsed" href="<?php echo base_url('admin/brand') ?>" data-target="#fasilitas" aria-expanded="true" aria-controls="collapseUtilities">
+            <!-- <i class="fas fa-home"></i> -->
+            <span>Brand</span>
+        </a>
+        <div id="fasilitas" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+               
+            </div>
+        </div>
     </li>
 
     <!-- Divider -->

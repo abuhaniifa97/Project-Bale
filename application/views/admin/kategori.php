@@ -31,58 +31,46 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- DataTales Example -->
-                    <nav class="navbar navbar-light bg-light justify-content-between">
-                        <a class="navbar-brand"><b style=" left: 439px; top: 128px; font-family: Poppins; font-style: normal; font-weight: 500; font-size: 25px; line-height: 37px; display: flex; align-items: center; color: #222222;">Tambah Produk</b></a>
-                            <a href="" class="" data-toggle="modal" data-target="#tambah_baru_ketegori">
-                            <button class="btn btn-primary " style="width: 180px;">Tambah Baru</button></a>
-                    </nav>
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="table_id" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">No</th>
-                                                <th scope="col">Produk</th>
-                                                <th scope="col">Nama Produk</th>
-                                                <th scope="col">Berat</th>
-                                                <th scope="col">Aksi</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td>2</td>
-                                                <td>mark</td>
-                                                <td>Otto</td>
-                                                <td>
-                                                3     
-                                                </td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                </table>
-                                        
-                                <script type="text/javascript">
-                                    $(document).ready( function () {
-                                        $('#table_id').DataTable();
-                                    } );
-                                </script>
-                            </div>
-                            <!-- End of Main Content -->
 
-                            <!-- Footer -->
-                            <?php $this->load->view('admin/partial/footer') ?>
-                            <!-- End of Footer -->
-
-                        </div>
-                        <!-- End of Content Wrapper -->
-
-                    </div>
                     <!-- End of Page Wrapper -->
-
+					<!-- Card -->
+					<div class="row">
+						<div class="col-md-6 p-2">
+							<span>Kategori</span>
+						</div>
+						<div class="col-md-6 p-2 text-right">
+							<button class="btn btn-primary" data-toggle="modal" data-target="#tambah_baru_ketegori">Tambah Data</button>
+						</div>
+						<div class="col-md-12 mt-2">
+							<div class="card_kategori" style="padding: 10px;border-radius:7px;width:100%;height:500px;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
+								<div class="table-responsive mt-3" style="overflow-x: auto;">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th style="width:200px" scope="col">No</th>
+											<th style="width:200px" scope="col">Foto</th>
+											<th style="width:200px" scope="col">Nama Kategori</th>
+											<th style="width:200px" scope="col"><i class="fas fa-cog"></i></th>
+										</tr>
+									</thead>
+									<tbody>
+										<?php foreach ($show_kategori as $show) : ?>
+										<tr>
+											<th style="width:200px" scope="row">1</th>
+											<td style="width: 200px;"><img src="<?php echo base_url().'assets/img_kategori/'. $show->img_sampul?>" alt="sampul kategori" class="img-fluid" style="object-fit: cover;width:150px;height:150px"></td>
+											<td style="width:200px"><?php echo $show->nama_kategori ?></td>
+											<td style="width:200px">
+											    <button  style="width:80px" class="btn-sm btn btn-outline-dark"><i class="far fa-image"></i></button>&nbsp<button  style="width:80px" class="btn-sm btn btn-outline-dark"><i class="far fa-edit"></i></button>&nbsp<button  style="width:80px" class="btn-sm btn btn-outline-dark"><i style="color:red" class="fas fa-trash"></i></button>
+											</td>
+										</tr>
+										<?php  endforeach?>
+									</tbody>
+								</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Akhir Card -->
                     <!-- Scroll to Top Button-->
                     <a class="scroll-to-top rounded" href="#page-top">
                         <i class="fas fa-angle-up"></i>
@@ -132,7 +120,6 @@
 												$r = $chars{rand(0, $len_chars)};
 												if ($r != $the_chars{$i - 1}) $the_chars .=  $r;
 											}
-
 											return $the_chars;
 										}
 									}
@@ -141,7 +128,14 @@
                                     <label>Nama Kategori</label>
 									<input type="text" name="nama_kategori" class="form-control" placeholder="Masukan Nama Kategori" required>
 									<input type="hidden" name="id_kategori" value="<?php echo kategori() ?>" class="form-control">
-                                </div>
+								</div>
+								<div class="form-group">
+									<label for=""><span class="badge badge-pill badge-danger">!</span>Sampul Kategori (500 x 500 )</label>
+									<label class=newbtn style=" cursor: pointer;width:100%">
+										<img id="blah" src="http://placehold.it/120x120" style="width:100%;margin-top:20px;">
+										<input id="pic" name="img_sampul" class='pis' onchange="readURL(this);" type="file" style=" display: none;">
+									</label>
+								</div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -172,7 +166,25 @@
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
                     <!-- Custom scripts for all pages-->
-                    <script src="<?= base_url() ?>template_admin/js/sb-admin-2.min.js"></script>
+					<script src="<?= base_url() ?>template_admin/js/sb-admin-2.min.js"></script>
+					<script>
+						 $('.newbtn').bind("click" , function () {
+									$('#pic').click();
+							});
+							
+							function readURL(input) {
+										if (input.files && input.files[0]) {
+											var reader = new FileReader();
+
+											reader.onload = function (e) {
+												$('#blah')
+													.attr('src', e.target.result);
+											};
+
+											reader.readAsDataURL(input.files[0]);
+										}
+									}
+					</script>
 
                 </div>
             </div>

@@ -88,7 +88,8 @@ class Model_barang extends CI_Model{
 		}
 		function input_data_kategori($data_kategori,$table){
             $this->db->insert($table, $data_kategori);
-        }
+		}
+		
        
 
 

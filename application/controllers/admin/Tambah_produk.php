@@ -5,19 +5,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Tambah_produk extends CI_Controller {
 	
-	public function __construct()
-        {
-                parent::__construct();
-                $this->load->helper(array('form', 'url'));
-				if ($this->session->userdata('status') != "login") {
-					redirect(base_url('auth'));
-				}
-        }
+	// public function __construct()
+    //     {
+    //             parent::__construct();
+    //             $this->load->helper(array('form', 'url'));
+	// 			if ($this->session->userdata('status') != "login") {
+	// 				redirect(base_url('auth'));
+	// 			}
+    //     }
 
 	public function index()
 	{
 		$data['item'] = $this->model_produk->tampil_data()->result();
-		$data['join_produk'] = $this->model_produk->join_show_produk()->result();
+		$data['d_brand'] = $this->M_brand->show_data_brand()->result();
 		$data['d_kategori'] = $this->model_barang->tampil_data_kategori()->result();
 		$this->load->view('admin/partial/head',$data);
 		$this->load->view('admin/tambah_produk',$data);
@@ -131,7 +131,7 @@ class Tambah_produk extends CI_Controller {
 			$berat = $this->input->post('berat');
 			$stok = $this->input->post('stok');
 			// Varian
-			$id_varian = $this->input->post('id_varian');
+			// $id_varian = $this->input->post('id_varian');
 			$id_produk = $this->input->post('id_produk');
 			$nama_varian = $this->input->post('nama_varian');
 			$isi_varian =$this->input->post('isi_varian');
@@ -140,6 +140,10 @@ class Tambah_produk extends CI_Controller {
 			$isi_varian_dua = $this->input->post('isi_varian_dua');
 			// Kategori
 			$id_kategori = $this->input->post('list_kategori');
+			// Brand
+			$id_brand = $this->input->post('list_brand');
+			// Status
+			$status_produk = $this->input->post('status'); 
 
 			
 			// Foto 1
@@ -196,28 +200,41 @@ class Tambah_produk extends CI_Controller {
 						'foto_utama'=> $encrypted,
 						'foto_samping' => $encrypteddua,
 						'foto_atas' => $encryptetiga,
-						'id_varian' => $id_varian
+						'id_brand'  => $id_brand,
+						'id_kategori'  => $id_kategori,
+						// Varian1
+						'nama_varian_satu' => $nama_varian,
+						'isi_varian_satu'  => $isi_varian,
+						// Varian2
+						'nama_varian_dua' =>$nama_varian_dua,
+						'isi_varian_dua'  =>$isi_varian_dua,
+						// Status
+						'status' => $status_produk,
 			);
 			// Array Varian
-			$data_varian = array(
-				'id_varian' 		    => $id_varian,
-				'nama_varian' 			=> $nama_varian,
-				'isi_varian'  			=> $isi_varian,
-				'nama_varian_dua'       => $nama_varian_dua,
-				'isi_varian_dua'        => $isi_varian_dua,
-				'id_produk'  		    => $id_produk,
-			);
+			// $data_varian = array(
+			// 	'id_varian' 		    => $id_varian,
+			// 	'nama_varian' 			=> $nama_varian,
+			// 	'isi_varian'  			=> $isi_varian,
+			// 	'nama_varian_dua'       => $nama_varian_dua,
+			// 	'isi_varian_dua'        => $isi_varian_dua,
+			// 	'id_produk'  		    => $id_produk,
+			// );
 			// Kategori
 			$data_kategori = array(
 				'id_produk'             => $id_produk,
 				'id_kategori'           => $id_kategori
 			);
+			$data_brand = array(
+				'id_produk'             => $id_produk,
+				'id_brand'              => $id_brand
+			);
 					
 					$this->model_barang->input_data($data,'produk');
-					// Insert Varian
-					$this->model_barang->input_data($data_varian,'varian');
+					// Insert Brand
+					$this->M_brand->input_data_brand($data_brand,'detail_brand');
 					// Insert Kategori
-					$this->model_barang->input_data($data_kategori,'detail_kategori');
+					$this->M_kategori->input_data_kategori_detail($data_kategori,'detail_kategori');
 					$this->session->set_flashdata('success','Action Completed');
 					$this->session->set_flashdata('pesan','<div class="alert alert-primary" role="alert">
 		             Data berhasil di input
