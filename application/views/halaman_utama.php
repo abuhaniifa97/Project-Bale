@@ -206,41 +206,13 @@
 				<br>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="wow" style="border-radius: 30px; box-shadow: 0 5px 10px rgb(73 84 100 / 5%); border-color: transparent; height: width: 100%; 263px;">
+							<div class="wow" style="border-radius: 30px; box-shadow: 0 5px 10px rgb(73 84 100 / 5%); border-color: transparent; height: auto">
 								<div class="row">
+									<?php foreach ($show_brand as $s_brand) :?>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<img src="assets/img/img_brand<?php echo $s_brand->icon_brand?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
 									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
-									</div>
+									<?php endforeach ?>
 									<div class ="col-4 col-md-2 mt-2">
 										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
 									</div>
