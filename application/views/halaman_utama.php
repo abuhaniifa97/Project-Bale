@@ -219,6 +219,7 @@
 					</div>	
 			</div>
 		</section>
+		<!-- Akhir Brand -->
 	<!-- akhir section edisi brand -->
 	<br>
 	<!-- awal banner pembatas -->
