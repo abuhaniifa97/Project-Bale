@@ -49,4 +49,6 @@
 
 				</div>
 			</nav>
+			<br>
+			<br>
 		<!-- NAVBAR BARU AKHIR -->
