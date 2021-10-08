@@ -1,9 +1,6 @@
 <?php $this->load->view('partial/head') ?>
 
 <?php $this->load->view('partial/navbar') ?> 
-<br>
-<br>
-<br>
 <!-- Carousel Brand -->
 			
 <!-- Akhir Carousel Brand -->

@@ -4,7 +4,7 @@
 <div id="load">Loading...</div>
 
  <!-- navbar -->
- <?php $this->load->view('partial/navbar'); ?>
+ <?php $this->load->view('partial/navbar2'); ?>
  <br>
 <br>
 <br>
@@ -115,10 +115,10 @@
 						<hr style="width: 100%;margin-top:10px">  
 					</div>
 				
-				<div class="col-md-12 text-right">
+				<div class="cos col-md-12 text-right">
           <a href="<?php echo base_url('halaman_utama'); ?>" style="width: 180px;" class="btn btn-outline-dark">Kembali Belanja</a>
         </div>
-        <div class="col-md-12 text-right">
+        <div class="coss col-md-12 text-right">
           <button class="btn btn-dark mt-3" name="buy_detail_cart" type="submit" style="width: 180px;"><span style="color:ffff;">Bayar</span></button>
         </div>
         <div class="col-md-12 text-right">
@@ -128,7 +128,9 @@
         <br>
         
       </div>
-      </div>  
+      </div> 
+      <!-- cocok -->
+      
       <!-- akhir detail keranjang -->
       <section>
         <div class="container mt-4" style="max-width: 1340px;">

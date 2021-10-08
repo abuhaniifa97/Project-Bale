@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Kategori_produk extends CI_Controller {
+class Kategori_mobile extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,6 @@ class Kategori_produk extends CI_Controller {
 	 */
 	public function index()
 	{
-
-		$this->load->view('kategori_produk');
+		$this->load->view('kategori_mobile');
 	}
 }

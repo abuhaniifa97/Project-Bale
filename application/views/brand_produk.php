@@ -4,15 +4,14 @@
     <!-- akhir head -->
     <!-- awal navbar -->
         <?php $this->load->view('partial/navbar') ?>
-    <br>
-    <br>     
+     
     <!-- akhir navbar -->
     <!-- section serch -->
             <section>
                 <div class="container" style="max-width: 1340px;">
                     <div class="row">
-                        <div class="col-md-9 mt-3">
-                            <span style="font-size:20px;font-weight:bold">Kategori Busana Muslim</span>
+                        <div class="col-md-9">
+                            <span style="font-size:20px;font-weight:bold">Brand Busana Muslim</span>
                         </div>
                         <div class="col-md-3 text-right mt-3">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 281px; height: 50px; top: 1933px; background: #FAFAFA; border: 1px solid #777777; box-sizing: border-box; border-radius: 50px;">
@@ -565,96 +564,60 @@
             </div>
         </section>
     <!-- akhir section produk kategori -->
-    <!-- awal section kategori -->
-		<section>
+    <!-- awal section brand -->
+        <section>
 			<div class="container" style="max-width: 1340px;">
-                <div class="row">
-                    <div class="col-md-6 mt-5">
-                        <span style="font-size:20px;font-weight:bold">Kategori Lainya</span>
-                    </div>
-                    <div class="col-md-6 mt-5 text-right">
-                        <span style="font-size:20px;">Lihat Semua</span>
-                    </div>
-                </div>
-                <br>
-				<div class="row no-gutters">
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Sepatu Pria</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/92.png') ?>" class="img-responsive "  style="width: 100%; height: auto;" alt="">
-						  <div class="text">
-                            <center><p>Fasihon Wanita</p></center>
-                          </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/93.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						 <div class="text"> 
-                           <center><p>Baju Anak</p></center>
-                         </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/94.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Kaos Kaki</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/95.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Busana Muslim</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/96.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Pasmina</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/97.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Sepatu Pria</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/98.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Hijab</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/99.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-                        <div class="text">
-                          <center><p>Khimer</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/100.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Sendal pria</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/101.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">
-                          <center><p>Sendal Wanita</p></center>
-                        </div>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <img src="<?php echo base_url('assets/img/102.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-                        <div class="text">
-                          <center><p>Khimer</p></center>
-                        </div>
-					</div>
+				<div class="col-md-12 mt-5">
+					<span style="font-size:25px;font-weight:bold">Edisi Brand</span>
 				</div>
+				<br>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="wow" style="border-radius: 30px; box-shadow: 0 5px 10px rgb(73 84 100 / 5%); border-color: transparent; height: width: 100%; 263px;">
+								<div class="row">
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+									<div class ="col-4 col-md-2 mt-2">
+										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
 			</div>
 		</section>
-	<!-- akhir section kategori -->    
-
+	<!-- akhir section brand -->    
     <br>
     <br>
     <!-- awal fotter -->
