@@ -250,7 +250,7 @@
 				/* Margin section */
 
 				hr
-				{ margin: 0px; padding: 0px; border-top: 1px dashed #999; }
+				{ margin: 0px; padding: 0px; border-top: 1px dashed #999; border-style: solid;}
 			/*--------------------------------------------FrameWork------------------------*/
 
 			/* 'Scroll gambar */
@@ -549,6 +549,200 @@
 
 				/* CSS NAVBAR AKHIR*/
 
+				/* CSS NAVBAR 2*/
+					/* penggunaan media query pada default monitor layout */
+					@media only screen and (min-width: 992px) {
+						.nav2 {
+							background: #0049A8;
+							position:fixed;
+							z-index: 20;
+							width: 100%;
+							}
+						.toko{
+							display:block;
+							color:#fff;
+						}
+
+						.item{
+							padding:10px;
+						}
+
+						.nav-item5{
+							padding:15px;
+						}
+
+						.nav-item4{
+							padding:0;
+						}
+
+						.nav-item1{
+							display:none;
+						}
+
+						.nav-item2{
+							display:none;
+						}
+						.nav-item3{
+							display:none;
+						}
+
+						.nav-item6{
+							display:none;
+						}
+					
+					}
+
+					/* penggunaan media query pada mobile layout */
+					@media only screen and (min-width: 360px) and (max-width: 379px) {
+
+						.nav2 {
+							position:fixed;
+							background: #fff;
+							width:100%;
+							bottom:0;
+							height:60px;
+							padding:10px;
+							z-index: 20;
+							box-shadow: 0px 0px 5px;
+							}
+						p{
+							display:none;
+						}
+						th{
+							display:none;
+						}
+						td{
+							display:none;
+						}
+
+						span{
+							display:none;
+						}
+						.cos{
+							display:none;
+						}
+						.coss{
+							display:none;
+						}
+
+						.cosss{
+							display:none;
+						}
+						.item{
+							margin: auto;
+
+						}
+						.item a{
+							display:none;
+						}
+
+						.toko{
+							display:none;
+							
+						}
+
+
+
+					}
+
+					/* RESOLUSI 360 px sampai 375 px */
+					@media only screen and (min-width: 380px) and (max-width: 767px) {
+
+						.nav2 {
+							position:fixed;
+							background: #fff;
+							width:100%;
+							bottom:0;
+							height:60px;
+							padding:10px;
+							box-shadow: 0px 0px 5px;
+							z-index: 20;
+							}
+						.item{
+							margin: auto;
+
+						}
+						p{
+							display:none;
+						}
+						th{
+							display:none;
+						}
+						td{
+							display:none;
+						}
+
+						span{
+							display:none;
+						}
+						.cos{
+							display:none;
+						}
+						.coss{
+							display:none;
+						}
+						.item a{
+							display:none;
+						}
+
+						.toko{
+							display:none;
+							
+						}
+
+
+
+					}
+
+					/* RESOLUSI 320 PX SAMPAI 350 PX */
+					@media only screen and (min-width: 320px) and (max-width: 350px) {
+
+						.nav2 {
+							position:fixed;
+							background: #fff;
+							width:100%;
+							bottom:0;
+							height:60px;
+							box-shadow: 0px 0px 5px;
+							padding:10px;
+							z-index: 20;
+							}
+						.item{
+							margin: auto;
+						}
+						p{
+							display:none;
+						}
+						th{
+							display:none;
+						}
+						td{
+							display:none;
+						}
+
+						span{
+							display:none;
+						}
+						.cos{
+							display:none;
+						}
+						.coss{
+							display:none;
+						}
+						.item a{
+							display:none;
+						}
+						.toko{
+							display:none;
+							
+						}
+
+
+
+					}
+
+				/* CSS NAVBAR 2 AKHIR */
+
 
 				     /* awal css text */
 					  /* css text mobile */
@@ -582,31 +776,31 @@
 					  /* akhir css text */
 					  /* awal css carusiol */
 					        .cards-wrapper {
-							display: flex;
-							justify-content: center;
+								display: flex;
+								justify-content: center;
 							}
 							.card img {
-							max-width: 100%;
-							max-height: 100%;
-							margin: 0 0.3em;
-							border-radius: 5%;
+								max-width: 100%;
+								max-height: 100%;
+								margin: 0 0.3em;
+								border-radius: 5%;
 							}
 							
 							.carousel-inner {
-							padding: 1em;
+								padding: 1em;
 							}
 							.carousel-control-prev,
 							.carousel-control-next {
-							background-color: #e1e1e1;
-							width: 5vh;
-							height: 5vh;
-							border-radius: 50%;
-							top: 50%;
-							transform: translateY(-50%);
+								background-color: #e1e1e1;
+								width: 5vh;
+								height: 5vh;
+								border-radius: 50%;
+								top: 50%;
+								transform: translateY(-50%);
 							}
 							@media (min-width: 768px) {
-							
-							}
+								
+								}
 							}
 					  /* akhir css carusol */
 		</style>
