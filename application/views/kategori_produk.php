@@ -4,6 +4,8 @@
     <!-- akhir head -->
     <!-- awal navbar -->
         <?php $this->load->view('partial/navbar') ?>
+    <br>
+    <br>     
     <!-- akhir navbar -->
     <!-- section serch -->
             <section>
@@ -652,6 +654,7 @@
 			</div>
 		</section>
 	<!-- akhir section kategori -->    
+
     <br>
     <br>
     <!-- awal fotter -->
