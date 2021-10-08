@@ -19,38 +19,8 @@ class Detail_keranjang extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{   	
-		 $data['show_item'] = $this->model_barang->join_show_produk()->result();
-		 $data['query'] = $this->model_keranjang->tampil_data()->result();
-		 $data['total'] = $this->model_keranjang->jumlah_harga()->result();
-		 $data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
-		 $data['jml_brt'] = $this->model_keranjang->tampil_berat_pesanan()->result();
-
-		//  memberikan alert kosong jika data tidak ada
-		$ip= $_SERVER['REMOTE_ADDR'];
-		$this->db->select('ip');
-		$this->db->where('ip',$ip);
-		$query = $this->db->get('keranjang');
-		$num = $query->num_rows();
-		if($num < 1)
-		{
-			
-			$this->session->set_flashdata('alert','Action Completed');
-			// echo "<script>alert('Tidak Ada produk')</script>";
-			$this->load->view('detail_keranjang',$data);
-			
-		}
-		
-		
-		
-		else{
-				// $this->session->set_flashdata('success','Action Completed');
-				// redirect('confirm_cart');
-			echo "<script>console.log('Ada produk')</script>";
-			$this->load->view('detail_keranjang',$data);
-		}
-		
-		
+	{   
+		$this->load->view('detail_keranjang');	
 	}
 	public function add_detail_cart(){
 		if(isset($_POST['buy_detail_cart'])){

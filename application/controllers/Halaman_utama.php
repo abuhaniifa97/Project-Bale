@@ -26,15 +26,10 @@ class Halaman_utama extends CI_Controller {
 	 */
 	public function index()
 	{   
-		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
-		$data['gabung']=$this->model_barang->join()->result();
-		$data['card'] = $this->model_barang->tampil_data()->result();
-		$data['show_item'] = $this->model_barang->join_show_produk()->result();
-		$data['jml_produk'] = $this->model_produk->jml_produk()->result();
-		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
-		$data['kuat'] = $this->model_banner->tampil_banner()->result();
-		// $this->load->view('www',$data);
-		$this->load->view('halaman_utama',$data);
+		
+		
+		
+		$this->load->view('halaman_utama');
 		
 		
 		// $join['query'] = $this->model_barang->join()->result();
