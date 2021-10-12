@@ -109,7 +109,8 @@
 					</div>
 					<div class="col-4 col-md-2 p-1">
 					    <img src="<?php echo base_url('assets/img/102.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-						<div class="text">Khimer</p></c1111enter>
+						<div class="text">
+						  <center><p>khimer</p></center>
                         </div>
 					</div>
 				</div>
