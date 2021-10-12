@@ -501,8 +501,6 @@
 					
 					}
 
-					
-					/* AKHIR CSS NAVBAR */
 
 
 
@@ -549,200 +547,154 @@
 
 				/* CSS NAVBAR AKHIR*/
 
-				/* CSS NAVBAR 2*/
-					/* penggunaan media query pada default monitor layout */
-					@media only screen and (min-width: 992px) {
-						.nav2 {
-							background: #0049A8;
-							position:fixed;
-							z-index: 20;
-							width: 100%;
-							}
-						.toko{
-							display:block;
-							color:#fff;
-						}
+						/* CSS NAVBAR 2 KERANJANG */
+				/* penggunaan media query pada default monitor layout */
+                @media only screen and (min-width: 992px) {
+                    .nav2 {
+                        background: #0049A8;
+                        position:fixed;
+                        z-index: 20;
+                        height:60px;
+                        width: 100%;
+                        }
+                    .toko{
+                        display:block;
+                        color:#fff;
+                    }
+                    .item1{
+                        padding:10px;
+                    }
 
-						.item{
-							padding:10px;
-						}
+                    .nav-item5{
+                        padding:15px;
+                    }
 
-						.nav-item5{
-							padding:15px;
-						}
+                    .nav-item4{
+                        padding:0;
+                    }
 
-						.nav-item4{
-							padding:0;
-						}
+                    .nav-item1{
+                        display:none;
+                    }
 
-						.nav-item1{
-							display:none;
-						}
+                    .nav-item2{
+                        display:none;
+                    }
+                    .nav-item3{
+                        display:none;
+                    }
 
-						.nav-item2{
-							display:none;
-						}
-						.nav-item3{
-							display:none;
-						}
+                    .nav-item6{
+                        display:none;
+                    }
+                    .card2{
+                        display:none;
+                    }
+                    .nav3{
+                        display:none;
+                    }
 
-						.nav-item6{
-							display:none;
-						}
-					
+                    .item2{
+                        display:none;
+                    }
+					.ktr{
+						display:none;
 					}
-
-					/* penggunaan media query pada mobile layout */
-					@media only screen and (min-width: 360px) and (max-width: 379px) {
-
-						.nav2 {
-							position:fixed;
-							background: #fff;
-							width:100%;
-							bottom:0;
-							height:60px;
-							padding:10px;
-							z-index: 20;
-							box-shadow: 0px 0px 5px;
-							}
-						p{
-							display:none;
-						}
-						th{
-							display:none;
-						}
-						td{
-							display:none;
-						}
-
-						span{
-							display:none;
-						}
-						.cos{
-							display:none;
-						}
-						.coss{
-							display:none;
-						}
-
-						.cosss{
-							display:none;
-						}
-						.item{
-							margin: auto;
-
-						}
-						.item a{
-							display:none;
-						}
-
-						.toko{
-							display:none;
-							
-						}
-
-
-
+					.oval{
+						display:none;
 					}
+                }
 
-					/* RESOLUSI 360 px sampai 375 px */
-					@media only screen and (min-width: 380px) and (max-width: 767px) {
+                /* penggunaan media query pada mobile layout */
+                @media only screen and (min-width: 360px) and (max-width: 379px) {
 
-						.nav2 {
-							position:fixed;
-							background: #fff;
-							width:100%;
-							bottom:0;
-							height:60px;
-							padding:10px;
-							box-shadow: 0px 0px 5px;
-							z-index: 20;
-							}
-						.item{
-							margin: auto;
+                    .nav2 {
+                        position:fixed;
+                        background: #fff;
+                        width:100%;
+                        bottom:0;
+                        height:71px;
+                        
+                        z-index: 20;
+                        box-shadow: 0px 5px 15px;
+                        }
+                    .item1{
+                        margin: auto;
+                        display:none;
+                    
+                    }
+                    .item2{
+                        margin: auto;
+                        
+                    
+                    }
 
-						}
-						p{
-							display:none;
-						}
-						th{
-							display:none;
-						}
-						td{
-							display:none;
-						}
+                    .toko{
+                        display:none;
+                        
+                    }
 
-						span{
-							display:none;
-						}
-						.cos{
-							display:none;
-						}
-						.coss{
-							display:none;
-						}
-						.item a{
-							display:none;
-						}
+                    .c1 {
+                        display:none;
+                    }
 
-						.toko{
-							display:none;
-							
-						}
+                    
 
+                }
 
+                /* css card keranjang */
+                .card2{
+                    
+                    width: 330px;
+                    height: auto;
+					padding-bottom: 20px;
+                    background: #fff;
+                    box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+                    border-radius: 15px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    margin-top: 50px;
+                                        
+                }
+                /*akhir css card keranjang */
 
-					}
+                /* CSS TEXT DI BAWAH CARD */
+                .ktr{
+                    width: 90px;
+                    height: 21px;
+                    position: absolute;
+                    background: #000;
+                    border-radius: 20px;
+                }
+                /*AKHIR CSS TEXT DI BAWAH CARD */
 
-					/* RESOLUSI 320 PX SAMPAI 350 PX */
-					@media only screen and (min-width: 320px) and (max-width: 350px) {
+                /* CSS CLOSE DI BAWAH CARD */
+                .oval{
+                    width: 50px;
+                    height: 50px;
+                    border-radius:100%;
+                    /* position: absolute; */
+                    background: #FFFFFF;
+					box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+					float: right;
+                }
 
-						.nav2 {
-							position:fixed;
-							background: #fff;
-							width:100%;
-							bottom:0;
-							height:60px;
-							box-shadow: 0px 0px 5px;
-							padding:10px;
-							z-index: 20;
-							}
-						.item{
-							margin: auto;
-						}
-						p{
-							display:none;
-						}
-						th{
-							display:none;
-						}
-						td{
-							display:none;
-						}
+                /*AKHIR CSS CLOSE DI BAWAH CARD */
 
-						span{
-							display:none;
-						}
-						.cos{
-							display:none;
-						}
-						.coss{
-							display:none;
-						}
-						.item a{
-							display:none;
-						}
-						.toko{
-							display:none;
-							
-						}
+                /* CSS NAVBAR KERANJANG DI ATAS */
+                .nav3{
+                    position: fixed;
+                    width: 100%;
+                    height: 60px;
+                    background: #fff;
+                    box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+                    top: 0p;
+                    z-index:20;
+                    
+                }
+                /*AKHIR CSS NAVBAR KERANJANG DI ATAS */
 
-
-
-					}
-
-				/* CSS NAVBAR 2 AKHIR */
-
+            /* AKHIR CSS NAVBAR 2 KERANJANG */
 
 				     /* awal css text */
 					  /* css text mobile */
