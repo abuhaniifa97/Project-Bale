@@ -778,12 +778,13 @@
 					        .cards-wrapper {
 								display: flex;
 								justify-content: center;
+								
 							}
-							.card img {
+							.card1 img {
 								max-width: 100%;
 								max-height: 100%;
-								margin: 0 0.3em;
-								border-radius: 5%;
+								padding-left: 10px;
+								border-radius: 10%;
 							}
 							
 							.carousel-inner {
