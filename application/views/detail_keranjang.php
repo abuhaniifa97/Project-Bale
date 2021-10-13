@@ -40,7 +40,7 @@
 
     <!-- card detail keranjang mobile -->
     <div class="container">
-      <div class="card2">
+        <div class="card2">
             <div class="col-md-12 pt-3">
 							<!-- Content -->
 							  <table>
@@ -188,47 +188,46 @@
               <hr>
             </div>
 
+            <!-- Ringkasan -->
             <div class="col-md-12 mt-3">
               <table>
                 <tr>
                   <td>
-                    <span style="font-weight:bold;">Ringkasan Pembayaran</span>
+                    <span class="judul" style="font-weight:bold;">Ringkasan Pembayaran</span>
                   </td>
                   
                   
                 </tr>
                 <tr>
                   <td style="width: 250px;">
-                  <span>Total Pembayaran</span>
+                    <span class="totalpemb">Total Pembayaran</span>
                   </td>
                   <td rowspan="2"  style="width: 100px;">
-                    <span>Rp 150.000</span>
+                    <span class="hrg1">Rp 150.000</span>
                   </td>
                 </tr>
               </table>
-              
             </div>
-   	 
-      </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="oval">
-                  <!-- <span style="position:absolute; top:50%; right:50%; font-size:20px;">X</span> -->
-                </div>
-                <div class="ktr">
-                  
-                </div>
-              </div>
-              <div class="col-md-12">
-                
-              </div>
-            </div>
-    </div>
+        </div>
+        <!--akhir ringkasan  -->
 
-         
-      
-
-      
+        <div class="artb row">
+          <div class="col-md-12">
+            <!--awal button bulat  -->
+            <a href="<?php echo base_url('halaman_utama'); ?>">
+              <div class="oval">
+                <span style="font-size: 14px; color:#444; padding: 20px; top: 12px; position: relative;">X</span>
+              </div>
+            </a>
+            <!-- akhir button bulat -->
+             
+            <!-- awal keterangan klik untuk kembali -->
+              <div class="ktr">
+                <span class="text-center" style="text-transform:capitalize; font-size: 10px; color:#666; position: absolute; margin: 7px; right: 6px;">klik untuk kembali</span>
+              </div>
+            <!-- akhir keterangan klik untuk kembali -->
+          </div>
+        </div>
     </div>
     <!--akhir card detail keranjang mobile -->
         
@@ -244,22 +243,26 @@
 
                   <thead>
                     <tr>
-                          <th>Aksi</th>
+                         
+                          <th style="text-align: -webkit-auto;" scope="col">Produk</th>
                           <th style="text-align: -webkit-auto;" scope="col">Nama Produk</th>
                           <th scope="col">Berat</th>
                           <th scope="col">Harga</th>
                           <th scope="col">Qty</th>
+                          <th>Aksi</th>
                           
                     </tr>
                   </thead>
           
                   <tbody>
                         <tr>
+                            
+                            <td><img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt=""></td>
+                            <td style="text-transform:capitalize;">Sepatu fantopel kulit</td>
+                            <td>1000 Gram</td> 
+                            <td>Rp 250.000</td>
+                            <td>1</td>
                             <td><a href="<?=site_url('detail_keranjang/hapus/') ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>
-                            <td></td>
-                            <td> Gram</td>
-                            <td>Rp </td> 
-                            <td></td>
                             <?php 
                               if( ""){
 
@@ -274,7 +277,30 @@
                                 echo " <td></td>";
                               }
                             ?>                                          
-                        </tr>      
+                        </tr>
+                        <tr>
+                            
+                            <td><img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt=""></td>
+                            <td style="text-transform:capitalize;">Sepatu fantopel kulit</td>
+                            <td>1000 Gram</td> 
+                            <td>Rp 250.000</td>
+                            <td>1</td>
+                            <td><a href="<?=site_url('detail_keranjang/hapus/') ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>
+                            <?php 
+                              if( ""){
+
+                              }else{
+                                echo "<td></td>";
+                              }
+                            ?>
+                            <?php 
+                              if( ""){
+                                
+                              }else{
+                                echo " <td></td>";
+                              }
+                            ?>                                          
+                        </tr>
                   </tbody>
               </table>
             </div>
@@ -290,7 +316,7 @@
                         <?php endif; ?>
                         <!--Akhir alert data tidak ada -->
 
-                        <hr style="width: 100%;margin-top:10px; margin-bottom:7px">
+                        <hr style="width: 100%;margin-top:10px; border: 0.1px solid #E5E7E9;">
                         
                           <span style="font-weight:bold "> Total: Rp. </span>
                           <br>
@@ -304,7 +330,7 @@
                           <input type="hidden" name="jml_qty" value="">
                           <input type="hidden" name="total_berat" value="">
                       
-                        <hr style="width: 100%;margin-top:10px">  
+                        <hr style="width: 100%; margin-top:10px; border: 0.1px solid #E5E7E9;">  
                 </div>
             
                   <div class="cos col-md-12 text-right">

@@ -295,7 +295,7 @@
 
 				/* CSS NAVBAR */
 						/* penggunaan media query pada default tablet layout */
-						@media only screen and (min-width: 800px) and (max-width: 991px) {
+					@media only screen and (min-width: 800px) and (max-width: 991px) {
 						.nav1 {
 							position:fixed;
 							background: #0049A8;
@@ -318,9 +318,7 @@
 							right: 0;
 							left:0;
 						}
-						a:hover{
-							background-color:#999;
-						}
+						
 						.toko{
 							display:none;
 							
@@ -547,9 +545,66 @@
 
 				/* CSS NAVBAR AKHIR*/
 
-						/* CSS NAVBAR 2 KERANJANG */
+				/* CSS NAVBAR 2 KERANJANG */
 				/* penggunaan media query pada default monitor layout */
-                @media only screen and (min-width: 992px) {
+                @media only screen and (min-width: 765px) {
+                    .nav2 {
+                        background: #0049A8;
+                        position:fixed;
+                        z-index: 20;
+                        height:60px;
+                        width: 100%;
+                        }
+                    .toko1{
+                        display:block;
+                        color:#fff;
+                    }
+                    .item1{
+                        padding:10px;
+                    }
+
+                    .nav-item55{
+                        padding:15px;
+                    }
+
+                    .nav-item44{
+                        padding:0;
+                    }
+
+                    .nav-item11{
+                        display:none;
+                    }
+
+                    .nav-item22{
+                        display:none;
+                    }
+                    .nav-item33{
+                        display:none;
+                    }
+
+                    .nav-item6{
+                        display:none;
+                    }
+                    .card2{
+                        display:none;
+                    }
+                    .nav3{
+                        display:none;
+                    }
+
+                    .item2{
+                        display:none;
+                    }
+					.ktr{
+						display:none;
+					}
+					.oval{
+						display:none;
+					}
+                }
+
+				/* PENGGUNAAN PADA LAYOUT TAB */
+				/* @media only screen and (min-width: 480px) and (max-width:1033px){
                     .nav2 {
                         background: #0049A8;
                         position:fixed;
@@ -603,7 +658,119 @@
 					.oval{
 						display:none;
 					}
-                }
+                } */
+
+				 /* penggunaan media query pada mobile layout */
+				@media only screen and (min-width: 320px) and (max-width: 359px) {
+
+					.nav2 {
+						position:fixed;
+						background: #fff;
+						width:100%;
+						bottom:0;
+						height:71px;
+						
+						z-index: 20;
+						box-shadow: 0px 5px 15px;
+						}
+					.item1{
+						margin: auto;
+						display:none;
+
+					}
+					.item2{
+						margin: auto;
+						
+
+					}
+
+					.toko1{
+						display:none;
+						
+					}
+
+					.c1 {
+						display:none;
+					}
+
+					/* css card keranjang */
+					.card2{
+						
+						width: auto;
+						height: auto;
+						padding-bottom: 20px;
+						background: #fff;
+						box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+						border-radius: 15px;
+						margin-bottom: 30px;
+						position: relative;
+						margin-top: 50px;
+											
+					}
+
+					.totalpes{
+						font-size:12px;
+					}
+
+					.hargapes{
+						font-size:11px;
+					}
+
+					.tmbl{
+						width: 150px;
+					}
+
+					.judul{
+						font-size:15px;
+					}
+
+					.totalpemb{
+						font-size:15px;
+					}
+
+					.hrg1{
+						font-size:15px;
+					}
+					/*akhir css card keranjang */
+
+					/* CSS TEXT DI BAWAH CARD */
+					.ktr{
+						width: 110px;
+						height: 30px;
+						position: absolute;
+						background: #FFFFFF;
+						box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+						border-radius: 20px;
+						bottom: 12px;
+						right: 75px;
+					}
+					/*AKHIR CSS TEXT DI BAWAH CARD */
+
+					/* CSS CLOSE DI BAWAH CARD */
+					.oval{
+						width: 50px;
+						height: 50px;
+						border-radius:100%;
+						/* position: absolute; */
+						background: #FFFFFF;
+						box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+						float: right;
+						-webkit-animation: bounce .3s infinite alternate;
+							-moz-animation: bounce .3s infinite alternate;
+							animation: bounce .3s infinite alternate;
+						}
+						@-webkit-keyframes bounce {
+							to { -webkit-transform: scale(1.2); }
+						}
+						@-moz-keyframes bounce {
+							to { -moz-transform: scale(1.2); }
+						}
+						@keyframes bounce {
+							to { transform: scale(1.2); }
+						}
+				}
+
+					/*AKHIR CSS CLOSE DI BAWAH CARD */
 
                 /* penggunaan media query pada mobile layout */
                 @media only screen and (min-width: 360px) and (max-width: 379px) {
@@ -629,7 +796,7 @@
                     
                     }
 
-                    .toko{
+                    .toko1{
                         display:none;
                         
                     }
@@ -638,62 +805,167 @@
                         display:none;
                     }
 
-                    
+                     /* css card keranjang */
+					.card2{
+						
+						width: auto;
+						height: auto;
+						padding-bottom: 20px;
+						background: #fff;
+						box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+						border-radius: 15px;
+						margin-bottom: 30px;
+						position: relative;
+						margin-top: 50px;
+											
+					}
+					/*akhir css card keranjang */
 
-                }
+					/* CSS TEXT DI BAWAH CARD */
+					.ktr{
+						width: 110px;
+						height: 30px;
+						position: absolute;
+						background: #FFFFFF;
+						box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+						border-radius: 20px;
+						bottom: 12px;
+						right: 75px;
+					}
+					/*AKHIR CSS TEXT DI BAWAH CARD */
 
-                /* css card keranjang */
-                .card2{
-                    
-                    width: 330px;
-                    height: auto;
-					padding-bottom: 20px;
-                    background: #fff;
-                    box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
-                    border-radius: 15px;
-                    margin-bottom: 30px;
-                    position: relative;
-                    margin-top: 50px;
-                                        
-                }
-                /*akhir css card keranjang */
+					/* CSS CLOSE DI BAWAH CARD */
+					.oval{
+						width: 50px;
+						height: 50px;
+						border-radius:100%;
+						/* position: absolute; */
+						background: #FFFFFF;
+						box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+						float: right;
+						-webkit-animation: bounce .3s infinite alternate;
+							-moz-animation: bounce .3s infinite alternate;
+							animation: bounce .3s infinite alternate;
+						}
+						@-webkit-keyframes bounce {
+							to { -webkit-transform: scale(1.2); }
+						}
+						@-moz-keyframes bounce {
+							to { -moz-transform: scale(1.2); }
+						}
+						@keyframes bounce {
+							to { transform: scale(1.2); }
+						}
+				}
 
-                /* CSS TEXT DI BAWAH CARD */
-                .ktr{
-                    width: 90px;
-                    height: 21px;
-                    position: absolute;
-                    background: #000;
-                    border-radius: 20px;
-                }
-                /*AKHIR CSS TEXT DI BAWAH CARD */
+                	/*AKHIR CSS CLOSE DI BAWAH CARD */
 
-                /* CSS CLOSE DI BAWAH CARD */
-                .oval{
-                    width: 50px;
-                    height: 50px;
-                    border-radius:100%;
-                    /* position: absolute; */
-                    background: #FFFFFF;
-					box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
-					float: right;
-                }
 
-                /*AKHIR CSS CLOSE DI BAWAH CARD */
+					 /* penggunaan media query pada mobile layout */
+					@media only screen and (min-width: 380px) and (max-width: 450px) {
 
-                /* CSS NAVBAR KERANJANG DI ATAS */
-                .nav3{
-                    position: fixed;
-                    width: 100%;
-                    height: 60px;
-                    background: #fff;
-                    box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
-                    top: 0p;
-                    z-index:20;
-                    
-                }
-                /*AKHIR CSS NAVBAR KERANJANG DI ATAS */
+						.nav2 {
+							position:fixed;
+							background: #fff;
+							width:100%;
+							bottom:0;
+							height:71px;
+							
+							z-index: 20;
+							box-shadow: 0px 5px 15px;
+							}
+						.item1{
+							margin: auto;
+							display:none;
 
+						}
+						.item2{
+							margin: auto;
+							
+
+						}
+
+						.toko1{
+							display:none;
+							
+						}
+
+						.c1 {
+							display:none;
+						}
+
+						/* css card keranjang */
+						.card2{
+							
+							width: auto;
+							height: auto;
+							padding-bottom: 20px;
+							background: #fff;
+							box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+							border-radius: 15px;
+							margin-bottom: 30px;
+							position: relative;
+							margin-top: 50px;
+												
+						}
+						/*akhir css card keranjang */
+
+						/* CSS TEXT DI BAWAH CARD */
+						.ktr{
+							width: 110px;
+    						height: 30px;
+							position: absolute;
+							background: #FFFFFF;
+							box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+							border-radius: 20px;
+							bottom: 12px;
+							right: 75px;
+						}
+						/*AKHIR CSS TEXT DI BAWAH CARD */
+
+						/* CSS CLOSE DI BAWAH CARD */
+						.oval{
+							width: 50px;
+							height: 50px;
+							border-radius:100%;
+							/* position: absolute; */
+							background: #FFFFFF;
+							box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+							float: right;
+							-webkit-animation: bounce .3s infinite alternate;
+								-moz-animation: bounce .3s infinite alternate;
+								animation: bounce .3s infinite alternate;
+							}
+							@-webkit-keyframes bounce {
+								to { -webkit-transform: scale(1.2); }
+							}
+							@-moz-keyframes bounce {
+								to { -moz-transform: scale(1.2); }
+							}
+							@keyframes bounce {
+								to { transform: scale(1.2); }
+							}
+						}
+
+						/*AKHIR CSS CLOSE DI BAWAH CARD */
+
+						/* CSS NAVBAR KERANJANG DI ATAS */
+						.nav3{
+							position: fixed;
+							width: 100%;
+							height: 60px;
+							background: #fff;
+							box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+							top: 0p;
+							z-index:20;
+							
+						}
+						/*AKHIR CSS NAVBAR KERANJANG DI ATAS */
+
+
+            		}
+
+               
             /* AKHIR CSS NAVBAR 2 KERANJANG */
 
 				     /* awal css text */
