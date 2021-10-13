@@ -780,31 +780,7 @@
 								
 								}
 							}
-					  /* akhir css carusol */
-					  /* awal css hr di register */
-					    h6 {
-							overflow: hidden;
-							text-align: center;
-						}
-						h6:before,
-						h6:after {
-							background-color: #000;
-							content: "";
-							display: inline-block;
-							height: 1px;
-							position: relative;
-							vertical-align: middle;
-							width: 44%;
-						}
-						h6:before {
-							right: 0.5em;
-							margin-left: 2%;
-						}
-						h6:after {
-							left: 0.5em;
-							margin-right: -6%;
-						}
-					  /* akhir css di register */
+					  
 		</style>
 
 </head>

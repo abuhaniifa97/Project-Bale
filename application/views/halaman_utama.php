@@ -110,11 +110,7 @@
 					<div class="col-4 col-md-2 p-1">
 					    <img src="<?php echo base_url('assets/img/102.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
 						<div class="text">
-<<<<<<< HEAD
 					    	<center><p>Khimer</p></center>
-=======
-						  <center><p>khimer</p></center>
->>>>>>> 81821b81b014ed9c4c6475e4b6ae5fe2b7bd9773
                         </div>
 					</div>
 				</div>
