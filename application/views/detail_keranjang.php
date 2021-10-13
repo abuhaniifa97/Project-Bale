@@ -1,9 +1,11 @@
 <?php $this->load->view('partial/head'); ?>
 <?php $this->load->view('partial/navbar2') ?>
 
+    <!--navbar atas detail keranjang  -->
     <div class="nav3">
       <center style="padding:15px;"><span >KERANJANG</span></center>
     </div>
+    <!-- akhir navbar atas detail keranjang -->
 
 <!-- loading -->
 <div id="load"></div>
