@@ -250,7 +250,7 @@
 				/* Margin section */
 
 				hr
-				{ margin: 0px; padding: 0px; border-top: 1px dashed #999; }
+				{ margin: 0px; padding: 0px; border-top: 1px dashed #999; border-style: solid;}
 			/*--------------------------------------------FrameWork------------------------*/
 
 			/* 'Scroll gambar */
@@ -501,8 +501,6 @@
 					
 					}
 
-					
-					/* AKHIR CSS NAVBAR */
 
 
 
@@ -549,7 +547,180 @@
 
 				/* CSS NAVBAR AKHIR*/
 
+						/* CSS NAVBAR 2 KERANJANG */
+				/* penggunaan media query pada default monitor layout */
+                @media only screen and (min-width: 992px) {
+                    .nav2 {
+                        background: #0049A8;
+                        position:fixed;
+                        z-index: 20;
+                        height:60px;
+                        width: 100%;
+                        }
+                    .toko{
+                        display:block;
+                        color:#fff;
+                    }
+                    .item1{
+                        padding:10px;
+                    }
 
+                    .nav-item5{
+                        padding:15px;
+                    }
+
+                    .nav-item4{
+                        padding:0;
+                    }
+
+                    .nav-item1{
+                        display:none;
+                    }
+
+                    .nav-item2{
+                        display:none;
+                    }
+                    .nav-item3{
+                        display:none;
+                    }
+
+                    .nav-item6{
+                        display:none;
+                    }
+                    .card2{
+                        display:none;
+                    }
+                    .nav3{
+                        display:none;
+                    }
+
+                    .item2{
+                        display:none;
+                    }
+					.ktr{
+						display:none;
+					}
+					.oval{
+						display:none;
+					}
+                }
+
+                /* penggunaan media query pada mobile layout */
+                @media only screen and (min-width: 360px) and (max-width: 379px) {
+
+                    .nav2 {
+                        position:fixed;
+                        background: #fff;
+                        width:100%;
+                        bottom:0;
+                        height:71px;
+                        
+                        z-index: 20;
+                        box-shadow: 0px 5px 15px;
+                        }
+                    .item1{
+                        margin: auto;
+                        display:none;
+                    
+                    }
+                    .item2{
+                        margin: auto;
+                        
+                    
+                    }
+
+                    .toko{
+                        display:none;
+                        
+                    }
+
+                    .c1 {
+                        display:none;
+                    }
+
+                    
+
+                }
+
+                /* css card keranjang */
+                .card2{
+                    
+                    width: 330px;
+                    height: auto;
+					padding-bottom: 20px;
+                    background: #fff;
+                    box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+                    border-radius: 15px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    margin-top: 50px;
+                                        
+                }
+                /*akhir css card keranjang */
+
+                /* CSS TEXT DI BAWAH CARD */
+                .ktr{
+                    width: 90px;
+                    height: 21px;
+                    position: absolute;
+                    background: #000;
+                    border-radius: 20px;
+                }
+                /*AKHIR CSS TEXT DI BAWAH CARD */
+
+                /* CSS CLOSE DI BAWAH CARD */
+                .oval{
+                    width: 50px;
+                    height: 50px;
+                    border-radius:100%;
+                    /* position: absolute; */
+                    background: #FFFFFF;
+					box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+					float: right;
+                }
+
+                /*AKHIR CSS CLOSE DI BAWAH CARD */
+
+                /* CSS NAVBAR KERANJANG DI ATAS */
+                .nav3{
+                    position: fixed;
+                    width: 100%;
+                    height: 60px;
+                    background: #fff;
+                    box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
+                    top: 0p;
+                    z-index:20;
+                    
+                }
+                     /* awal css bt media */
+					    @media only screen and (min-width: 360px) and (max-width: 767px) {
+							.bt {
+									width:120px;
+									height:47px;
+									border-radius: 10px;
+								
+								}
+							
+						}
+						/* css bt tab */
+						@media only screen and (min-width: 768px) and (max-width: 991px) {
+							.bt {
+								width:140px;
+								height:47px;
+								border-radius: 10px;
+
+						    }
+					    }
+						/* css bt destok */
+						@media only screen and (min-width: 992px) {
+							.bt {
+								width:150px;
+								height:47px;
+								border-radius: 10px;
+                                
+							}
+					    }
+					/* akhir css bottom media */
 				     /* awal css text */
 					  /* css text mobile */
 					  @media only screen and (min-width: 360px) and (max-width: 767px) {
@@ -582,33 +753,58 @@
 					  /* akhir css text */
 					  /* awal css carusiol */
 					        .cards-wrapper {
-							display: flex;
-							justify-content: center;
+								display: flex;
+								justify-content: center;
+								
 							}
-							.card img {
-							max-width: 100%;
-							max-height: 100%;
-							margin: 0 0.3em;
-							border-radius: 5%;
+							.card1 img {
+								max-width: 100%;
+								max-height: 100%;
+								padding-left: 10px;
+								border-radius: 10%;
 							}
 							
 							.carousel-inner {
-							padding: 1em;
+								padding: 1em;
 							}
 							.carousel-control-prev,
 							.carousel-control-next {
-							background-color: #e1e1e1;
-							width: 5vh;
-							height: 5vh;
-							border-radius: 50%;
-							top: 50%;
-							transform: translateY(-50%);
+								background-color: #e1e1e1;
+								width: 5vh;
+								height: 5vh;
+								border-radius: 50%;
+								top: 50%;
+								transform: translateY(-50%);
 							}
 							@media (min-width: 768px) {
-							
-							}
+								
+								}
 							}
 					  /* akhir css carusol */
+					  /* awal css hr di register */
+					    h6 {
+							overflow: hidden;
+							text-align: center;
+						}
+						h6:before,
+						h6:after {
+							background-color: #000;
+							content: "";
+							display: inline-block;
+							height: 1px;
+							position: relative;
+							vertical-align: middle;
+							width: 44%;
+						}
+						h6:before {
+							right: 0.5em;
+							margin-left: 2%;
+						}
+						h6:after {
+							left: 0.5em;
+							margin-right: -6%;
+						}
+					  /* akhir css di register */
 		</style>
 
 </head>

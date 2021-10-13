@@ -28,8 +28,8 @@ class Halaman_utama extends CI_Controller {
 	{   
 		
 		
-		
-		$this->load->view('halaman_utama');
+		$data['show_brand'] = $this->M_brand->show_data_brand()->result();
+		$this->load->view('halaman_utama',$data);
 		
 		
 		// $join['query'] = $this->model_barang->join()->result();

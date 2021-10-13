@@ -33,8 +33,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		
 		
-		
-		$this->load->view('halaman_utama');
+		$data['show_brand'] = $this->M_brand->show_data_brand()->result();
+		$this->load->view('halaman_utama',$data);
 		
 		//inisialisasi
 		// $this->pagination->initialize($config);

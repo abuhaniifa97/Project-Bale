@@ -41,12 +41,10 @@
 							
 						
 							<a href="<?php echo base_url('auth'); ?>" class="nav-item5"><img class="img-responsive" src="assets/iconnav/user.png" style="width: 20px;height: 20px;" alt=""></a>
-
-							
-						
-
 					</div>
 
 				</div>
 			</nav>
+			<br>
+			<br>
 		<!-- NAVBAR BARU AKHIR -->
