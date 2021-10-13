@@ -692,10 +692,35 @@
                     z-index:20;
                     
                 }
-                /*AKHIR CSS NAVBAR KERANJANG DI ATAS */
+                     /* awal css bt media */
+					    @media only screen and (min-width: 360px) and (max-width: 767px) {
+							.bt {
+									width:120px;
+									height:47px;
+									border-radius: 10px;
+								
+								}
+							
+						}
+						/* css bt tab */
+						@media only screen and (min-width: 768px) and (max-width: 991px) {
+							.bt {
+								width:140px;
+								height:47px;
+								border-radius: 10px;
 
-            /* AKHIR CSS NAVBAR 2 KERANJANG */
-
+						    }
+					    }
+						/* css bt destok */
+						@media only screen and (min-width: 992px) {
+							.bt {
+								width:150px;
+								height:47px;
+								border-radius: 10px;
+                                
+							}
+					    }
+					/* akhir css bottom media */
 				     /* awal css text */
 					  /* css text mobile */
 					  @media only screen and (min-width: 360px) and (max-width: 767px) {
@@ -756,6 +781,30 @@
 								}
 							}
 					  /* akhir css carusol */
+					  /* awal css hr di register */
+					    h6 {
+							overflow: hidden;
+							text-align: center;
+						}
+						h6:before,
+						h6:after {
+							background-color: #000;
+							content: "";
+							display: inline-block;
+							height: 1px;
+							position: relative;
+							vertical-align: middle;
+							width: 44%;
+						}
+						h6:before {
+							right: 0.5em;
+							margin-left: 2%;
+						}
+						h6:after {
+							left: 0.5em;
+							margin-right: -6%;
+						}
+					  /* akhir css di register */
 		</style>
 
 </head>
