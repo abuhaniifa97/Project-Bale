@@ -7,57 +7,59 @@
  <body>
      <!-- awal section detail produk -->
      <section>
-         <div class="container" style="max-width: 1360px;">
-          <div class="row">
-              <div class="col-md-5">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100"  src="<?php echo base_url().'assets/gambar_utama/p3.png' ?>"  alt="First slide">
+         <div class="container" style="max-width: 1370px;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100"  src="<?php echo base_url().'assets/gambar_utama/p3.png' ?>"  alt="First slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls " role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls " role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-              </div>
-              <div class="col-md-7 text-left">
-                        <p style="left: 400px; top: 300px;  font-style: normal; font-weight: 600; font-size: 30px; line-height: 52px; color: #222222; text-transform: capitalize;">JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN</p>
-                        <input type="hidden" name="nama_produk" value="JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN">
-                        <b style="font-style: normal; font-weight: 300; font-size: 45px; line-height: 75px; display: flex; align-items: center; color: #000000;">Rp.52,000</b>
-                        <input type="text" style="display:none" name="harga" value="139000" >
-                <br>         
-                <div class="row">
-                    <div class="col-md-10">
-                        <table>
-                            <tr>
-                                <td style="padding-right: 140px;">
-                                    <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Berat</P>
-                                    <p>50 Gram</p>
-                                    <input type="text" style="display:none" name="berat" value="70 ">   
-                                </td>
-                                <td>
-                                    <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Stok</P>
-                                    <p>50 Gram</p>
-                                    <input type="text" style="display:none" name="berat" value="70 ">   
-                                </td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <div class="col-md-2 text-left" style="margin-left: -14px; margin-top: 20px;">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="left: 400px;   font-style: normal; font-weight: 600; font-size: 28px; line-height: 55px; color: #222222; text-transform: capitalize;">JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN</p>
+                            <input type="hidden" name="nama_produk" value="JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN">
+                            <b style="font-style: normal; font-weight: 300; font-size: 45px; line-height: 75px; display: flex; align-items: center; color: #000000;">Rp.52,000</b>
+                            <input type="text" style="display:none" name="harga" value="139000" >
+                        </div>
+                        <div class="col-md-12">
+                            <table>
+                                <tr>
+                                    <td style="padding-right: 140px;">
+                                        <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Berat</P>
+                                        <p>50 Gram</p>
+                                        <input type="text" style="display:none" name="berat" value="70 ">   
+                                    </td>
+                                    <td>
+                                        <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Stok</P>
+                                        <p>50 Gram</p>
+                                        <input type="text" style="display:none" name="berat" value="70 ">   
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr style="width: 99%"> 
+                        </div>
+                        <div class="col-md-2" style=" margin-top: 20px;">
                             <p style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Atribut</p> 
                             <hr>
                         </div>
-                    </div>
-                </div> 
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
+                        <div class="col-md-12">
                         <table>
                             <tr>
                                 <td style="padding-right: 40px;">
@@ -84,42 +86,41 @@
                                 </td>
                             </tr>
                         </table>
-                    </div>     
-                </div>
-                    <div class="row">
-                        <div class="col-md 12"> 
-                                <table>
-                                    <tr>
-                                        <td>    
-                                            <p style="font-style:  normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000; margin-right: 40px; margin-top: 20px;">Jumlah</p>
-                                            <select class="form-control" name="qty" style= "width: 70px;  left: 773px; top: 763px;">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                            </select>
+                    </div>  
+                    <div class="col-md-12">
+                            <table>
+                                <tr>
+                                    <td>    
+                                    <p style="font-style:  normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000; margin-right: 40px; margin-top: 20px;">Jumlah</p>
+                                    <select class="form-control" name="qty" style= "width: 70px;  left: 773px; top: 763px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    </td>
+                                        <td>
+                                            <p>   </p>
+                                                <button  style=" margin-right: 40px;  margin-top: 50px; margin-left: -38px; width: 210px; height: 40px;" class=" btn btn-warning" name ="btn_add_cart" type="submit" aria-hidden="true" ><i class="fa fa-shopping-cart"></i> Tambah Ke keranjang</button>    
                                         </td>
                                         <td>
-                                           <button  style=" margin-right: 40px;  margin-top: 60px; margin-left: -38px; width: 210px; height: 40px;" class=" btn btn-warning" name ="btn_add_cart" type="submit" aria-hidden="true" ><i class="fa fa-shopping-cart"></i> Tambah Ke keranjang</button>    
+                                                                                        
+                                            <button type="button"  style=" margin-left: -38px;  margin-top: 65px;" class="btn btn-outline-warning" aria-hidden="true"><i class="fa fa-share-alt " style="color:black" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i></button>
                                         </td>
-                                        <td>                                            
-                                           <button type="button"  style=" margin-left: -38px;  margin-top: 65px;" class="btn btn-outline-warning" aria-hidden="true"><i class="fa fa-share-alt " style="color:black" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i></button>
-                                        </td>
-                                    </tr>
-                                </table>
-                        </div>
+                                </tr>
+                            </table> 
+                     </div>                     
                     </div>
-              </div>
-            
-          </div>
+                </div>
+            </div>
          </div>
      </section>
       <br>
@@ -139,7 +140,7 @@
                     <p style="white-space: pre-wrap;">Detail ukuran Lebih panjang 185x75cm (toleransi jahitan) Finishing Jahit Tepi Halus.</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="row text-center">
+                    <div class="row">
                         <div class="col-md-12 d-flex justify-content-center mt-2">
                             <h5>Hubungi Customer Service kami</h5>
                         </div>

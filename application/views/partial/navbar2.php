@@ -1,4 +1,4 @@
-	
+
 		<!-- NAVBAR BARU -->
         	<nav class="nav2">
 				<div class="navbar">

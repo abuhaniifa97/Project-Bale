@@ -956,7 +956,7 @@
 							height: 60px;
 							background: #fff;
 							box-shadow: 0px -3px 39px rgb(0 0 0 / 6%), 0px -0.375647px 4.88341px rgb(0 0 0 / 3%);
-							top: 0p;
+							top: 0;
 							z-index:20;
 							
 						}
@@ -968,6 +968,34 @@
                
             /* AKHIR CSS NAVBAR 2 KERANJANG */
 
+                     /* awal css bt media */
+					    @media only screen and (min-width: 360px) and (max-width: 767px) {
+							.bt {
+									width:120px;
+									height:47px;
+									border-radius: 10px;
+								
+								}
+							
+						}
+						/* css bt tab */
+						@media only screen and (min-width: 768px) and (max-width: 991px) {
+							.bt {
+								width:140px;
+								height:47px;
+								border-radius: 10px;
+						    }
+					    }
+						/* css bt destok */
+						@media only screen and (min-width: 992px) {
+							.bt {
+								width:150px;
+								height:47px;
+								border-radius: 10px;
+                                
+							}
+					    }
+					/* akhir css bottom media */
 				     /* awal css text */
 					  /* css text mobile */
 					  @media only screen and (min-width: 360px) and (max-width: 767px) {
@@ -1002,12 +1030,13 @@
 					        .cards-wrapper {
 								display: flex;
 								justify-content: center;
+								
 							}
-							.card img {
+							.card1 img {
 								max-width: 100%;
 								max-height: 100%;
-								margin: 0 0.3em;
-								border-radius: 5%;
+								padding-left: 10px;
+								border-radius: 10%;
 							}
 							
 							.carousel-inner {
@@ -1026,7 +1055,7 @@
 								
 								}
 							}
-					  /* akhir css carusol */
+					  
 		</style>
 
 </head>

@@ -110,7 +110,7 @@
 					<div class="col-4 col-md-2 p-1">
 					    <img src="<?php echo base_url('assets/img/102.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
 						<div class="text">
-						  <center><p>khimer</p></center>
+					    	<center><p>Khimer</p></center>
                         </div>
 					</div>
 				</div>
@@ -133,15 +133,15 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                 <div class="cards-wrapper">
-                                <div class="card">
+                                <div class="card1">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                 </div>
-                                <div class="card d-none d-md-block">
+                                <div class="card1 d-none d-md-block">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                 </div>
-                                <div class="card d-none d-md-block">
+                                <div class="card1 d-none d-md-block">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                 </div>
@@ -149,15 +149,15 @@
                                 </div>
                                 <div class="carousel-item">
                                 <div class="cards-wrapper">
-                                    <div class="card">
+                                    <div class="card1">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                    
                                     </div>
-                                    <div class="card d-none d-md-block">
+                                    <div class="card1 d-none d-md-block">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                     </div>
-                                    <div class="card d-none d-md-block">
+                                    <div class="card1 d-none d-md-block">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                     </div>
@@ -165,15 +165,15 @@
                                 </div>
                                 <div class="carousel-item">
                                 <div class="cards-wrapper">
-                                    <div class="card">
+                                    <div class="card1">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                     </div>
-                                    <div class="card d-none d-md-block">
+                                    <div class="card1 d-none d-md-block">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                     </div>
-                                    <div class="card d-none d-md-block">
+                                    <div class="card1 d-none d-md-block">
                                     <img src="<?php echo base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="...">
                                     
                                     </div>
