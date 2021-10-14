@@ -37,10 +37,10 @@
                       <table style="margin-left: auto; margin-right: auto;">
                             <tr>
                                 <td style="position:relative; right:5px;">
-                                  <a href="#" class="bt btn btn-primary btn-lg active" role="button" aria-pressed="true"><span>Masuk</span></a>
+                                  <a href="<?php echo base_url('halaman_utama'); ?>"><button type="button" class="bt1 btn btn-primary" style=" background-color: #0049A8;">Masuk</button></a>
                                 </td>
                                 <td>
-                                  <button type="button" class="bt btn btn-outline-primary ">Daftar</button>
+                                 <a href="<?php echo base_url('daftar'); ?>"> <button type="button" class="bt1 btn btn-outline-primary">Daftar</button></a>
                                 </td>
                             </tr>
                       </table>

@@ -550,49 +550,54 @@
     <!-- awal section brand -->
         <section>
 			<div class="container" style="max-width: 1340px;">
-				<div class="col-md-12 mt-5">
-					<span style="font-size:25px;font-weight:bold">Edisi Brand</span>
-				</div>
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <span style="font-size:20px;font-weight:bold">Brand Lainya</span>
+                    </div>
+                    <div class="col-md-6 mt-5 text-right">
+                        <a href="  <?php echo base_url('all_brand'); ?>" style="color:black; text-decoration: none;"><span style="font-size:20px;">Lihat Semua</span></a> 
+                    </div>
+                </div>
 				<br>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="wow" style="border-radius: 30px; box-shadow: 0 5px 10px rgb(73 84 100 / 5%); border-color: transparent; height: width: 100%; 263px;">
-								<div class="row">
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+                            <div class="row">
+                                    <div class ="col-4 col-md-2 mt-2">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 								</div>
 							</div>

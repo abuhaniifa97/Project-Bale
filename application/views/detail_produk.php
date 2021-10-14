@@ -32,8 +32,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-12">
-                            <p style="left: 400px;   font-style: normal; font-weight: 600; font-size: 28px; line-height: 55px; color: #222222; text-transform: capitalize;">JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN</p>
+                        <div class="col-md-12 mr-5">
+                            <p style="left: 400px; font-style: normal; font-weight: 600; font-size: 28px; line-height: 55px; color: #222222; text-transform: capitalize;">JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN</p>
                             <input type="hidden" name="nama_produk" value="JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN">
                             <b style="font-style: normal; font-weight: 300; font-size: 45px; line-height: 75px; display: flex; align-items: center; color: #000000;">Rp.52,000</b>
                             <input type="text" style="display:none" name="harga" value="139000" >
@@ -55,16 +55,12 @@
                             </table>
                             <hr style="width: 99%"> 
                         </div>
-                        <div class="col-md-2" style=" margin-top: 20px;">
-                            <p style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Atribut</p> 
-                            <hr>
-                        </div>
                         <div class="col-md-12">
                         <table>
                             <tr>
                                 <td style="padding-right: 40px;">
                                     <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Warna</P>
-                                    <select class="form-control" id="warna" name="warna" style="width: 150px;  left: 773px; top: 763px; margin-right: 10px;">
+                                    <select class="form-control" id="warna" name="warna">
                                         <option selected disabled value>Pilih warna</option>
                                         <option value="Tan">Tan</option>
                                         <option value="Cokelat">Cokelat</option>
@@ -73,7 +69,7 @@
                                 </td>
                                 <td>
                                         <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Ukuran</P>
-                                        <select class="form-control" id="ukuran" name="ukuran" style="width: 150px;  left: 773px; top: 763px;">
+                                        <select class="form-control" id="ukuran" name="ukuran">
                                             <option selected disabled value>Pilih ukuran</option>
                                                 <option value="36">36</option>
                                                 <option value="37">37</option>

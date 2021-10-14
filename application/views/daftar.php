@@ -13,45 +13,48 @@
         <div class="p-4">
           <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                  <a aria-hidden="true"><div class="hamun" style="margin-bottom:20px; width: 100%; height: 40px; border: 1px solid blue; border-radius:20px;">
-                    <center><img class="image-responsive" src="<?php echo base_url('assets/img/log.png') ?>" style=" position:relative; top:6px; width: 25px;height: 25px;" alt=""><span style="font-size:14px; position:relative; top:6px;">Daftar Dengan Google</span></center></div>
-                  </a>                           
-                </div>
-                <div class="col-md-12">
-                  <h6>Atau</h6> 
-                </div>
+                
                 <div class="col-md-12">
                   <form method="post" action="" class="user">
                       <div class="form-group">
-                          <label >Nama Lengkap</label>
-                          <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan Nama Lengkap" name="username">
-                      </div>
-                      <div class="form-group">
-                        <label >No Handphone</label>
-                        <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="number" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan No Handphone Anda" name="password">
-                      </div>
-                      <div class="form-group">
-                          <label>Username</label>
-                          <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan Username Anda" name="username">
-                      </div>
-                      <div class="form-group">
-                          <label>Password</label>
-                          <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan Password Anda" name="username">
+                          <label >No Handphone</label>
+                          <input style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nomer Handphone" name="username">
                       </div>
                 <br>    
                 </div>   
                     <div class="col-md-12">
-                      <table style="margin-left: auto; margin-right: auto;">
-                            <tr>
-                                <td style="position:relative; right:5px;">
-                                  <a href="#" class="bt btn btn-primary btn-lg active" role="button" aria-pressed="true"><span>Daftar</span></a>
-                                </td>
-                                <td>
-                                  <button type="button" class="bt btn btn-outline-primary ">Masuk</button>
-                                </td>
-                            </tr>
-                      </table>
+                       <a href="<?php echo base_url('auth'); ?>"><button type="button" class="btn btn-primary" style="width: 100%; font-size: 15px; background-color: #0049A8;">Berikutnya</button></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                      <h6>Atau</h6> 
+                    </div>
+                    <div class="col-md-12">
+                      <a aria-hidden="true"><div class="hamun" style="margin-bottom:20px; width: 100%; height: 40px; border: 1px solid blue; border-radius:20px;">
+                        <center><img class="image-responsive" src="<?php echo base_url('assets/img/log.png') ?>" style=" position:relative; top:6px; width: 25px;height: 25px;" alt=""><span style="font-size:14px; position:relative; top:6px;">Daftar Dengan Google</span></center></div>
+                      </a>                           
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <div class="p-4">
+                        <span>Dengan mendaftar, Anda setuju dengan </span>
+                        <a href="#"><span>Syarat,ketentuan dan Kebijakan dari Ballesupply</span></a>
+                        <span>&</span>
+                        <a href="#"><span>Kebijakan Privasi</span></a>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <table style="margin-left: auto; margin-right: auto;">
+                          <tr>
+                            <td>
+                              <span style="color:#696969;">Sudah Punya akun?</span>
+                            </td>
+                            <td>
+                              <a href=""><span>Login</span></a>
+                            </td>
+                          </tr>
+                        </table>
                     </div>
             </div>
           </div>
@@ -61,9 +64,9 @@
     </div>
   </div>
  </section>
-  <br>
+ 
   <!-- awal fotter -->
-  <?php $this->load->view('partial/footer') ?> 
+  
     <!-- akhir fotter -->
  <style>
    /* awal css hr di register */
