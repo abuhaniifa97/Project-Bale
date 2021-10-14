@@ -18,7 +18,7 @@
                   <!-- Nested Row within Card Body -->
                   <div class="row">
                     <div class="col-md-12 text-center">
-                    <button  style="width: 210px; height: 40px; border: 2px solid black; border-radius:20px;" class=" btn btn-light" type="submit" aria-hidden="true" ><i class="fa fa-google" aria-hidden="true"></i> Daftar Dengan Google</button>                           
+                      <button  style="width: 210px; height: 40px; border: 2px solid black; border-radius:20px;" class=" btn btn-light" type="submit" aria-hidden="true" ><i class="fa fa-google" aria-hidden="true"></i> Daftar Dengan Google</button>                           
                     </div>
                     <div class="col-lg-12">
                       <div class="p-5">

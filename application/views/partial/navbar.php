@@ -19,7 +19,7 @@
 					<!-- item -->
 					<div class="item">
 						
-							<a href="#!" class="nav-item1">
+							<a href="<?php echo base_url('halaman_utama'); ?>" class="nav-item1">
 								<img class="img-responsive" src="assets/iconnav/home.png" style="width: 20px;height: 20px;" alt="">
 							</a>
 						
