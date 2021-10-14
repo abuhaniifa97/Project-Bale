@@ -970,8 +970,8 @@
 
                      /* awal css bt media */
 					    @media only screen and (min-width: 360px) and (max-width: 767px) {
-							.bt {
-									width:120px;
+							.bt1 {
+									width:140px;
 									height:47px;
 									border-radius: 10px;
 								
@@ -980,7 +980,7 @@
 						}
 						/* css bt tab */
 						@media only screen and (min-width: 768px) and (max-width: 991px) {
-							.bt {
+							.bt1 {
 								width:140px;
 								height:47px;
 								border-radius: 10px;
@@ -988,7 +988,7 @@
 					    }
 						/* css bt destok */
 						@media only screen and (min-width: 992px) {
-							.bt {
+							.bt1 {
 								width:150px;
 								height:47px;
 								border-radius: 10px;
@@ -1055,7 +1055,20 @@
 								
 								}
 							}
-					  
+					  /* awal csss text detail produk */
+					  @media only screen and (min-width: 360px) and (max-width: 767px) {
+							.text2 {
+								     font-style: normal;
+									 font-weight: 600; 
+									 font-size: 20px; 
+									 line-height: 55px;
+									 color: #222222; 
+									 text-transform: capitalize;
+									 
+								}
+							
+						}
+
 		</style>
 
 </head>
