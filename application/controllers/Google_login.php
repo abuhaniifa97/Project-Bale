@@ -11,7 +11,9 @@ class Google_login extends CI_Controller
     }
    public function login()
     {
-        require "vendor/autoload.php";
+        $type_akun = "OTOMATIS";
+        $role = "2";
+        include_once APPPATH . "../vendor/autoload.php";
         $google_client = new Google_Client();
 
         $google_client->setClientId('261717386692-03f51tpdedaqfoe3cos5jik4s3iu6biq.apps.googleusercontent.com'); //Define your ClientID
@@ -44,11 +46,11 @@ class Google_login extends CI_Controller
                     {
                     //update data
                     $user_data = array(
-                    'first_name' => $data['given_name'],
-                    'last_name'  => $data['family_name'],
-                    'email_address' => $data['email'],
-                    'profile_picture'=> $data['picture'],
-                    'updated_at' => $current_datetime
+                    'nama_lengkap' => $data['given_name'],
+                    // 'last_name'  => $data['family_name'],
+                    'email' => $data['email'],
+                    // 'profile_picture'=> $data['picture'],
+                    // 'updated_at' => $current_datetime
                     );
 
                     $this->google_login_model->Update_user_data($user_data, $data['id']);
@@ -58,11 +60,13 @@ class Google_login extends CI_Controller
                     //insert data
                     $user_data = array(
                     'login_oauth_uid' => $data['id'],
-                    'first_name'  => $data['given_name'],
-                    'last_name'   => $data['family_name'],
-                    'email_address'  => $data['email'],
-                    'profile_picture' => $data['picture'],
-                    'created_at'  => $current_datetime
+                    'nama_lengkap'  => $data['given_name'],
+                    // 'last_name'   => $data['family_name'],
+                    'email'  => $data['email'],
+                    'type_akun' =>$type_akun,
+                    'role' =>$role
+                    // 'profile_picture' => $data['picture'],
+                    // 'created_at'  => $current_datetime
                     );
 
                     $this->google_login_model->Insert_user_data($user_data);
@@ -73,7 +77,9 @@ class Google_login extends CI_Controller
             $login_button = '';
             if(!$this->session->userdata('access_token'))
                 {
-                    $login_button = '<a href="'.$google_client->createAuthUrl().'"><img src="'.base_url().'sign-with-google.png" /></a>';
+                    $login_button = '<a href="'.$google_client->createAuthUrl().'"><div class="col-md-12 text-center">
+                    <button  style="width: 210px; height: 40px; border: 2px solid black; border-radius:20px;" class=" btn btn-light" type="submit" aria-hidden="true" ><i class="fa fa-google" aria-hidden="true"></i> Daftar Dengan Google</button>                           
+                  </div></a>';
                     $data['login_button'] = $login_button;
                     $this->load->view('google_login', $data);
                 }

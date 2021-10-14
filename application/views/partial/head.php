@@ -998,7 +998,7 @@
 					/* akhir css bottom media */
 				     /* awal css text */
 					  /* css text mobile */
-					  @media only screen and (min-width: 360px) and (max-width: 767px) {
+					  	@media only screen and (min-width: 360px) and (max-width: 767px) {
 							.text {
 								font-size: 14px;
 								line-height: 42px;
