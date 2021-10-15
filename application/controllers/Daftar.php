@@ -22,4 +22,24 @@ class Daftar extends CI_Controller {
 	{
 		$this->load->view('daftar');
 	}
+
+	public function insert_manual()
+	{
+		$type_akun = "MANUAL";
+        $role = "2";
+		
+		$permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
+        $id_user = substr(str_shuffle($permitted_chars), 0, 8);
+		$no_hp = $this->input->post('no_hp');
+
+		$data = array(
+			'id_user' => $id_user,
+			'type_akun' => $type_akun,
+			'role'    => $role,
+			'no_hp'   => $no_hp
+		);
+
+		$this->model_auth->insert_manual1($data,'users');
+		redirect('halaman_utama');
+	}
 }

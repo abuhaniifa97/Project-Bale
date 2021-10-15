@@ -18,22 +18,16 @@
         <div class="panel panel-default">
             <?php
             if (!isset($login_button)) {
-                echo ' <div class="col-md-12 text-center">
-                <button  style="width: 210px; height: 40px; border: 2px solid black; border-radius:20px;" class=" btn btn-light" type="submit" aria-hidden="true" ><i class="fa fa-google" aria-hidden="true"></i> Daftar Dengan Google</button>                           
-              </div>';
+                // echo ' <div class="col-md-12 text-center">
+                // <button  style="width: 210px; height: 40px; border: 2px solid black; border-radius:20px;" class=" btn btn-light" type="submit" aria-hidden="true" ><i class="fa fa-google" aria-hidden="true"></i> Daftar Dengan Google</button>                           
+                // </div>';
 
-                $user_data = $this->session->userdata('user_data');
-                echo base_url("halaman_utama");
-               
-                // echo '<div class="panel-heading">Welcome User</div><div class="panel-body">';
-                // // echo '<a href="' . base_url() . 'halaman_utama">'
-                // echo '<img src="' . $user_data['profile_picture'] . '" class="img-responsive img-circle img-thumbnail" />';
-                // echo '<h3><b>Name : </b>' . $user_data["first_name"] . ' ' . $user_data['last_name'] . '</h3>';
-                // echo '<h3><b>Email :</b> ' . $user_data['email_address'] . '</h3>';
+                echo '<script>console.log("login"); </script>';
                 echo '<h3><a href="' . base_url() . 'google_login/logout">Logout</h3></div>';
             } else
 
             {
+                echo '<script>console.log("logout"); </script>';
                 echo '<div align="center">' . $login_button . '</div>';
             }
 
