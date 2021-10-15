@@ -21,30 +21,33 @@
                 <div class="col-md-12">
                   <h6>Atau</h6> 
                 </div>
-                <div class="col-md-12">
-                  <form method="post" action="" class="user">
-                      <div class="form-group">
-                          <label >Username</label>
-                          <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan Username" name="username">
-                      </div>
-                      <div class="form-group">
-                          <label >Password</label>
-                          <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password" name="password">
-                      </div>
-                <br>    
-                </div>   
-                    <div class="col-md-12">
-                      <table style="margin-left: auto; margin-right: auto;">
-                            <tr>
-                                <td style="position:relative; right:5px;">
-                                  <a href="<?php echo base_url('halaman_utama'); ?>"><button type="button" class="bt1 btn btn-primary" style=" background-color: #0049A8;">Masuk</button></a>
-                                </td>
-                                <td>
-                                 <a href="<?php echo base_url('daftar'); ?>"> <button type="button" class="bt1 btn btn-outline-primary">Daftar</button></a>
-                                </td>
-                            </tr>
-                      </table>
-                    </div>
+                  <div class="col-md-12">
+                    <form method="post" action="" class="user">
+                          <div class="form-group">
+                              <label >No Handphone/Email</label>
+                              <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan No Handphone/Email" name="username">
+                          </div>
+                          <div class="form-group">
+                              <label >Password</label>
+                              <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password" name="password">
+                          </div>
+                          <div class="col-md-12">
+                            <table style="margin-left: auto; margin-right: auto;">
+                                  <tr>
+                                      <td style="position:relative; right:5px;">
+                                        <a href="<?php echo base_url('halaman_utama'); ?>"><button type="button" class="bt1 btn btn-primary" style=" background-color: #0049A8;">Masuk</button></a>
+                                      </td>
+                                      <td>
+                                      <a href="<?php echo base_url('daftar'); ?>"> <button type="button" class="bt1 btn btn-outline-primary">Daftar</button></a>
+                                      </td>
+                                  </tr>
+                            </table>
+                          </div>
+                    </form>     
+                    <br>    
+                  </div>   
+
+                </form>    
             </div>
           </div>
         </div>
@@ -54,9 +57,7 @@
   </div>
  </section>
   <br>
-  <!-- awal fotter -->
-  <?php $this->load->view('partial/footer') ?> 
-    <!-- akhir fotter -->
+  
  <style>
    /* awal css hr di register */
    h6 {

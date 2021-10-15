@@ -23,7 +23,7 @@
                 <br>    
                 </div>   
                     <div class="col-md-12">
-                       <a href="<?php echo base_url('auth'); ?>"><button type="button" class="btn btn-primary" style="width: 100%; font-size: 15px; background-color: #0049A8;">Berikutnya</button></a>
+                       <a href="<?php echo base_url('verifikasi'); ?>"><button type="button" class="btn btn-primary" style="width: 100%; font-size: 15px; background-color: #0049A8;">Berikutnya</button></a>
                     </div>
                     <br>
                     <br>
@@ -31,7 +31,7 @@
                       <h6>Atau</h6> 
                     </div>
                     <div class="col-md-12">
-                      <a aria-hidden="true"><div class="hamun" style="margin-bottom:20px; width: 100%; height: 40px; border: 1px solid blue; border-radius:20px;">
+                      <a href="#" aria-hidden="true"><div class="hamun" style="color:black; text-decoration: none; margin-bottom:20px; width: 100%; height: 40px; border: 1px solid blue; border-radius:20px;">
                         <center><img class="image-responsive" src="<?php echo base_url('assets/img/log.png') ?>" style=" position:relative; top:6px; width: 25px;height: 25px;" alt=""><span style="font-size:14px; position:relative; top:6px;">Daftar Dengan Google</span></center></div>
                       </a>                           
                     </div>
@@ -51,7 +51,7 @@
                               <span style="color:#696969;">Sudah Punya akun?</span>
                             </td>
                             <td>
-                              <a href=""><span>Login</span></a>
+                              <a href="<?php echo base_url('auth'); ?>" style="text-decoration: none;"><span>Login</span></a>
                             </td>
                           </tr>
                         </table>
