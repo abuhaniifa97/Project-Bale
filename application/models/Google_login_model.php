@@ -3,7 +3,7 @@ class Google_login_model extends CI_Model
 {
     function Is_already_register($id)
     {
-        $this->db->where('id_user', $id);
+        $this->db->where('email', $id);
         $query = $this->db->get('users');
         if ($query->num_rows() > 0) {
             return true;
@@ -22,4 +22,6 @@ class Google_login_model extends CI_Model
     {
         $this->db->insert('users', $data);
     }
+
+    
 }

@@ -8,6 +8,9 @@
 <body>
 	
 		<!-- Section Slide -->
+		<!-- <div>
+			<h5><a href="' . base_url() . 'google_login/logout">Logout</h5>
+		</div> -->
 		<section class="mt-3">
 			<div class="container" style="max-width: 1367px;">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
