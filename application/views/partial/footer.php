@@ -10,7 +10,7 @@
 					<!-- Grid column -->
 					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 						<!-- Content -->
-						<h6 class="text-white fw-bold" style="font-weight: bold;"><i class="fas fa-gem me-3"></i>TENTANG KAMI</h6>
+						<h5 class="text-white fw-bold" style="font-weight: bold;"><i class="fas fa-gem me-3"></i>TENTANG KAMI</h5>
 						<hr class="mb-4" style="width:60px">
 						<p class="text-white" style="color: #f7f7f9e0!important; letter-spacing: 1px;">
 							Balesupply merupakan toko online yang sudah berdiri sejak 2020,
@@ -23,7 +23,7 @@
 					<!-- Grid column -->
 					<div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
 						<!-- Links -->
-						<h6 class="text-White" style="font-weight: bold;">KONTAK </h6>
+						<h5 class="text-White" style="font-weight: bold;">KONTAK </h5>
 						<hr class="mb-4" style="width:60px">
 						<table>
 							<tr>
@@ -39,9 +39,9 @@
 					<!-- Grid column Toko -->
 					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 					<!-- Links -->
-					<h6 class="text-White fw-bold" style="font-weight: bold;">
+					<h5 class="text-White fw-bold" style="font-weight: bold;">
 						TOKO	
-					</h6>
+					</h5>
 					<hr class="mb-4" style="width:60px;">
 					
 						<table>
@@ -63,9 +63,9 @@
 					<!-- Grid column Pengiriman-->
 					<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 					<!-- Links -->
-					<h6 class="text-White fw-bold" style="font-weight: bold;">
+					<h5 class="text-White fw-bold" style="font-weight: bold;">
 						SUPPORT PENGIRIMAN
-					</h6>
+					</h5>
 					<hr class="mb-4" style="width:60px; ">
 					<div class="row">
 					<div class="col-md-10">

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Www extends CI_Controller {
+class All_brand extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,6 +20,6 @@ class Www extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('www');
+		$this->load->view('all_brand');
 	}
 }

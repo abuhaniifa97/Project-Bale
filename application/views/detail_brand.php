@@ -4,26 +4,26 @@
     <!-- akhir head -->
     <!-- awal navbar -->
         <?php $this->load->view('partial/navbar') ?>
-     
+     <br>
+
     <!-- akhir navbar -->
     <!-- section serch -->
             <section>
                 <div class="container" style="max-width: 1340px;">
                     <div class="row">
-                        <div class="col-md-9">
-                            <span style="font-size:20px;font-weight:bold">Brand Busana Muslim</span>
+                        <div class="col-md-12 mt-5">
+                            <span style="font-size:25px;font-weight:bold">Brand Zoya</span>
                         </div>
-                        <div class="col-md-3 text-right mt-3">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 281px; height: 50px; top: 1933px; background: #FAFAFA; border: 1px solid #777777; box-sizing: border-box; border-radius: 50px;">
-                                <div style="width:80px;height:80px;border-radius:100%;color:blue;"></div>
-                            </input>
+                        <div class="col-md-12">
+                           <img src="<?php echo base_url('assets/img/brand.png') ?>" class="img-responsive " style="width: 100%; height: auto;" alt="">
                         </div>
                     </div>
                 </div>
             </section>
+
     <!-- akhir section search -->
     <!-- awal section produk kategori -->
-        <section style=" margin-top: -50px; ">
+        <section style="">
             <div class="container" style="max-width: 1340px;">
                         <div class="row">
                                 <div class="col-6 col-md-2 mt-3">
@@ -543,73 +543,61 @@
                                                 </div>
                                 </div>							
                         </div>
-                        <br>
-						<!-- pagination -->
-                        <nav aria-label="...">
-							<ul class="pagination">
-								<li class="page-item disabled">
-								<a class="page-link" href="#" tabindex="-1">Previous</a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">1</a></li>
-								<li class="page-item active">
-								<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item">
-								<a class="page-link" href="#">Next</a>
-								</li>
-							</ul>
-						</nav>		
-                        <!-- akhir pagination -->
             </div>
+           
         </section>
     <!-- akhir section produk kategori -->
     <!-- awal section brand -->
         <section>
 			<div class="container" style="max-width: 1340px;">
-				<div class="col-md-12 mt-5">
-					<span style="font-size:25px;font-weight:bold">Edisi Brand</span>
-				</div>
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <span style="font-size:20px;font-weight:bold">Brand Lainya</span>
+                    </div>
+                    <div class="col-md-6 mt-5 text-right">
+                        <a href="  <?php echo base_url('all_brand'); ?>" style="color:black; text-decoration: none;"><span style="font-size:20px;">Lihat Semua</span></a> 
+                    </div>
+                </div>
 				<br>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="wow" style="border-radius: 30px; box-shadow: 0 5px 10px rgb(73 84 100 / 5%); border-color: transparent; height: width: 100%; 263px;">
-								<div class="row">
-									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+                            <div class="row">
+                                    <div class ="col-4 col-md-2 mt-2">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<a href="<?php echo base_url('detail_brand'); ?>"><img src="<?php echo base_url('assets/img/Erigo 2.png') ?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt=""></a>
 									</div>
 								</div>
 							</div>
