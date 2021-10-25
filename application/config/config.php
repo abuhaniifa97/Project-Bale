@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | WITH a trailing slash:
 |
 |	http://example.com/
-|
+| 
 | WARNING: You MUST set this value!
 |
 | If it is not set, then CodeIgniter will try guess the protocol and path
@@ -25,14 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-<<<<<<< HEAD
 $config['base_url'] = 'http://localhost:8080/ballesupply';
-=======
-
-$config['base_url'] = 'http://localhost:/Project-Bale';
->>>>>>> 55bbf456096da47d4cfb44c5b4423fd6f06be3b5
-
-
 
 
 

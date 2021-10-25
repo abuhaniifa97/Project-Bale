@@ -24,6 +24,9 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+	<!-- Icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 	<!-- Pay -->
 	<script type="text/javascript"
             src="https://app.sandbox.midtrans.com/snap/snap.js"

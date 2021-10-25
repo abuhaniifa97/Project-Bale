@@ -21,8 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- CSS JS, CDN DATATABLES -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"> 
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/fh-3.2.0/kt-2.6.4/r-2.2.9/sc-2.0.5/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/fh-3.2.0/kt-2.6.4/r-2.2.9/sc-2.0.5/datatables.min.js"></script>
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url() ?>template_admin/css/sb-admin-2.min.css" rel="stylesheet">
