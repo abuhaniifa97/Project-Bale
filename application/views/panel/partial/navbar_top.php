@@ -1,5 +1,5 @@
  <!-- partial:partials/_navbar.html/Navbar Atas -->
- <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="<?php echo base_url('assets/panel/images/logo.svg')?>" class="mr-2" alt="logo"/></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="<?php echo base_url('assets/panel/images/logo-mini.svg')?>" alt="logo"/></a>
@@ -97,7 +97,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper" >
-      <!-- partial:partials/_settings-panel.html color Tema -->
+      <!-- partial:partials/_set tings-panel.html color Tema -->
       <div class="theme-setting-wrapper" >
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">

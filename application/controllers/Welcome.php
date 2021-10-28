@@ -1,13 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-	class Welcome extends CI_Controller {
-	public function __construct(){
-		parent::__construct();
-		$this->load->helper('url');		
-		$this->load->model('model_barang');
-               
-	}
+class Welcome extends CI_Controller {
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -25,46 +20,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	 */
 	public function index()
 	{
+		$this->load->helper('url');
 
-		// $data["card"] = $this->model_barang->tampil_data()->result();
-		
-		
-		
-		
-		
-		
-		$data['show_brand'] = $this->M_brand->show_data_brand()->result();
-		$this->load->view('halaman_utama',$data);
-		
-		//inisialisasi
-		// $this->pagination->initialize($config);
-
+		$this->load->view('welcome_message');
 	}
-	
-	// pagination
-	// public function index()
-	// {
-
-	// 	// $data["card"] = $this->model_barang->tampil_data()->result();
-		
-	// 	$data["gabung"] = $this->model_barang->join()->result();
-
-	// 	//PAGINATION
-	// 	$this->load->library('pagination');
-
-	// 	//CONFIG
-	// 	$config['base_url'] = "http://localhost/clone/ballesupply/index";
-	// 	$config['total_rows'] = $this->model_barang->pagination();
-	// 	$config['per_page'] = 12;
-
-	// 	//inisialisasi
-	// 	$this->pagination->initialize($config);
-
-	// 	$data["card"] = $this->model_barang->tampil_data($config['per_page'], 30);
-	// 	$data["gabung"] = $this->model_barang->tampil_data()->result();
-		
-	// 	$this->load->view('halaman_utama',$data);
-
-		
-	// }
 }

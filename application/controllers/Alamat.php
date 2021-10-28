@@ -128,7 +128,7 @@ class Alamat extends CI_Controller {
 			
 		}else{
 			$data = array(
-				'ip'         =>$ip_alamat,
+				// 'ip'         =>$ip_alamat,
 				'id_pembeli' => $id_pembeli,
 				'no_telepon' => $no_telepon,
 				'nama_pembeli' => $nama_pembeli,
