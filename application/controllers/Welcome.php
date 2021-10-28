@@ -30,9 +30,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		
 		
-		
-		
-		
+		// Show Brand Join Produk
+		$data['joinbrandproduk'] = $this->M_brand->joinprodukbrand()->result();
+		// Show Product
+		$data['show_produk'] = $this->model_barang->tampil_data()->result();
+		// Show Kategori
+		$data['show_kategori_all'] = $this->M_kategori->show_data_kategori()->result();
 		$data['show_brand'] = $this->M_brand->show_data_brand()->result();
 		$this->load->view('halaman_utama',$data);
 		

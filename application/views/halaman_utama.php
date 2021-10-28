@@ -11,6 +11,7 @@
 		<!-- <div>
 			<h5><a href="' . base_url() . 'google_login/logout">Logout</h5>
 		</div> -->
+		<!-- Hero -->
 		<section class="mt-3">
 			<div class="container" style="max-width: 1367px;">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
@@ -36,6 +37,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- Akhir Hero -->
     <!-- Akhir Section slide -->
 	<!-- awal section kategori -->
 		<section>
@@ -44,102 +46,16 @@
 					<a href="<?php echo base_url('all_kategori'); ?>" style="color:black; text-decoration: none;"><span style="font-size:25px;font-weight:bold">Kategori</span></a>	
 				</div>
 				<div class="row no-gutters">
+					<?php foreach($show_kategori_all as $kat_all) : ?>
 					<div class="col-4 col-md-2 p-1">
 						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
+							<img src="<?php echo base_url().'assets/img_kategori/'. $kat_all->img_sampul?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
 							<div class="text">
-							  <center><p>Sepatu Pria</p></center>
+							  <center><p><?php echo $kat_all->nama_kategori?></p></center>
 							</div>
 						</a>
 					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/92.png') ?>" class="img-responsive "  style="width: 100%; height: auto;" alt="">
-							<div class="text">
-								<center><p>Fasihon Wanita</p></center>
-							</div>
-						</a>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						 <a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-						    <img src="<?php echo base_url('assets/img/93.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text"> 
-							   <center><p>Baju Anak</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/94.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Kaos Kaki</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/95.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							    <center><p>Busana Muslim</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/96.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-								<center><p>Pasmina</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-						    <img src="<?php echo base_url('assets/img/97.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							  <center><p>Sepatu Pria</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/98.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Hijab</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/99.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Khimer</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/100.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Sendal pria</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/101.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Sendal Wanita</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/102.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-								<center><p>Khimer</p></center>
-							</div>
-						</a> 
-					</div>
+					<?php endforeach ?>
 				</div>
 			</div>
 		</section>
@@ -153,7 +69,6 @@
 			   </div>
 				<div class="container" style="max-width: 1355px;">
 					<div class="row">
-						
 						<div class="col-md-12">
 						<!-- Carousel -->
 						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -235,7 +150,7 @@
 								<div class="row">
 									<?php foreach ($show_brand as $s_brand) :?>
 									<div class ="col-4 col-md-2 mt-2">
-										<img src="assets/img/img_brand<?php echo $s_brand->icon_brand?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
+										<img src="assets/img_brand/icon/<?php echo $s_brand->icon_brand?>"class="card-img-top img-responsive " style="width: 100%; height: auto;" alt="">
 									</div>
 									<?php endforeach ?>
 									<div class ="col-4 col-md-2 mt-2">
@@ -281,15 +196,16 @@
 		<section>
 			<div class="container" style="max-width: 1340px;">
 					<div class="row">
+						<?php foreach($show_produk as $produkall):?>
 							<div class="col-6 col-md-2 mt-3">
 										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
+										   <div class="card_home">
 												<div class="row">
 													<div class="col-md-12">
 														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
 													</div>
 													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px"><?php echo $produkall->nama_produk ?></span>
 														<br>
 														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
 													</div>
@@ -304,122 +220,7 @@
 											</div>
 										</a>
 							</div>
-						    <div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							
+						<?php endforeach?>
 					</div>
 			</div>
 			<div class="container" style="max-width: 1340px;">
@@ -855,18 +656,16 @@
 	<!-- akhir card produk -->
 	<!-- awal section brand hal -->
 		<section>
+			<?php foreach($joinbrandproduk as $join_brand):?>
 			<div class="container" style="max-width: 1340px;">
 				<div class="row">
 				 <div class="col-md-12 mt-5">
-				     <span style="font-size:25px;font-weight:bold">Brand Eiger</span>
+				     <span style="font-size:25px;font-weight:bold"><?php echo $join_brand->nama_brand?></span>
 				 </div>	
                   <div class="col-md-5">
 					<div class="row">
                       <div class="col-md-12 mt-5">
-							<div class="card" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px; ">
-								<div class="card-body">	
-								</div>
-							</div>						  
+							<img style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px; " src="<?php echo base_url().'assets/img_brand/banner/'. $join_brand->banner?>" alt="">						  
 					  </div>
 					</div>
 				  </div>
@@ -877,33 +676,33 @@
 								<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
 						</div>	
 						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1" >
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
+									<a href="<?php echo base_url('detail_produk'); ?>">
+										   <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/'. $join_brand->foto_utama?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px"><?php echo $produkall->nama_produk ?></span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp.<?php echo number_format($join_brand->harga) ?></h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+								    </a>	
 						</div>
 					</div>
 				  </div>
 				</div>
 			</div>
+			<?php endforeach ?>
 			<div class="container" style="max-width: 1340px;">
 				<div class="row">
 				 <div class="col-md-12 mt-5">
@@ -919,7 +718,6 @@
 					  </div>
 					</div>
 				  </div>
-				 
 				  <div class="col-md-7">
 					<div class="row no-gutters">
 						<div class="col-md-12 text-right  mt-2">
