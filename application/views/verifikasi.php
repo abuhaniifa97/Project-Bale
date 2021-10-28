@@ -32,7 +32,7 @@
                                     <input type="number" name="nomer_hp" placeholder="Nomer Hp" /> 
                                     <input type="password" name="password" placeholder="Password" />
                                     <input type="password" name="passwordr" placeholder="Ulangi Password" />
-                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Kembali" /> <input type="button" name="next" class="next action-button" value="Selanjutnya" />
+                                </div> <input type="button" name="previous" class="previous action-button-previous" value="Kembali" /> <button type="button" name="next" class="next action-button" value="Selanjutnya"></button>
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">
