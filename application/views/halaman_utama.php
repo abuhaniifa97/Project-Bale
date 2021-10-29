@@ -14,7 +14,7 @@
 		<!-- Hero -->
 		<section class="mt-3">
 			<div class="container" style="max-width: 1367px;">
-				<div id="=carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 						<span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner1.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border-radius: 20px;"></span>
