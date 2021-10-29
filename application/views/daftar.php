@@ -18,7 +18,7 @@
                         <div class="col-md-12">
                               <div class="form-group">
                                   <label >No Handphone</label>
-                                  <input style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nomer Handphone" name="no_hp">
+                                  <input required style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nomer Handphone" name="no_hp">
                               </div>  
                           <br>    
                         </div>   

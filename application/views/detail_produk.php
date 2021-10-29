@@ -8,14 +8,14 @@
      <!-- awal section detail produk -->
      <section>
          <div class="container" style="max-width: 1370px;">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row no-gutters">
+                <div class="col-md-5">
                     <div class="row">
                         <div class="col-md-12">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100"  src="<?php echo base_url().'assets/gambar_utama/p3.png' ?>"  alt="First slide">
+                                    <img class="d-block w-100"  src="<?php echo base_url().'assets/gambar_utama/p3.png' ?>" alt="First slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls " role="button" data-slide="prev">
@@ -30,47 +30,48 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-12 mr-5">
-                            <p style="left: 400px; font-style: normal; font-weight: 600; font-size: 28px; line-height: 55px; color: #222222; text-transform: capitalize;">JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN</p>
-                            <input type="hidden" name="nama_produk" value="JILBAB BERGO LASERCUT | HIJAB TALI \ HIJAB INSTAN">
-                            <b style="font-style: normal; font-weight: 300; font-size: 45px; line-height: 75px; display: flex; align-items: center; color: #000000;">Rp.52,000</b>
+                        <div class="col-md-12 ">
+                            <p style="position:relative; left:3px; font-style: normal; font-weight: 600; font-size: 28px; line-height: 55px; color: #222222; text-transform: capitalize;">JILBAB BERGO LASERCUT | HIJAB INSTAN</p>
+                            <input type="hidden" name="nama_produk" value="JILBAB BERGO LASERCUT |HIJAB INSTAN">
+                            <b style="position:relative; left:3px;  font-style: normal; font-weight: 300; font-size: 45px; line-height: 75px; display: flex; align-items: center; color: #000000;">Rp.52,000</b>
                             <input type="text" style="display:none" name="harga" value="139000" >
+                            <div class=""style="padding-bottom: 60px; "></div>
                         </div>
                         <div class="col-md-12">
                             <table>
                                 <tr>
-                                    <td style="padding-right: 140px;">
+                                    <td style="width:220px">
                                         <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Berat</P>
                                         <p>50 Gram</p>
                                         <input type="text" style="display:none" name="berat" value="70 ">   
                                     </td>
-                                    <td>
+                                    <td style="width:220px">
                                         <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Stok</P>
                                         <p>50 Gram</p>
                                         <input type="text" style="display:none" name="berat" value="70 ">   
                                     </td>
                                 </tr>
                             </table>
-                            <hr style="width: 99%"> 
                         </div>
                         <div class="col-md-12">
-                        <table>
-                            <tr>
-                                <td style="padding-right: 40px;">
-                                    <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Warna</P>
-                                    <select class="form-control" id="warna" name="warna">
-                                        <option selected disabled value>Pilih warna</option>
-                                        <option value="Tan">Tan</option>
-                                        <option value="Cokelat">Cokelat</option>
-                                        <option value="Hitam">Hitam</option>
-                                    </select>
-                                </td>
-                                <td>
+                            <table>
+                                <tr>
+                                    <td style="width:220px">
+                                        <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Warna</P>
+                                        <select class="form-control" id="warna" name="warna">
+                                            <option selected disabled value>Pilih warna</option>
+                                            <option value="Tan">Tan</option>
+                                            <option value="Cokelat">Cokelat</option>
+                                            <option value="Hitam">Hitam</option>
+                                        </select>
+                                    </td>
+                                    <td style="width:220px ">
                                         <P style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;">Ukuran</P>
                                         <select class="form-control" id="ukuran" name="ukuran">
-                                            <option selected disabled value>Pilih ukuran</option>
+                                                <option selected disabled value>Pilih ukuran</option>
                                                 <option value="36">36</option>
                                                 <option value="37">37</option>
                                                 <option value="38">39</option>
@@ -78,38 +79,43 @@
                                                 <option value="41">41</option>
                                                 <option value="42">42</option>
                                                 <option value="43">43</option>
-                                        </select> 
-                                </td>
-                            </tr>
-                        </table>
-                    </div>  
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>  
                     <div class="col-md-12">
                             <table>
                                 <tr>
-                                    <td>    
-                                    <p style="font-style:  normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000; margin-right: 40px; margin-top: 20px;">Jumlah</p>
-                                    <select class="form-control" name="qty" style= "width: 70px;  left: 773px; top: 763px;">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                    </select>
-                                    </td>
-                                        <td>
-                                            <p>   </p>
-                                                <button  style=" margin-right: 40px;  margin-top: 50px; margin-left: -38px; width: 210px; height: 40px;" class=" btn btn-warning" name ="btn_add_cart" type="submit" aria-hidden="true" ><i class="fa fa-shopping-cart"></i> Tambah Ke keranjang</button>    
+                                        <td style="width:200px">    
+                                            <p style="font-style: normal; font-weight: 600; font-size: 20px; line-height: 30px; display: flex; align-items: center; color: #000000;  margin-top: 20px;">Jumlah</p>
+                                            <select class="form-control" name="qty" style= "width: 68px;  height:40px;">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </td>
+                                        <td style="width:200px;">
+                                            <button style="width:180px; position: relative; top:32px;" class=" btn btn-warning" name ="btn_add_cart" type="submit" aria-hidden="true" ><i class="fa fa-shopping-cart"></i> Tambah keranjang</button>    
                                         </td>
                                         <td>
-                                                                                        
-                                            <button type="button"  style=" margin-left: -38px;  margin-top: 65px;" class="btn btn-outline-warning" aria-hidden="true"><i class="fa fa-share-alt " style="color:black" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i></button>
+                                                <div class="dropdown">
+                                                    <button style="position: relative; top:32px;" type="button" class="btn btn-outline-warning" aria-hidden="true"><i class="fa fa-share-alt " style="color:black" style="width:20px; height:20px;" aria-hidden="true"></i></button>
+                                                    <div class="dropdown-content" style="position:absolute; right:10px;">
+                                                        <a href="https://www.instagram.com/?url=https://www.drdrop.co/" target="_blank" rel="noopener"><span>share <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                                                        <a href="https://api.whatsapp.com/send?phone=62895354997040&text=hallo%20%0Akami%20Bagikankewa%"><span>share <i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
+                                                        <a href="https://www.facebook.com/share.php?u=target_link" target="_blank"><span>share <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                                                    </div>
+                                                </div>
                                         </td>
                                 </tr>
                             </table> 
@@ -121,7 +127,7 @@
      </section>
       <br>
       <div class="container" style="max-width: 1340px;">
-       <hr style="width: 100%">
+       <hr style="width: 100% background-color : 1px solid #E5E7E">
       </div>
      <!-- akhir section detail produk -->
      <br>

@@ -24,12 +24,12 @@
 							</a>
 						
 						
-							<a href="#!" class="nav-item2">
+							<a href="<?php echo base_url('all_kategori'); ?>" class="nav-item2">
 								<img class="img-responsive" src="assets/iconnav/kategori.png" style="width: 20px;height: 20px;" alt="">
 							</a>
 						
 						
-							<a href="#!" class="nav-item3">
+							<a href="<?php echo base_url('all_brand'); ?>" class="nav-item3">
 								<img class="img-responsive" src="assets/iconnav/brand.png" style="width: 20px;height: 20px;" alt="">
 							</a>
 						
