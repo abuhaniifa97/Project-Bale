@@ -25,11 +25,11 @@
                     <form method="post" action="" class="user">
                           <div class="form-group">
                               <label >No Handphone/Email</label>
-                              <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan No Handphone/Email" name="username">
+                              <input required style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan No Handphone/Email" name="username">
                           </div>
                           <div class="form-group">
                               <label >Password</label>
-                              <input style="width: 100%; height: 40px; border: 2px solid black; border-radius:20px;" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password" name="password">
+                              <input required style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password" name="password">
                           </div>
                           <div class="col-md-12">
                             <table style="margin-left: auto; margin-right: auto;">

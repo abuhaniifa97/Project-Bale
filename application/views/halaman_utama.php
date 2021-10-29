@@ -17,13 +17,22 @@
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-						<span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border-radius: 20px;"></span>
+						<span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner1.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border-radius: 20px;"></span>
 						</div>
 						<div class="carousel-item">
-						<span class="responsive" ><img src="<?php echo base_url('assets/img/banner_slide.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border-radius: 20px;"></span>
+						  <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner2.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border-radius: 20px;"></span>
 						</div>
 						<div class="carousel-item">
-						<span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border radius: 20px; border-radius: 20px;"></span>
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner3.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner4.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner5.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner6.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:100%; border radius: 20px; border-radius: 20px;"></span>
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -61,7 +70,7 @@
 		</section>
 	<!-- akhir section kategori -->
 	<!-- awal section speasil brand -->
-		<section class=""  >
+	<section class=""  >
 			   <div class="container" style="max-width: 1340px;">
 			   <div class="col-md-12 mt-5">
 					<span style="font-size:25px;font-weight:bold">Spesial Brand</span>
@@ -69,6 +78,7 @@
 			   </div>
 				<div class="container" style="max-width: 1355px;">
 					<div class="row">
+						
 						<div class="col-md-12">
 						<!-- Carousel -->
 						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -223,435 +233,6 @@
 						<?php endforeach?>
 					</div>
 			</div>
-			<div class="container" style="max-width: 1340px;">
-					<div class="row">
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-						    <div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							
-					</div>
-			</div>
-			<div class="container" style="max-width: 1340px;">
-					<div class="row">
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-						    <div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							
-					</div>
-			</div>
-			<div class="container" style="max-width: 1340px;">
-					<div class="row">
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-						    <div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							<div class="col-6 col-md-2 mt-3">
-										<a href="<?php echo base_url('detail_produk'); ?>">
-										 <div class="card_home">
-												<div class="row">
-													<div class="col-md-12">
-														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
-													</div>
-													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
-														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
-														<br>
-														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
-													</div>
-													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star" style="font-size:90%;"></i>
-														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
-													</div>
-												</div>     
-											</div>
-										</a>
-							</div>
-							
-					</div>
-			</div>
 		</section>
 	<!-- akhir card produk -->
 	<!-- awal section brand hal -->
@@ -705,152 +286,562 @@
 			<?php endforeach ?>
 			<div class="container" style="max-width: 1340px;">
 				<div class="row">
-				 <div class="col-md-12 mt-5">
-				     <span style="font-size:25px;font-weight:bold">Brand Eiger</span>
-				 </div>	
-                  <div class="col-md-5">
-					<div class="row">
-                      <div class="col-md-12 mt-5">
-							<div class="card" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px; ">
-								<div class="card-body">	
-								</div>
-							</div>						  
-					  </div>
-					</div>
-				  </div>
-				  <div class="col-md-7">
-					<div class="row no-gutters">
-						<div class="col-md-12 text-right  mt-2">
-								<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
-						</div>	
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
+				 <!--awal brand 1  -->
+					<div class="col-md-12 mt-5">
+						<span style="font-size:25px;font-weight:bold">Brand Eiger</span>
+					</div>	
+					<div class="col-md-5">
+						<div class="row">
+						<div class="col-md-12 mt-5">
+								<img  class="card-img-top img-responsive "  src="<?php echo base_url('assets/buatan/brandeiger.webp') ?>" alt="" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px;">		
 						</div>
-						<div class="col-6 col-md-3 p-1" >
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
 						</div>
 					</div>
-				  </div>
-				</div>
+					<div class="col-md-7">
+						<div class="row no-gutters">
+							<div class="col-md-12 text-right  mt-2">
+									<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
+							</div>	
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1" >
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>	
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+						</div>
+					</div>
+				  <!-- akhir brand 1  -->
+				  <!-- awal brand 2 -->
+					<div class="col-md-12 mt-5">
+						<span style="font-size:25px;font-weight:bold">Brand Ardiles</span>
+					</div>
+					<div class="col-md-5">
+						<div class="row">
+						<div class="col-md-12 mt-5">
+						  <img  class="card-img-top img-responsive "  src="<?php echo base_url('assets/buatan/brand ardiles.webp') ?>" alt="" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px;">							  
+						</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="row no-gutters">
+							<div class="col-md-12 text-right  mt-2">
+									<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
+							</div>	
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1" >
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>	
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+						</div>
+					</div>
+				  <!--akhir brand 2 -->
+				  <!-- awal brand 3 -->
+					<div class="col-md-12 mt-5">
+						<span style="font-size:25px;font-weight:bold">Brand Acer</span>
+					</div>
+					<div class="col-md-5">
+						<div class="row">
+						<div class="col-md-12 mt-5">
+						  <img  class="card-img-top img-responsive "  src="<?php echo base_url('assets/buatan/brandacer.webp') ?>" alt="" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px;">							  					  
+						</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="row no-gutters">
+							<div class="col-md-12 text-right  mt-2">
+									<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
+							</div>	
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1" >
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>	
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+						</div>
+					</div>
+				  <!-- akhir brand 3 -->
+				  <!-- awal brand 4 -->
+					<div class="col-md-12 mt-5">
+						<span style="font-size:25px;font-weight:bold">Brand ADHDC</span>
+					</div>
+					<div class="col-md-5">
+						<div class="row">
+						<div class="col-md-12 mt-5">
+						  <img  class="card-img-top img-responsive "  src="<?php echo base_url('assets/buatan/brandahdcaparal.webp') ?>" alt="" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px;">							  					  						  
+						</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="row no-gutters">
+							<div class="col-md-12 text-right  mt-2">
+									<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
+							</div>	
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1" >
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>	
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+						</div>
+					</div>
+				  <!-- akhir brand 4 -->
+				  <!-- awal brand 5 -->
+					<div class="col-md-12 mt-5">
+						<span style="font-size:25px;font-weight:bold">Brand Arei</span>
+					</div>
+					<div class="col-md-5">
+						<div class="row">
+						<div class="col-md-12 mt-5">
+							<img  class="card-img-top img-responsive "  src="<?php echo base_url('assets/buatan/brandarai.webp') ?>" alt="" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px;">							  					  						  				  
+						</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="row no-gutters">
+							<div class="col-md-12 text-right  mt-2">
+									<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
+							</div>	
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1" >
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>	
+							</div>
+							<div class="col-6 col-md-3 p-1">
+							        <a href="<?php echo base_url('detail_produk'); ?>">
+										 <div class="card_home">
+												<div class="row">
+													<div class="col-md-12">
+														<img src="<?php echo base_url().'assets/gambar_utama/7.png' ?>" class="img-fluid"  style="width:100%;height:auto; " alt="Produk">
+													</div>
+													<div class="col-md-12 text-left m-2" style="position: relative;height:70px;font-family:Poppins">
+														<span class="text-uppercase" style="color: #222222; display:flex;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url('assets/xml/ellipsis.xml#ellipsis');font-size:12px;margin-right:20px;max-height:35px">Jilbab Merah Muda</span>
+														<br>
+														<h5 style="position: absolute;bottom:0;font-weight:830;font-family:Poppins;font-size: 15px;color:#000">Rp. 150000</h5>
+													</div>
+													<div class="col-md-11 text-right pb-1" style="color: #f1c40f">
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star" style="font-size:90%;"></i>
+														<i class="fa fa-star-half-o" style="font-size:90%;"></i>
+													</div>
+												</div>     
+											</div>
+										</a>
+							</div>
+						</div>
+					</div>
+				  <!--akhir brand 5 -->
 			</div>
-			<div class="container" style="max-width: 1340px;">
-				<div class="row">
-				 <div class="col-md-12 mt-5">
-				     <span style="font-size:25px;font-weight:bold">Brand Eiger</span>
-				 </div>	
-                  <div class="col-md-5">
-					<div class="row">
-                      <div class="col-md-12 mt-5">
-							<div class="card" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px; ">
-								<div class="card-body">	
-								</div>
-							</div>						  
-					  </div>
-					</div>
-				  </div>
-				 
-				  <div class="col-md-7">
-					<div class="row no-gutters">
-						<div class="col-md-12 text-right  mt-2">
-								<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
-						</div>	
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1" >
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="container" style="max-width: 1340px;">
-				<div class="row">
-				 <div class="col-md-12 mt-5">
-				     <span style="font-size:25px;font-weight:bold">Brand Eiger</span>
-				 </div>	
-                  <div class="col-md-5">
-					<div class="row">
-                      <div class="col-md-12 mt-5">
-							<div class="card" style="width: 100%; height: 230px; background: #EBEBEB; border-radius: 10px; ">
-								<div class="card-body">	
-								</div>
-							</div>						  
-					  </div>
-					</div>
-				  </div>
-				 
-				  <div class="col-md-7">
-					<div class="row no-gutters">
-						<div class="col-md-12 text-right  mt-2">
-								<a href="<?php echo base_url('detail_brand'); ?>" style="color:black;  text-decoration: none;"><span style="font-size:22px">Lihat Semua</span></a>
-						</div>	
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1" >
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-						<div class="col-6 col-md-3 p-1">
-							<div class="card" style="padding:10px;width: 100%; height: 250px; background: #EBEBEB; border-radius: 10px; ">
-									<div class="card-body">	
-									</div>
-							</div>	
-						</div>
-					</div>
-				  </div>
-				</div>
-			</div>
-			
-           
 		</section>
 	<!-- akhir section brand hal -->
 	<br>

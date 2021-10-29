@@ -17,8 +17,8 @@
                     <form method="post" action="<?php echo base_url(). 'daftar/insetbyemail'; ?>" class="user">
                         <div class="col-md-12">
                               <div class="form-group">
-                                  <label >Email</label>
-                                  <input style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nomer Handphone" name="emailbymanual">
+                                  <label >No Handphone</label>
+                                  <input required style="width: 100%; height: 40px; border: 1px solid black; border-radius:20px;" type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nomer Handphone" name="no_hp">
                               </div>  
                           <br>    
                         </div>   

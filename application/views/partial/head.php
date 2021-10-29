@@ -35,14 +35,14 @@
 
 	<!-- loading -->
 	<!-- <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css"> -->
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<!-- <script src="https://js.arcgis.com/4.10/"></script> -->
 	<!-- akhir loading -->
 
 
 	<!--sweet alert -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script> -->
     <!-- akhir sweet alert -->
 
@@ -1043,7 +1043,7 @@
 							}
 							
 							.carousel-inner {
-								padding: 1em;
+								padding: 2em;
 							}
 							.carousel-control-prev,
 							.carousel-control-next {

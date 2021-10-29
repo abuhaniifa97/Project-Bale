@@ -7,29 +7,38 @@
     <!-- akhir navbar -->
     <!-- Section Slide -->
         <section class=""  >
-                <div class="container" style="max-width: 1367px;">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-                            </div>
-                            <div class="carousel-item">
-                            <span class="responsive" ><img src="<?php echo base_url('assets/img/banner_slide.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-                            </div>
-                            <div class="carousel-item">
-                            <span class="responsive" ><img src="<?php echo base_url('assets/img/banner53.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="height:auto; border-radius:20px;"></span>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
+		<div class="container" style="max-width: 1367px;">
+				<div id="=carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-radius: 20px;">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner1.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:auto; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						  <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner2.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:auto; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner3.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:auto; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner4.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:auto; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner5.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:auto; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+						<div class="carousel-item">
+						 <span class="responsive" ><img src="<?php echo base_url('assets/buatan/banner6.jpg') ?>" class="d-block w-100 img-fluid"  alt="slider 1"  class="rounded" style="width: 100%; height:auto; border radius: 20px; border-radius: 20px;"></span>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+		</div>
         </section>
     <!-- Akhir Section slide -->
     <!-- awal section kategori -->
