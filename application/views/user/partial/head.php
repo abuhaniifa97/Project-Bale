@@ -13,7 +13,7 @@
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="<?php echo base_url('assets/user/vendors/datatables.net-bs4/dataTables.bootstrap4.css')?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/user/vendors/ti-icons/css/themify-icons.css')?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('js/select.dataTables.min.css')?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('user/js/select.dataTables.min.css')?>">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="<?php echo base_url('assets/user/css/vertical-layout-light/style.css')?>">
