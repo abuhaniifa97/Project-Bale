@@ -14,9 +14,9 @@ class Alamat extends CI_Controller {
 
 	// FUNCTION UNTUK MENAMPILKAN PROVINSI
 	function index() {
-		$data['berat'] = $this->model_keranjang->tampil_detail_pesanan()->result();
-		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
-		$data['provinsi']=$this->model_pembeli->get_all_provinsi();
+		// $data['berat'] = $this->model_keranjang->tampil_detail_pesanan()->result();
+		// $data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
+		// $data['provinsi']=$this->model_pembeli->get_all_provinsi();
 		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result()
 		
 			
@@ -26,7 +26,7 @@ class Alamat extends CI_Controller {
 		
 		// $this->session->set_flashdata('success','Action Completed');
 		// $this->load->view('edit_alamat', $data);
-		$this->load->view('alamat', $data);
+		$this->load->view('alamat');
 	}
 
 	// FUNCTION UNTUK MENAMPILKAN KABUPATEN	
@@ -128,7 +128,7 @@ class Alamat extends CI_Controller {
 			
 		}else{
 			$data = array(
-				'ip'         =>$ip_alamat,
+				// 'ip'         =>$ip_alamat,
 				'id_pembeli' => $id_pembeli,
 				'no_telepon' => $no_telepon,
 				'nama_pembeli' => $nama_pembeli,
@@ -178,11 +178,11 @@ class Alamat extends CI_Controller {
 	public function edit_data()
 	{
 		// $data['berat'] = $this->model_keranjang->tampil_detail_pesanan()->result();
-		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
+		// $data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		// $data['provinsi']=$this->model_pembeli->get_all_provinsi();
 		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
 		// $data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();
-		$this->load->view('edit_alamat',$data);
+		$this->load->view('edit_alamat');
 
 	}
 

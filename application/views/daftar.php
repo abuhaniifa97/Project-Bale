@@ -14,7 +14,7 @@
           <div class="container">
             <div class="row">
                   <div class="col-md-12">
-                    <form method="post" action="<?php echo base_url(). 'daftar/insert_manual'; ?>" class="user">
+                    <form method="post" action="<?php echo base_url(). 'daftar/insetbyemail'; ?>" class="user">
                         <div class="col-md-12">
                               <div class="form-group">
                                   <label >No Handphone</label>
@@ -24,7 +24,7 @@
                         </div>   
                         <div class="col-md-12">
                           <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 15px; background-color: #0049A8;">Berikutnya</button>
-                        </div>         
+                        </div> 
                     </form>
                       <div class="col-md-12">
                         <h6>Atau</h6> 

@@ -32,7 +32,7 @@
                             <button class="btn btn-primary " style="width: 180px;">Tambah Baru</button></a>
                     </nav>
                     <div class="" style="box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;padding:15px;border-radius:10px">
-                        <div class="cardq">
+                        <div >
 						<?php echo $this->session->flashdata('pesan'); ?> 
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="table_id" width="100%">
@@ -40,10 +40,12 @@
                                             <tr>
                                                 <th scope="col">No</th>
                                                 <th scope="col">Produk</th>
-                                                <th scope="col">Nama Produk</th>
+												<th scope="col">Nama Produk</th>
+												<th scope="col">Brand</th>
+												<th scope="col">Kategori</th>
                                                 <th scope="col">Berat</th>
                                                 <th scope="col">Harga</th>
-                                                <th scope="col">Aksi</th>
+                                                <th scope="col"><i class="fas fa-cog"></i></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -52,24 +54,34 @@
                                             <tr>
                                                 <td><?php echo $no++ ?></td>
                                                 <td> 2</td>
-                                                <td>2</td>
+												<td>2</td>
+												<td>2</td>
+												<td>2</td>
                                                 <td>2</td>
                                                 <td>Rp.></td>
                                                 <td>
-                                                <div class="row">
-                                                    <div class="col-md-2" style="padding:5px;">
-                                                            <button data-toggle="modal" data-target="#edit_data" class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-pencil-square-o" style="color:#FDD922;" aria-hidden="true"></i></button>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-2"></div>
-
-                                                    <div class="col-md-2" style="padding:5px;">
-														<a href="" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
-                                                    </div>
-                                                </div>                           
+													<div class="row">
+														<div class="col-12 col-md-2">
+															<!-- Swith Toggle -->
+															<div class="custom-control custom-switch">
+																<input type="checkbox" class="custom-control-input" id="customSwitch1">
+																<label class="custom-control-label" for="customSwitch1"></label>
+															</div>
+															<!-- Akhir Swith Toogle--> 
+														</div>
+														<div class="col-12 col-md-8">
+															<!-- Select -->
+															<select class="custom-select custom-select-sm selectpicker" data-show-content="true">
+																<option selected>Atur</option>
+																<option value="1" data-icon="glyphicon glyphicon-eye-open">Edit</option>
+																<option value="2" > Hapus</option>
+															</select>
+															<!-- Akhir Select -->
+														</div>
+													</div>
 												</td>
 												<!-- Modal Edit -->
-												<div class="modal fade" id="edit_data" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal fade" id="edit_data" tabindex="-1" ar1ia-labelledby="exampleModalLabel" aria-hidden="true">
 													<div class="modal-dialog">
 														<div class="modal-content">
 														<div class="modal-header">
@@ -172,7 +184,7 @@
 						<div class="modal-dialog">
 							<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Input Produk</h5>
+								<h5 class="modal-title" id="exampleModalLabel">Tambah</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 								</button>
@@ -222,15 +234,12 @@
 													<div class="upload_box">
 														<label for="foto_utama" class="row">
 														<div class="col-md-12 text-center">
-															<h6><h4>Icon</h4></h6>
-														</div>
-														<div class="col-md-12 text-center">
-															<h5 class="iconimg btn btn-warning">Pilih File</h5>
+															<h5 class="iconimg btn btn-outline-dark" style="width: 100%;height:auto;border-radius:20px">Pilih File</h5>
 														</div>
 														</label>
 														<input type="file" name="foto_upload" id="foto_utama" style="display:none">
 														<div class="dimg text-center">
-														<img src="<?php echo base_url().'assets/img/icon_brand.jpg'?>" style="width: 300px;height:300px;padding:20px" id="src_foto_utama" class="img-fluid" />
+														<img src="<?php echo base_url().'assets/img/icon_brand.jpg'?>" style="width:100%;height:auto" id="src_foto_utama" />
 														</div>
 													</div>
 												</div>
@@ -238,15 +247,12 @@
 													<div class="upload_box">
 														<label for="foto_samping" class="row">
 														<div class="col-md-12 text-center">
-															<h6><h4>Icon</h4></h6>
-														</div>
-														<div class="col-md-12 text-center">
-															<h5 class="iconimg btn btn-warning">Pilih File</h5>
+															<h5 class="iconimg btn btn-outline-dark" style="width: 100%;height:auto;border-radius:20px">Pilih File</h5>
 														</div>
 														</label>
 														<input type="file" name="foto_uploaddua" id="foto_samping" style="display:none">
 														<div class="dimg text-center">
-														<img src="<?php echo base_url().'assets/img/icon_brand.jpg'?>" style="width: 300px;height:300px;padding:20px" id="src_foto_samping" class="img-fluid" />
+														<img src="<?php echo base_url().'assets/img/icon_brand.jpg'?>" style="width: 100%;height:auto;" id="src_foto_samping"/>
 														</div>
 													</div>
 												</div>
@@ -254,15 +260,12 @@
 													<div class="upload_box">
 														<label for="foto_atas" class="row">
 														<div class="col-md-12 text-center">
-															<h6><h4>Icon</h4></h6>
-														</div>
-														<div class="col-md-12 text-center">
-															<h5 class="iconimg btn btn-warning">Pilih File</h5>
+															<h5 class="iconimg btn btn-outline-dark" style="width: 100%;height:auto;border-radius:20px">Pilih File</h5>
 														</div>
 														</label>
 														<input type="file" name="foto_uploadtiga" id="foto_atas" style="display:none">
 														<div class="dimg text-center">
-														<img src="<?php echo base_url().'assets/img/icon_brand.jpg'?>" style="width: 300px;height:300px;padding:20px" id="src_foto_atas" class="img-fluid" />
+														<img src="<?php echo base_url().'assets/img/icon_brand.jpg'?>" style="width: 100%;height:auto" id="src_foto_atas"/>
 														</div>
 													</div>
 												</div>
@@ -375,7 +378,7 @@
 									</div>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
 								<button type="submit" class="btn btn-primary" name="btn_add">Simpan</button>
 							</div>
 
