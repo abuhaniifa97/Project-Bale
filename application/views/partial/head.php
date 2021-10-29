@@ -273,7 +273,7 @@
 				} */
 
 				/* Load */
-				#load,#load_cart,#load_keranjang {
+				#load,#load_confirm,#load_keranjang {
 					width: 100%;
 					height: 100%;
 					position: fixed;

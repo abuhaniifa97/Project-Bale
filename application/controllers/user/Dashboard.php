@@ -19,13 +19,8 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $data['item'] = $this->model_produk->tampil_data()->result();
-		// $data['prod'] = $this->model_produk->tampil_data()->result();
-		$this->load->view('user/partial/head');
-		$this->load->view('user/partial/navbar');
-		$this->load->view('user/partial/sidebar');
+		
 		$this->load->view('user/pages/dashboard');
-		$this->load->view('user/partial/footer');
 	}
 }
 

@@ -1,6 +1,21 @@
 
+  <!-- HEAD -->
+  <?php
+    $this->load->view('user/partial/head');
+  ?>
+
+
   <div class="container-scroller">
     <!-- NAVBAR -->
+    <?php
+			$this->load->view('user/partial/navbar');
+		?>
+
+    <!-- SIDEBAR -->
+    <?php
+			$this->load->view('user/partial/sidebar');
+		?>
+
     
       <!-- partial -->
       <div class="main-panel">
@@ -94,7 +109,11 @@
           </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
+        <!-- FOOTER -->
+        <?php
+			    $this->load->view('user/partial/footer');
+		    ?>
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

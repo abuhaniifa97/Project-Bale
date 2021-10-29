@@ -309,7 +309,7 @@
           </div>
 
             <div class="col-md-12 text-right container mb-5">
-              <form action="<?php echo base_url('detail_keranjang/add_detail_cart');?>" id="bayarr" method="post">
+              <form action="" id="bayarr" method="post">
           
             
                   <!-- alert data tidak ada -->

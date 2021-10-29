@@ -1,9 +1,24 @@
+  <!-- HEAD -->
+  <?PHP 
+    $this->load->view('user/partial/head');
+  ?>
 
   <div class="container-scroller">
+
+  <!-- NAVBAR -->
+  <?PHP 
+    $this->load->view('user/partial/navbar');
+  ?>
+
+  <!-- SIDEBAR -->
+  <?PHP 
+    $this->load->view('user/partial/sidebar');
+  ?>
 
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+          <!-- konten edit profil -->
             <div class="row">
                 <div class="col-md-12 grid-margin stretch-card">
                         <div class="card">
@@ -39,9 +54,15 @@
                         </div> 
                 </div>
             </div>
+          <!-- akhir kontent edit profil -->
         </div>
         <!-- content-wrapper ends -->
-        
+
+        <!--FOOTER  -->
+        <?PHP 
+          $this->load->view('user/partial/footer');
+        ?>
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

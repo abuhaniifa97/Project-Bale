@@ -2,7 +2,7 @@
 			<nav class="nav1">
 				<div class="navbar">
 					<div class="toko">
-						<a href="<?= base_url() ?>halaman_utama" style="color:#fff; font-weight: bold;">BALESUPPLY</a>
+						<a href="<?= base_url() ?>welcome" style="color:#fff; font-weight: bold;">BALESUPPLY</a>
 						<a href="#!" style="color:#fff;"></a>
 						<div class="dropdown">
 							<span style="font-size:15px; margin-left:15px;">kategori</span>
@@ -19,7 +19,7 @@
 					<!-- item -->
 					<div class="item">
 						
-							<a href="<?php echo base_url('halaman_utama'); ?>" class="nav-item1">
+							<a href="<?php echo base_url('welcome'); ?>" class="nav-item1">
 								<img class="img-responsive" src="assets/iconnav/home.png" style="width: 20px;height: 20px;" alt="">
 							</a>
 						

@@ -1,12 +1,25 @@
 
+  <!-- HEAD -->
+  <?PHP 
+    $this->load->view('user/partial/head');
+  ?>
+
   <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <!-- <?php include "partial/navbar.php"; ?> -->
-    <!-- sidebar -->
-    <!-- <?php include "partial/sidebar.php"; ?> -->
+    
+    <!-- NAVBAR -->
+    <?PHP 
+      $this->load->view('user/partial/navbar');
+    ?>
+
+    <!-- SIDEBAR -->
+    <?PHP 
+      $this->load->view('user/partial/sidebar');
+    ?>
+
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+          <!-- konten card satu -->
           <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
@@ -302,6 +315,7 @@
               </div>
             </div>
           </div>
+          <!--akhir konten card satu -->
 
           <!-- konten card kedua -->
           <div class="row">
@@ -601,30 +615,12 @@
           </div>
           <!-- akhir kontent card kedua -->
         </div>
-
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
         <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
+
+        <!-- FOOTER -->
+        <?PHP 
+          $this->load->view('user/partial/footer');
+        ?>
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

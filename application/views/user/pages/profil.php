@@ -1,12 +1,24 @@
 
+  <!-- HEAD -->
+  <?PHP 
+    $this->load->view('user/partial/head');
+  ?>
+  
   <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <!-- <?php include "partial/navbar.php"; ?> -->
-    <!--sidebar  -->
-    <!-- <?php include "partial/sidebar.php"; ?> -->
+    <!-- NAVBAR -->
+    <?PHP 
+      $this->load->view('user/partial/navbar');
+    ?>
 
+    <!-- SIDEBAR -->
+    <?PHP 
+      $this->load->view('user/partial/sidebar');
+    ?>
+    
+      <!-- Panel -->
       <div class="main-panel">
         <div class="content-wrapper">
+          <!-- kontent profil -->
             <div class="row">
                 <div class="col-md-12 grid-margin stretch-card">
                         <div class="card">
@@ -48,11 +60,15 @@
                         </div> 
                 </div>
             </div>
+            <!-- Akhir kontent profil -->
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
+
          <!-- FOOTER -->
-        <!-- <?php include "partial/footer.php"; ?> -->
+         <?PHP 
+            $this->load->view('user/partial/footer');
+          ?>
+          
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

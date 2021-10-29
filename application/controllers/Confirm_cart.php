@@ -29,45 +29,45 @@ class Confirm_cart extends CI_Controller {
 	public function index()
 	{
 		// Show Join
-		$data['show_detail'] = $this->model_confirm->show_detail()->result();
+		// $data['show_detail'] = $this->model_confirm->show_detail()->result();
 		// Ongkir 
-		$data['ongkir'] = '';
-		$data['query'] = $this->model_keranjang->tampil_data()->result();
-		$data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
-		$data['detail_keranjang'] = $this->model_confirm->tampil_data_detail_keranjang()->result();
-		$data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
+		// $data['ongkir'] = '';
+		// $data['query'] = $this->model_keranjang->tampil_data()->result();
+		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result();
+		// $data['detail_keranjang'] = $this->model_confirm->tampil_data_detail_keranjang()->result();
+		// $data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		// $data['query'] = $this->model_barang->tampil_data()->result();
-		$data['show_query'] = $this->model_confirm->tampil_detail()->result();
-		$this->load->view('confirm_cart', $data);
+		// $data['show_query'] = $this->model_confirm->tampil_detail()->result();
+		$this->load->view('confirm_cart');
 		
 
 		// Funnction Validasi Masuk berhasil
 		
 		// $id = ('id_keranjang');
-		$ip= $_SERVER['REMOTE_ADDR'];
-		$this->db->select('ip');
-		$this->db->where('ip',$ip);
-		$query = $this->db->get('pembeli');
-		$num = $query->num_rows();
-		if($num < 1)
-		{
+		// $ip= $_SERVER['REMOTE_ADDR'];
+		// $this->db->select('ip');
+		// $this->db->where('ip',$ip);
+		// $query = $this->db->get('pembeli');
+		// $num = $query->num_rows();
+		// if($num < 1)
+		// {
 			// $this->session->set_flashdata('success','Action Completed');
 			// echo base_url('alamat');
 			
-			echo "<script>console.log('Tidak berhasil')</script>";
-			redirect('alamat');
+		// 	echo "<script>console.log('Tidak berhasil')</script>";
+		// 	redirect('alamat');
 			
-		}
+		// }
 		
 		
 		
-		else{
+		// else{
 			
 				// redirect('confirm_cart');
 			// echo "<script>console.log('Berhasil')</script>";
-			$this->session->set_flashdata('success','Action Completed');
-			$this->load->view('confirm_cart',$data);
-		}
+		// 	$this->session->set_flashdata('success','Action Completed');
+		// 	$this->load->view('confirm_cart',$data);
+		// }
 		//Funnction Validasi Masuk
 	}
 	public function provinsi(){

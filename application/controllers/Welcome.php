@@ -39,5 +39,5 @@ class Welcome extends CI_Controller {
 		//inisialisasi
 		// $this->pagination->initialize($config);
 
-
+	}
 }

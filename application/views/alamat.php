@@ -45,7 +45,7 @@ if ($err) {
 <body>
       <!-- section alamat -->
       <section>
-          <div class="container" style="max-width: 1340px;"> 
+          <div class="container mt-5" style="max-width: 1340px;"> 
               <h3 class="text-center">Lengkapi Alamat</h3>
                 <div class="row flex-column-reverse flex-lg-row">
                     <div class="col-md-6">
@@ -54,9 +54,9 @@ if ($err) {
 
                         <form action="<?php echo base_url('alamat/tambah_aksi'); ?>" id="result" method="POST">
 							<!-- String ID PRODUK-->
-							<?php foreach($berat as $weight) :?>
-								<input type="hidden" name="total_berat" value="<?php echo $weight->total_berat ?>">
-							<?php endforeach?>
+							
+								<input type="hidden" name="total_berat" value="">
+							
 									<?php
 											function id_pembeli($length = 9, $chars = '1234567890abcdefghijklmnopqrstuvwxyz')
 											{
@@ -77,8 +77,8 @@ if ($err) {
 							<!-- Akhir  STRING ID PRODUK -->
                             <div class="form-group">
                                 <label for="inputAddress">Kontak</label>
-								<input type="hidden" name="ip_alamat" value="<?php echo $_SERVER['REMOTE_ADDR'];?>">
-                                <input type="hidden" name="id_pembeli" value="<?php echo id_pembeli()?>">
+								<input type="hidden" name="ip_alamat" value="">
+                                <input type="hidden" name="id_pembeli" value="">
                                 <input type="number" name="no_telepon" class="form-control" id="telepon" placeholder="Masukan no.telepon" required>
                             </div>
                             <div class="form-group">
