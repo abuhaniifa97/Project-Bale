@@ -44,7 +44,8 @@
 													<p class="text-center" style="color:white;padding: 10px;"><?php echo $order_tanggal->tanggal ?></p>
 													<?php endforeach ?>	
                         </div>
-                        <hr>
+												<hr>
+												
                       <div class="container">
                         <div class="col-md-12">
                           <div class="table-responsive">
