@@ -19,7 +19,8 @@ class Pesanan extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('user/pages/pesanan');
+		$data['tbl_order'] = $this->Model_invoice->tbl_order()->result();
+		$this->load->view('user/pages/pesanan',$data);
 		
 		
 	}

@@ -54,102 +54,16 @@
                 </div>
                 <br>
 				<div class="row no-gutters">
+					<?php foreach($show_all_kategori as $show_all) :?>
 					<div class="col-4 col-md-2 p-1">
 						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
+							<img src="<?php echo base_url().'assets/img_kategori/'. $show_all->img_sampul?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
 							<div class="text">
-							  <center><p>Sepatu Pria</p></center>
+							  <center><p><?php echo $show_all->nama_kategori ?></p></center>
 							</div>
 						</a>
 					</div>
-					<div class="col-4 col-md-2 p-1">
-					    <a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/92.png') ?>" class="img-responsive "  style="width: 100%; height: auto;" alt="">
-							<div class="text">
-								<center><p>Fasihon Wanita</p></center>
-							</div>
-						</a>
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						 <a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-						    <img src="<?php echo base_url('assets/img/93.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text"> 
-							   <center><p>Baju Anak</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/94.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Kaos Kaki</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/95.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							    <center><p>Busana Muslim</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/96.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-								<center><p>Pasmina</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-						    <img src="<?php echo base_url('assets/img/97.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							  <center><p>Sepatu Pria</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/98.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Hijab</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/99.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Khimer</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/100.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Sendal pria</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/101.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-							   <center><p>Sendal Wanita</p></center>
-							</div>
-						</a> 
-					</div>
-					<div class="col-4 col-md-2 p-1">
-						<a href="<?php echo base_url('detail_kategori'); ?>" style="color:black; text-decoration: none;">
-							<img src="<?php echo base_url('assets/img/102.png') ?>"class="img-responsive " style="width: 100%; height: auto;" alt="">
-							<div class="text">
-								<center><p>Khimer</p></center>
-							</div>
-						</a> 
-					</div>
+					<?php endforeach ?>
 				</div>
 			</div>
 		</section>

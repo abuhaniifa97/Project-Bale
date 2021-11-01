@@ -19,8 +19,8 @@ class Profil extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('user/pages/profil');
-
+		$data['join_user_alamat'] = $this->model_pembeli->join_user_alamat()->result();
+		$this->load->view('user/pages/profil',$data);
 	}
 }
 

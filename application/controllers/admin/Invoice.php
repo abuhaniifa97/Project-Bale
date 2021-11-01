@@ -2,15 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Invoice extends CI_Controller {
-    public function __construct()
-        {
-                parent::__construct();
-				$data['item'] = $this->model_produk->tampil_data()->result();
-				if ($this->session->userdata('status') != "login") {
-					redirect(base_url('auth'));
-				}
-				
-        }
 
 	/**
 	 * Index Page for this controller.
@@ -29,8 +20,12 @@ class Invoice extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['campur'] = $this->model_invoice->tampil_data()->result();
-        // $data['query'] = $this->model_barang->tampil_data()->result();
+		
+		// $data['query'] = $this->model_barang->tampil_data()->result();
+		// Tbl Order Belum Bayar
+		$data['tbl_order'] = $this->Model_invoice->tbl_order()->result();
+		// Tbl Order Sudah Bayar
+		$data['order_bayar'] = $this->Model_invoice->order_bayar()->result();
 		$this->load->view('admin/invoice',$data);
 		
 	}

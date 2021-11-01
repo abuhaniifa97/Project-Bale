@@ -60,7 +60,9 @@
 													<span style="font-weight:bold;font-size:14px;">Total Pesanan</span>
 												</div>
 												<div class="hrgtot col-md-12">
-													<span style="font-size:13px;">Rp.10.000</span>
+													<?php foreach($tot_belanja as $sum_tot): ?>
+													<span style="font-size:13px;">Rp.<?php echo number_format($sum_tot->total) ?></span>
+													<?php endforeach ?>
 												</div>
 											</div>
 										</td>

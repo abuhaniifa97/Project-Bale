@@ -24,37 +24,43 @@
                         <div class="card">
                             <div class="card-body">
                               <div class="container">
+																<!-- User -->
+																<?php foreach($join_user_alamat as $user): ?>
                                   <div class="col-md-12 mt-3">
                                     <i class="icon-head menu-icon"></i>
-                                    <span style="margin:10px; font-weight: 600; font-size: large;">Ageng Subagja</span>
+                                    <span style="margin:10px; font-weight: 600; font-size: large;"><?php echo $user->nama_lengkap ?></span>
                                   </div>
-                                  <div class="col-md-12 mt-5">
-                                    <span>Username</span>
-                                  </div>
-                                  <div class="col-md-12 mt-2">
-                                    <span style="color: #888;">Ageng</span>
-                                  </div>
+                                
                                   <div class="col-md-12 mt-5">
                                     <span>Nama Lengkap</span>
                                   </div>
                                   <div class="col-md-12 mt-2">
-                                    <span style="color: #888;">Ageng Subagja</span>
+                                    <span style="color: #888;"><?php echo $user->nama_lengkap?></span>
                                   </div>
                                   <div class="col-md-12 mt-5">
                                     <span>No telepon</span>
+																	</div>
+																	<div class="col-md-12 mt-2">
+                                    <span style="color: #888;"><?php echo $user->no_hp ?></span>
+                                  </div>
+																	<div class="col-md-12 mt-5">
+                                    <span>Email</span>
                                   </div>
                                   <div class="col-md-12 mt-2">
-                                    <span style="color: #888;">081220321456</span>
+                                    <span style="color: #888;"><?php echo $user->email?></span>
                                   </div>
+                                  
                                   <div class="col-md-12 mt-5">
                                     <span>Alamat</span>
                                   </div>
                                   <div class="col-md-12 mt-2">
-                                    <span style="color: #888;">Desa tugu Rt 003 Rw 002 kecamatan lelea kabupaten indramayu kodepos 45261 jawa barat</span>
+                                    <span style="color: #888;"><?php echo $user->alamat ?></span>
                                   </div>
                                   <div class="col-md-12 mt-4">
                                      <a href="<?php echo base_url('user/edit_profil')?>"><button style="width:130px;" class="btn btn-primary">Edit</button></a>
-                                  </div>
+																	</div>
+																	<?php endforeach ?>
+																	<!-- Akhir User -->
                               </div>
                             </div>
                         </div> 

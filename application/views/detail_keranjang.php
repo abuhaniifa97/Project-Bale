@@ -43,153 +43,48 @@
     <!-- card detail keranjang mobile -->
     <div class="container">
         <div class="card2">
+						<!-- Produk 1 -->
+						<?php foreach ($joinproduk as $show_M_keranjang):?>
             <div class="col-md-12 pt-3">
 							<!-- Content -->
 							  <table>
                   <tr>
                     <td rowspan="5">
-                      <img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt="">
+                      <img src="<?php echo base_url().'assets/gambar_utama/'. $show_M_keranjang->foto_utama?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt="">
                     </td>
                     <td rowspan="5" style="width: 10px;">
-
                     </td>
                   </tr>
                   <tr>
                     <td style="width: 180px;">
-                      <span style="font-size: 15px; width: 100px; text-transform: capitalize;">Pashmina bahan halus</span>
+                      <span style="font-size: 15px; width: 100px; text-transform: capitalize;"><?php echo $show_M_keranjang->nama_produk ?></span>
                     </td>
                     <td style="position:relative; width: 20px;">
                       <div >
                         <a href="<?=site_url('detail_keranjang/hapus/') ?>" style="float: right;" onclick="return confirm('Yakin akan menghapus data?')"> <i class="fa fa-trash" style="color:#FC185A; font-size:20px;" aria-hidden="true"></i></a>
-
                       </div>
-                       
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span style="color: #888888;"><?php echo $show_M_keranjang->qty ?></span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <span style="color: #888888;">Varian : Hitam</span>
+                      <span>Rp.<?php echo number_format($show_M_keranjang->harga) ?></span>
                     </td>
                   </tr>
-                  <tr>
-                    <td>
-                      <span style="color: #888888;">Qty 1</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span>Rp 45.000</span>
-                    </td>
-                   
-                  </tr>
-                  
-                   
-                 
                 </table>
 							<!-- Akhir Content -->
 						</div>
-            
-            <!-- Produk 2 -->
-            <div class="col-md-12 pt-3">
-							<!-- Content -->
-							  <table>
-                  <tr>
-                    <td rowspan="5">
-                      <img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt="">
-                    </td>
-                    <td rowspan="5" style="width: 10px;">
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 180px;">
-                      <span style="font-size: 15px; width: 100px; text-transform: capitalize;">Pashmina bahan halus</span>
-                    </td>
-                    <td style="position:relative; width: 20px;">
-                      <div >
-                        <a href="<?=site_url('detail_keranjang/hapus/') ?>" style="float: right;" onclick="return confirm('Yakin akan menghapus data?')"> <i class="fa fa-trash" style="color:#FC185A; font-size:20px;" aria-hidden="true"></i></a>
-
-                      </div>
-                       
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span style="color: #888888;">Varian : Hitam</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span style="color: #888888;">Qty 1</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span>Rp 45.000</span>
-                    </td>
-                   
-                  </tr>
-                  
-                   
-                 
-                </table>
-							<!-- Akhir Content -->
-						</div>
-            <!-- Akhir produk 2 -->
-
-            <!-- produk 3 -->
-            <div class="col-md-12 pt-3">
-							<!-- Content -->
-							  <table>
-                  <tr>
-                    <td rowspan="5">
-                      <img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt="">
-                    </td>
-                    <td rowspan="5" style="width: 10px;">
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 180px;">
-                      <span style="font-size: 15px; width: 100px; text-transform: capitalize;">Pashmina bahan halus</span>
-                    </td>
-                    <td style="position:relative; width: 20px;">
-                      <div >
-                        <a href="<?=site_url('detail_keranjang/hapus/') ?>" style="float: right;" onclick="return confirm('Yakin akan menghapus data?')"> <i class="fa fa-trash" style="color:#FC185A; font-size:20px;" aria-hidden="true"></i></a>
-
-                      </div>
-                       
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span style="color: #888888;">Varian : Hitam</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span style="color: #888888;">Qty 1</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span>Rp 45.000</span>
-                    </td>
-                   
-                  </tr>
-                  
-                   
-                 
-                </table>
-							<!-- Akhir Content -->
-						</div>
-            <!-- Akhir produk 3 -->
-
+						<?php endforeach ?>
+						<!-- Akhir Produk -->
             <!-- batas produk -->
             <div class="col-md-12 mt-4">
               <hr>
             </div>
-
             <!-- Ringkasan -->
             <div class="col-md-12 mt-3">
               <table>
@@ -197,22 +92,21 @@
                   <td>
                     <span class="judul" style="font-weight:bold;">Ringkasan Pembayaran</span>
                   </td>
-                  
-                  
                 </tr>
                 <tr>
                   <td style="width: 250px;">
                     <span class="totalpemb">Total Pembayaran</span>
                   </td>
-                  <td rowspan="2"  style="width: 100px;">
-                    <span class="hrg1">Rp 150.000</span>
-                  </td>
+									<td rowspan="2"  style="width: 100px;">
+									<?php foreach($tot_belanja as $sum_tot_belanjang): ?>
+                    <span class="hrg1">Rp.<?php echo number_format($sum_tot_belanjang->total) ?></span>
+									</td>
+									<?php endforeach ?>
                 </tr>
               </table>
             </div>
         </div>
         <!--akhir ringkasan  -->
-
         <div class="artb row">
           <div class="col-md-12">
             <!--awal button bulat  -->
@@ -255,63 +149,23 @@
                           
                     </tr>
                   </thead>
-          
                   <tbody>
+												<?php foreach($joinproduk as $showkeranjang) : ?>
                         <tr>
-                            
-                            <td><img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt=""></td>
-                            <td style="text-transform:capitalize;">Sepatu fantopel kulit</td>
-                            <td>1000 Gram</td> 
-                            <td>Rp 250.000</td>
-                            <td>1</td>
-                            <td><a href="<?=site_url('detail_keranjang/hapus/') ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>
-                            <?php 
-                              if( ""){
-
-                              }else{
-                                echo "<td></td>";
-                              }
-                            ?>
-                            <?php 
-                              if( ""){
-                                
-                              }else{
-                                echo " <td></td>";
-                              }
-                            ?>                                          
+                            <td><img src="<?php echo base_url().'assets/gambar_utama/'. $showkeranjang->foto_utama?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt=""></td>
+                            <td style="text-transform:capitalize;"><?php echo $showkeranjang->nama_produk ?></td>
+                            <td><?php echo number_format($showkeranjang->berat) ?> Gram</td> 
+                            <td>Rp<?php echo number_format($showkeranjang->harga) ?></td>
+                            <td><?php echo $showkeranjang->qty ?></td>
+                            <td><a href="<?=site_url('detail_keranjang/hapus/') ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>                                 
                         </tr>
-                        <tr>
-                            
-                            <td><img src="<?php echo base_url('assets/img/103.png') ?>"class="img-responsive img-fluid" style="width: 100px; height: 100px;" alt=""></td>
-                            <td style="text-transform:capitalize;">Sepatu fantopel kulit</td>
-                            <td>1000 Gram</td> 
-                            <td>Rp 250.000</td>
-                            <td>1</td>
-                            <td><a href="<?=site_url('detail_keranjang/hapus/') ?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a></td>
-                            <?php 
-                              if( ""){
-
-                              }else{
-                                echo "<td></td>";
-                              }
-                            ?>
-                            <?php 
-                              if( ""){
-                                
-                              }else{
-                                echo " <td></td>";
-                              }
-                            ?>                                          
-                        </tr>
+												<?php endforeach ?>
                   </tbody>
               </table>
             </div>
           </div>
-
             <div class="col-md-12 text-right container mb-5">
               <form action="" id="bayarr" method="post">
-          
-            
                   <!-- alert data tidak ada -->
                   <?php if ($this->session->flashdata('alert')): ?>
                     <div class="alert alert-secondary text-center" name="alert1" role="alert">Produk tidak ada</div>
@@ -319,8 +173,9 @@
                         <!--Akhir alert data tidak ada -->
 
                         <hr style="width: 100%;margin-top:10px; border: 0.1px solid #E5E7E9;">
-                        
-                          <span style="font-weight:bold "> Total: Rp. </span>
+													<?php foreach ($tot_belanja as $sum_tot): ?>
+													<span style="font-weight:bold "> Total: Rp.<?php echo number_format($sum_tot->total) ?> </span>
+													<?php endforeach ?>
                           <br>
                           <span style="font-weight:bold"> Berat: Gram</span>
                           <input type="hidden" name="id_detail_keranjang" value="">
@@ -331,7 +186,6 @@
                       
                           <input type="hidden" name="jml_qty" value="">
                           <input type="hidden" name="total_berat" value="">
-                      
                         <hr style="width: 100%; margin-top:10px; border: 0.1px solid #E5E7E9;">  
                 </div>
             
@@ -352,9 +206,6 @@
     </div>
   </div> 
       <!-- akhir detail keranjang -->
-  
-      
-     
       <section>
         <div class="c3 container mt-4" style="max-width: 1340px;">
           <div class="paralax">

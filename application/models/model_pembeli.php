@@ -55,7 +55,20 @@ class Model_pembeli extends CI_Model{
         $ip= $_SERVER['REMOTE_ADDR'];
         $this->db->where('ip',$ip);
         $this->db->delete('keranjang',$data);
-    }
+	}
+	
+	// Update
+	// Show Data User
+	public function show_user(){
+		return $this->db->get('users');
+	}
+	// Join Alamat
+	public function join_user_alamat(){
+		$data = $this->db->query("SELECT users.nama_lengkap,users.no_hp,users.email,alamat.alamat
+		FROM users
+		INNER JOIN alamat ON users.id_user = alamat.id_user;");
+		return $data;
+	}
 }
 
 

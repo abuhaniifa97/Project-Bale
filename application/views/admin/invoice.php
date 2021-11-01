@@ -9,23 +9,17 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <?php $this->load->view('admin/partial/sidebar') ?>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
             <!-- Main Content -->
             <div id="content" style="position: relative;">
-
                 <!-- Topbar -->
-
                 <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow" style="background: #0049A8; position: relative;">
                     <?php $this->load->view('admin/partial/topbar')  ?>
                 </nav>
-
                 <!-- End of Topbar -->
 				<div class="container-fluid" style="position: absolute;">
 					<div class="row">
@@ -35,33 +29,49 @@
 						<div class="col-md-12">
 							<div class="card_penjualan" style="width:100%;height:250px;background-color: #F5F6F8;border-radius:10px;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
 								<!-- Tab Bootstarp -->
-								<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 									<li class="nav-item" role="presentation">
-										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Belum Dibayar</a>
+										<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Belum Dibayar</a>
 									</li>
 									<li class="nav-item" role="presentation">
-										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Perlu Dikirim</a>
+										<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Di Proses</a>
 									</li>
 								</ul>
-								<div class="tab-content" id="myTabContent" >
-									<div class="container">
-										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 											<div class="row">
 												<div class="col-md-12 mt-2">
 													<table>
 														<tr>
 															<td style="width: 400px;">
-																<div class="card_panding" style="padding:10px;background-color:#fff;border-radius:10px;width:100%;height:150px;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
+																<div class="card_panding" style="padding:10px;background-color:#fff;border-radius:10px;width:100%;height:auto;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
 																	<table>
-																		<td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Baby.tux.sit-black-800x800.png" style="width: 100px;" class="img-fluid" alt=""></td>
-																		<td style="width: 10px;"></td>
-																		<td>
-																			<div class="row">
-																				<div class="col-md-12"><h6 style="font-size: 19px;">Sepatu</h6></div>
-																				<div class="col-md-12"><p style="color:#999;font-size:13px">Varian</p></div>
-																				<div class="col-md-12"><p>x</p></div>
-																			</div>
-																		</td>
+																		<!-- List Produk -->
+																		<?php foreach ($tbl_order as $order) :?>																		<tr>
+																			<td><img src="<?php echo base_url().'assets/gambar_utama/'. $order->foto_utama?>" style="width: 100px;" class="img-fluid" alt=""></td>
+																			<td style="width: 10px;"></td>
+																			<td>
+																				<div class="row">
+																					<div class="col-md-12"><h6 style="font-size: 19px;font-variant: all-petite-caps;"><?php echo $order->nama_produk ?></h6></div>
+																					<div class="col-md-12">
+																						<div class="row">
+																							<div class="col-md-2"><p style="color:#999;font-size:13px"><?php echo $order->isi_varian_satu ?></p></div>
+																							<div class="col-md-3"><p style="color:#999;font-size:13px"><?php echo $order->isi_varian_dua ?></p></div>
+																						</div>	
+																					</div>
+																					<div class="col-md-12">
+																						<table>
+																							<tr>
+																								<td><p><?php echo $order->qty ?>x</p></td>
+																								<td><p style="font-weight: bold;font-size:13px;font-style:italic">| Rp.<?php echo $order->harga ?></p></td>
+																							</tr>
+																						</table>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																		<?php endforeach ?>
+																		<!-- Akhir Produk -->
 																	</table>
 																</div>
 															</td>
@@ -82,9 +92,63 @@
 													<hr>
 												</div>
 											</div>
-										</div>
-										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
 									</div>
+									<!-- Diproses -->
+									<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+											<div class="row">
+												<div class="col-md-12 mt-2">
+													<table>
+														<tr>
+															<td style="width: 400px;">
+																<div class="card_panding" style="padding:10px;background-color:#fff;border-radius:10px;width:100%;height:auto;box-shadow: 0 5px 10px rgb(73 84 100 / 5%);border-color: transparent;">
+																	<table>
+																		<!-- List Produk -->
+																		<?php foreach ($order_bayar as $order) :?>																		<tr>
+																			<td><img src="<?php echo base_url().'assets/gambar_utama/'. $order->foto_utama?>" style="width: 100px;" class="img-fluid" alt=""></td>
+																			<td style="width: 10px;"></td>
+																			<td>
+																				<div class="row">
+																					<div class="col-md-12"><h6 style="font-size: 19px;font-variant: all-petite-caps;"><?php echo $order->nama_produk ?></h6></div>
+																					<div class="col-md-12">
+																						<div class="row">
+																							<div class="col-md-2"><p style="color:#999;font-size:13px"><?php echo $order->isi_varian_satu ?></p></div>
+																							<div class="col-md-3"><p style="color:#999;font-size:13px"><?php echo $order->isi_varian_dua ?></p></div>
+																						</div>	
+																					</div>
+																					<div class="col-md-12">
+																						<table>
+																							<tr>
+																								<td><p><?php echo $order->qty ?>x</p></td>
+																								<td><p style="font-weight: bold;font-size:13px;font-style:italic">| Rp.<?php echo $order->harga ?></p></td>
+																							</tr>
+																						</table>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																		<?php endforeach ?>
+																		<!-- Akhir Produk -->
+																	</table>
+																</div>
+															</td>
+															<td style="width: 50px;"></td>
+															<td style="width: 400pxs;">
+																<div class="row">
+																	<div class="col-md-12 p-1">
+																		<button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Cetak Pesanan</button>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														
+													</table>
+													<hr>
+												</div>
+											</div>
+									</div>
+								</div>
+								<!-- Akhir Update -->
+								
 								</div>
 								<!-- Akhir Bootstrap -->
 							</div>

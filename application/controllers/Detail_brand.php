@@ -20,7 +20,8 @@ class detail_brand extends CI_Controller {
 	 */
 	public function index()
 	{
-		
-		$this->load->view('detail_brand');
+		// Show Brand Join Produk
+		$data['joinbrandproduk'] = $this->M_brand->joinprodukbrand()->result();
+		$this->load->view('detail_brand',$data);
 	}
 }

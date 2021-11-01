@@ -47,5 +47,17 @@ class Model_keranjang extends CI_Model{
 
       $this->db->where($where);
       $this->db->delete($table);
-   }
+	}
+	// Join Produk Dan Keranjang
+	public function joinproduk(){
+		$data=$this->db->query("SELECT produk.nama_produk,produk.foto_utama,produk.berat,produk.harga,keranjang.qty FROM keranjang INNER JOIN produk ON keranjang.id_produk = produk.id_produk");
+		return $data;
+	}
+	// SUM TOTAL BERALANJA BELUM WHERE
+	public function tot_belanja(){
+		$data = $this->db->query("SELECT SUM(produk.harga) as total
+		FROM keranjang
+		INNER JOIN produk ON keranjang.id_produk = produk.id_produk");
+		return $data;
+	}
 }    

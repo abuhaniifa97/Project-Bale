@@ -20,7 +20,10 @@ class Detail_kategori extends CI_Controller {
 	 */
 	public function index()
 	{
-
-		$this->load->view('detail_kategori');
+		// Show Brand Join Produk
+		$data['joinkategoriproduk'] = $this->M_kategori->showkategoriproduk()->result();
+		// Show All Kategori
+		$data['show_all_kategori'] = $this->M_kategori->show_data_kategori()->result();
+		$this->load->view('detail_kategori',$data);
 	}
 }

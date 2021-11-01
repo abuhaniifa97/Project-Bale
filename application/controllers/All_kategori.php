@@ -20,6 +20,8 @@ class All_kategori extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('all_kategori');
+		// Show Brand Join Produk
+		$data['show_all_kategori'] = $this->M_kategori->show_data_kategori()->result();
+		$this->load->view('all_kategori',$data);
 	}
 }

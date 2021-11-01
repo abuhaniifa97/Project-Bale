@@ -19,8 +19,9 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
-		
-		$this->load->view('user/pages/dashboard');
+		// Show User
+		$data['show_user'] = $this->model_pembeli->show_user()->result();
+		$this->load->view('user/pages/dashboard',$data);
 	}
 }
 

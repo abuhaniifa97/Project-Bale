@@ -68,27 +68,25 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $no=1; ?>
-                                        <?php foreach ($kuat as $bnr) : ?>
+										<?php $no=1; ?>
+											<?php foreach ($show_promo as $promo) : ?>
                                             <tr>
                                                 <td><?php echo $no++ ?></td>
-                                                <td><?php echo $bnr->nama_banner ?></td>
-                                                <td><img src="<?php echo base_url(). '/assets/img/'. $bnr->gambar_banner ?>" class="img-fluid" style="width: 200px; left: px; top: 454px" alt=""></td>
+                                                <td>2</td>
+                                                <td><img src="" class="img-fluid" style="width: 200px; left: px; top: 454px" alt=""></td>
                                                 <td>   
                                                 <div class="row"> 
-                                                    <div class="col-md-2" style="padding:5px; margin-right: 30px;">
-                                                        <a href="<?=site_url().'admin/slide_bar/hapuss/'.$bnr->id_banner ;?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
-                                                    <div class="col-md-2 text-center" >
-                                                        <a href="<?=site_url('admin/slide_bar/hapuss/'.$bnr->id_banner,) ;?>" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
-
+                                                    <div class="col-md-6" style="padding:5px; margin-right: 30px;">
+                                                        <a href="" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>
+                                                    <div class="col-md-6 text-center" >
+                                                    	<a href="" onclick="return confirm('Yakin akan menghapus data?')"><button type="button" data="modal"  class="btn btn-small" style="background: #FFFFFF; box-shadow: 0px 23px 80px rgba(0, 0, 0, 0.12), 0px 9.60885px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 5.13735px 17.869px rgba(0, 0, 0, 0.0715329), 0px 2.87996px 10.0172px rgba(0, 0, 0, 0.06), 0px 1.52952px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 0.636469px 2.21381px rgba(0, 0, 0, 0.0337375);"><i class="fa fa-trash" style="color:#FC185A;" aria-hidden="true"></i></button></a>	
                                                     </div>
                                                 </div>  
                                                 </td>
-                                            </tr>
-                                        <?php endforeach ?>           
+											</tr>       
+											<?php endforeach?>
                                         </tbody>
                                 </table>
-                               
                             </div>
                             <!-- End of Main Content -->
                             <div class="modal fade" id="tambah_baru" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,22 +107,17 @@
                                         <label>Gambar Banner</label>
                                         <input type="file" id="imgInp"name="gambar_banner" class="form-control">
                                         <br>
-                                        <img id="blah" src="<?php echo base_url().'assets/img/contoh.jpg'?>" alt="your image" style="max-width: 480px; max-height: 200px;"/>
+                                        <img id="blah" src="<?php echo base_url().'assets/img/contoh.jpg'?>" alt="your image" style="width: 100%;"/>
                                        </div>
-                                       
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
                                     <button type="submit" name="btn_banner" class="btn btn-primary">Simpan</button>
                                 </div>
-
                                 </form>
-                                
                                 </div>
                             </div>
                             </div>
-                   
-
                             <!-- Footer -->
                             <?php $this->load->view('admin/partial/footer') ?>
                             <!-- End of Footer -->

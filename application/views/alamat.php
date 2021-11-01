@@ -49,14 +49,12 @@ if ($err) {
               <h3 class="text-center">Lengkapi Alamat</h3>
                 <div class="row flex-column-reverse flex-lg-row">
                     <div class="col-md-6">
-
                         <!-- FORM UNTUK MENAMBAHKAN DATA -->
-
                         <form action="<?php echo base_url('alamat/tambah_aksi'); ?>" id="result" method="POST">
 							<!-- String ID PRODUK-->
-							
-								<input type="hidden" name="total_berat" value="">
-							
+								<?php foreach($detail_keranjang as $total_berat): ?>
+								<input type="hidden" name="total_berat" value="<?php echo $total_berat->total_berat ?>">
+								<?php endforeach ?>
 									<?php
 											function id_pembeli($length = 9, $chars = '1234567890abcdefghijklmnopqrstuvwxyz')
 											{
@@ -75,17 +73,18 @@ if ($err) {
 											}
 									?>
 							<!-- Akhir  STRING ID PRODUK -->
+							<?php foreach($show_user as $show): ?>
                             <div class="form-group">
                                 <label for="inputAddress">Kontak</label>
 								<input type="hidden" name="ip_alamat" value="">
                                 <input type="hidden" name="id_pembeli" value="">
-                                <input type="number" name="no_telepon" class="form-control" id="telepon" placeholder="Masukan no.telepon" required>
+                                <input type="number" name="no_telepon" class="form-control" id="telepon" value="<?php echo $show->no_hp ?>" disabled>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress">Nama Lengkap</label>
-                                <input type="text" name="nama_pembeli" class="form-control" id="nama" placeholder="Masukan nama lengkap" required>
-                            </div>
-                            
+                                <input type="text" name="nama_pembeli" class="form-control" id="nama" value="<?php echo $show->nama_lengkap ?>" disabled>
+							</div>
+							<?php endforeach ?>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                 <label for="">Provinsi</label>
@@ -108,12 +107,10 @@ if ($err) {
                                 </div>  
                             </div>
                             <div class="form-row">
-
                                 <div class="form-group col-md-6">
                                 <label for="inputCity">Kecamatan</label>
                                 <input type="text" name="kecamatan" placeholder="Kecamatan" class="form-control">
                                 </div>
-                                
                                 <div class="form-group col-md-6">
                                 <label for="inputState">Kode Pos</label>
                                 <input type="text" name="kodepos" id="kodepos" class="form-control" id="kodepos" placeholder="Kode Pos">
@@ -125,7 +122,6 @@ if ($err) {
                             </div>
                             <div>
                                 <!-- validasi IP -->
-                                
                                 <!-- Akhir Validasi IP -->
 								<button type="submit" name="tambah" class="btn btn-dark" value="tambah">Confirm Alamat</button>
 								<a href="<?php echo base_url('halaman_utama'); ?>" class="btn btn-outline-dark">Kembali Belanja</a>

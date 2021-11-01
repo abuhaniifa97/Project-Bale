@@ -10,7 +10,6 @@ class Confirm_cart extends CI_Controller {
 		$this->midtrans->config($params);
 		$this->load->helper('url');	
     }
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -38,7 +37,15 @@ class Confirm_cart extends CI_Controller {
 		// $data['jml_qty'] = $this->model_keranjang->tampil_qty_pesanan()->result();
 		// $data['query'] = $this->model_barang->tampil_data()->result();
 		// $data['show_query'] = $this->model_confirm->tampil_detail()->result();
-		$this->load->view('confirm_cart');
+		// User Join Alamat
+		$data['showjoinuser'] = $this->Model_confirm->joinuseralamat()->result();
+		// Produk Show
+		$data['produkshow'] = $this->Model_confirm->produkshow()->result();
+		// Cost Ongkir
+		$data['showcost'] = $this->Model_confirm->showcost()->result();
+		// Detail Keranjang
+		$data['detail_keranjang'] = $this->Model_confirm->detail_keranjang()->result();
+		$this->load->view('confirm_cart',$data);
 		
 
 		// Funnction Validasi Masuk berhasil
@@ -161,7 +168,6 @@ class Confirm_cart extends CI_Controller {
 		$where = array('id_detail_keranjang');
 		$wheree = array('id_keranjang');
     	$result = json_decode($this->input->post('result_data'),true);
-		$ip = $_SERVER['REMOTE_ADDR'];
     	$data = [
 			'order_id' => $result['order_id'],
 			'gross_amount' => $result['gross_amount'],
@@ -171,17 +177,17 @@ class Confirm_cart extends CI_Controller {
 			'va_number'     => $result['va_numbers'][0]['va_number'],
 			'pdf_url'       => $result['pdf_url'],
 			'status_code'   => $result['status_code'],
-			'ip'            =>  $ip
-			
-			
-
+			'id_user'      	=> '3et'
 		];
-		
+		$order = array(
+			'status' => $result['status_code'],
+			'order_id_payment' => $result['order_id'],
+		);
+		// input Order
+		$this->model_pembeli->input_data($order,'tbl_order');
 		$this->model_pembeli->input_data($data,'payment');
-		$this->model_pembeli->delete_id_produk($where,'detail_keranjang');
-		$this->model_pembeli->delete_id_keranjang($wheree,'keranjang');
 		echo "<script>console.log('Succes');</script>";
-		redirect('my_order',$data);
+		// redirect('my_order',$data);
 
     }
 }

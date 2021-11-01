@@ -5,8 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // FUnction Tampil Data
 class Model_banner extends CI_Model{
     public function tampil_banner(){
-        return $this->db->get('banner');
-    
+        return $this->db->get('promo');
     }
   //   public function tambah_produk($data, $table){
 	// 	$this->db->insert($table, $data);

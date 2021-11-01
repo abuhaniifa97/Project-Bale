@@ -49,4 +49,30 @@ class Model_confirm extends CI_Model{
 	  ");
 	  return $show;
   }
+
+//   Update
+	// 	Join Alamat User
+  	public function joinuseralamat(){
+		$userjoin = $this->db->query("SELECT users.nama_lengkap,users.no_hp,alamat.alamat,alamat.kodepos
+		FROM users
+		INNER JOIN alamat ON users.id_user = alamat.id_user;");
+		return $userjoin;
+  	}
+    public function produkshow(){
+		$produkshow = $this->db->query("SELECT produk.nama_produk,produk.harga,keranjang.qty
+		FROM keranjang
+		INNER JOIN produk ON keranjang.id_produk = produk.id_produk; ");
+		return $produkshow;
+   }
+	//    Detail Keranjang
+	public function detail_keranjang(){
+		$show_detail = $this->db->query("SELECT * FROM detail_keranjang");
+		return $show_detail;
+	}
+	//    Cost(Ongkir)
+   public function showcost(){
+		$show_cost = $this->db->query("SELECT * FROM cost_ongkir");
+		return $show_cost;
+   }
+
 }    

@@ -5,9 +5,8 @@ class Slide_bar extends CI_Controller {
 
 	public function index()
 	{
-		$dataa['kuat'] = $this->model_banner->tampil_banner()->result();
-		// $data['show'] = $this->model_varian->show_select_varian()->result();
-		$this->load->view('admin/slide_bar',$dataa);
+		$data['show_promo'] = $this->Model_banner->tampil_banner()->result();
+		$this->load->view('admin/slide_bar',$data);
 	}
 	function tambah_banner()
 	 {
@@ -18,22 +17,19 @@ class Slide_bar extends CI_Controller {
             $gambar_banner         = $_FILES['gambar_banner']['name'];
             $gambar_banner_tmp         = $_FILES['gambar_banner']['tmp_name'];
     
-            
             // Pindah atau upload server
             move_uploaded_file($gambar_banner_tmp,'./assets/img/'.$gambar_banner);
             echo "<script>console.log('Img Disimpan')</script>";
             
                 //Pencocokan data dan field db 
                 $dataaa = array(
-                    'id_banner'           => $id_banner,
-                    'nama_banner'         => $nama_banner,
-                    'gambar_banner'       => $gambar_banner,
+                    'id_promo'             => $id_banner,
+                    'nama_promo'           => $nama_banner,
+					'gambar'               => $gambar_banner,
                  );
                 //  Simpan Data
-                  $this->model_banner->input_banner($dataaa, 'banner');
+                  $this->model_banner->input_banner($dataaa, 'promo');
                    redirect('admin/slide_bar');
-            
-
          }else{
             echo "<script>console.log('Img Gagal')</script>";
          }

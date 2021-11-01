@@ -20,7 +20,11 @@ class Detail_keranjang extends CI_Controller {
 	 */
 	public function index()
 	{   
-		$this->load->view('detail_keranjang');	
+		// Show Keranjang
+		$data['joinproduk'] = $this->Model_keranjang->joinproduk()->result();
+		// Tot Belanjang
+		$data['tot_belanja'] = $this->Model_keranjang->tot_belanja()->result();
+		$this->load->view('detail_keranjang',$data);	
 	}
 	public function add_detail_cart(){
 		if(isset($_POST['buy_detail_cart'])){

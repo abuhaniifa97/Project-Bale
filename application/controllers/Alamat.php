@@ -20,15 +20,18 @@ class Alamat extends CI_Controller {
 		// $data['buyer'] = $this->model_confirm->tampil_data_pembeli()->result()
 		
 			
-		$data['editt'] = $this->model_confirm->tampil_data_pembeli()->result();	
+		
 
 		$data['path'] = base_url('assets');
 		
 		// $this->session->set_flashdata('success','Action Completed');
 		// $this->load->view('edit_alamat', $data);
-		$this->load->view('alamat');
+		// Show User
+		$data['show_user'] = $this->model_pembeli->show_user()->result();
+		// Show Detail Keranjang
+		$data['detail_keranjang'] = $this->Model_confirm->detail_keranjang()->result();
+		$this->load->view('alamat',$data);
 	}
-
 	// FUNCTION UNTUK MENAMPILKAN KABUPATEN	
 	function add_ajax_kab($id_prov){
 		$query = $this->db->get_where('wilayah_kabupaten',array('provinsi_id'=>$id_prov));
@@ -65,13 +68,8 @@ class Alamat extends CI_Controller {
 		// Deklrasi Manual
 		$original = 23;
 		$berat = $this->input->post('total_berat');
-		echo $berat;
 		// Akhir Deklrasi Manual
 		// Deklarasi Varible
-		$ip_alamat = $this->input->post('ip_alamat');
-		$id_pembeli = $this->input->post('id_pembeli');
-		$no_telepon = $this->input->post('no_telepon');
-		$nama_pembeli = $this->input->post('nama_pembeli');
 		$alamat = $this->input->post('alamat');
 		$provinsi = $this->input->post('provinsi');
 		$kota = $this->input->post('kota');
@@ -102,69 +100,62 @@ class Alamat extends CI_Controller {
 		curl_close($curl);
 
 		$cost = json_decode($response,true);
-	  
+		
 		// Cek Ongkir 
 		foreach(array ($cost["rajaongkir"]["results"][0]["costs"][0]["cost"][0]["value"]) as $ongkir ) {
-			echo($ongkir);
+			
 		}
 		// Ekspedisi
 		foreach(array ($cost["rajaongkir"]["results"][0]["code"]) as $ekspedisi ) {
-			echo($ekspedisi);
+			
 		}
 		// Tipe Pengiriman
 		foreach(array ($cost["rajaongkir"]["results"][0]["costs"][0]["service"]) as $jenis ) {
-			echo($jenis);
+			
 		}
+
+		// Belum Cek
+		$data = array(
+			// Alamat
+			// 'ip'         =>$ip_alamat,
+			'alamat' => $alamat,
+			'prov' => $provinsi,
+			'kot'=>$kota,
+			'kec'=>$kecamatan,
+			'kodepos'=>$kodepos,
+			'id_user' => '3et'
+			
+			);
+			// Cost Ongkir
+		$cost = array(
+			'cost' => $ongkir,
+			'ekspedisi' => $ekspedisi,
+			'j_pengiriman' => $jenis,
+			'id_user' => '3et'
+		);
+
+			// $this->model_pembeli->input_data($data,'pembeli');
+			// Input Pembeli
+			$this->model_pembeli->input_data($data,'alamat');
+			// Input Cost
+			$this->model_pembeli->input_data($cost,'cost_ongkir');
+			$this->session->set_flashdata('success','Action Completed');
+			redirect('confirm_cart');
+			// echo "<script>console.log('Berhasil upload akhir')</script>";
 		
 		//cek alamat IP
-		$this->db->select('ip');
-		$this->db->where('ip',$ip_alamat);
-		$query = $this->db->get('pembeli');
-		$num = $query->num_rows();
-		if($num > 0)
-		{
-			$this->session->set_flashdata('error','Action not Completed');
-			redirect('alamat');
+		// $this->db->select('ip');
+		// $this->db->where('ip',$ip_alamat);
+		// $query = $this->db->get('users');
+		// $num = $query->num_rows();
+		// if($num > 0)
+		// {
+		// 	$this->session->set_flashdata('error','Action not Completed');
+		// 	redirect('alamat');
 			
-		}else{
-			$data = array(
-				// 'ip'         =>$ip_alamat,
-				'id_pembeli' => $id_pembeli,
-				'no_telepon' => $no_telepon,
-				'nama_pembeli' => $nama_pembeli,
-				'alamat' => $alamat,
-				'id_provinsi' => $provinsi,
-				'id_kota'=>$kota,
-				'id_kecamatan'=>$kecamatan,
-				'kodepos'=>$kodepos,
-				'cost' => $ongkir,
-				'ekspedisi' => $ekspedisi,
-				'j_pengiriman' => $jenis
-				);
-				// data provinsi
-				$data2 = array(
-				'id_provinsi' => $provinsi,
-				'id_pembeli' => $id_pembeli
-				);
-				// data kabupaten
-				$data3 = array(
-				 'id_pembeli' => $id_pembeli,
-				 'id_kota'=>$kota
-				);
-				// data kecamatan
-			    $data4 = array(
-				 'id_pembeli' => $id_pembeli,
-				 'id_kecamatan'=>$kecamatan,
-				);
-	
-				$this->model_pembeli->input_data($data,'pembeli');
-				$this->model_pembeli->input_data($data2,'tb_provinsi');
-				$this->model_pembeli->input_data($data3,'tb_kota');
-				$this->model_pembeli->input_data($data4,'tb_kecamatan');
-				$this->session->set_flashdata('success','Action Completed');
-				redirect('confirm_cart');
-			    // echo "<script>console.log('Berhasil upload akhir')</script>";
-		}
+		// }else{
+			
+		// }
 		// Akhir Aksi Input
 		
 		// Akhir Cek Ongkir

@@ -11,7 +11,6 @@
 			<div class="row flex-column-reverse flex-lg-row mt-5">
 				<div class="col-md-7">
 					<div class="container">
-						
 						<div class="row">
 							<div class="col-md-12 text-center">
 								<!-- gambar img tokopedia -->
@@ -21,27 +20,28 @@
 							<div class="col-md-12">
 								<div class="row">
 									<div class="col-md-6">
-										
 										<div class="row">
+											<!-- User Join Alamat -->
+											<?php foreach($showjoinuser as $showuser): ?>
 											<div class="col-md-12">
 												<span style="font-size:12px;font-weight:bold">Penerima</span>
 												<br>
-												<span style="font-weight: bold;">Ageng subagja</span>
+												<span style="font-weight: bold;"><?php echo $showuser->nama_lengkap ?></span>
 											</div>
 											<div class="col-md-12">
-												<span>081220395252</span>
+												<span><?php echo $showuser->no_hp ?></span>
 											</div>
 											<div class="col-md-12">
-												<span>desa tugu blok A kecamatan Lelea kabupaten indramayu</span>
+												<span><?php echo $showuser->alamat ?></span>
 											</div>
+											<?php endforeach ?>
+											<!-- Akhir User Join Alamat -->
 										</div>
-										
 										<div class="row">
 											<div class="col-md-12">
 												<a href="<?php echo base_url('alamat/edit_data') ?>"><p class="font-italic" style="color:#FC185A; ">Edit Alamat</p></a>
 											</div>	
 										</div>
-										
 									</div>
 									<div class="col-md-6">
 										<div class="row">
@@ -71,17 +71,19 @@
 											<th style="width:200px">Jumlah</th>
 										</tr>
 									</thead>
-										
+									<!-- Produk -->
+									<?php foreach($produkshow as $produk): ?>
 										<tr>
-											<td style="width:400px">Sepatu pantofel</td>
+											<td style="width:400px"><?php echo $produk->nama_produk?></td>
 											<td style="width:200px">
 												<span>Hitam</span>
 												<br>
 												<span>31</span>
 											</td>
-											<td style="width:200px">1</td>
+											<td style="width:200px"><?php echo $produk->qty ?></td>
 										</tr>
-										
+									<?php endforeach ?>
+									<!-- Akhir Produk -->
 								</table>
 								<hr style="width:100%">
 							</div>
@@ -91,21 +93,24 @@
 										<span style="font-weight:700">Ongkir :</span>
 										<br>
 										<!-- FOREACH -->
-											<!-- <?php $tot_ongkir = $buy->cost?> -->
-										<span class="text-uppercase">JNE(OKE) : Rp. 25.000</span>
+										<!-- <?php $tot_ongkir = $buy->cost?> -->
+										<?php foreach($showcost as $cost): ?>
+										<?php $ongkir = $cost->cost ?>
+										<span class="text-uppercase"><?php echo $cost->ekspedisi ?>(<?php echo $cost->j_pengiriman ?>) : Rp. <?php echo number_format($cost->cost) ?></span>
+										<?php endforeach ?>
 										<!-- END FOREACH -->
 									</div>
 								</div>
 								<hr style="width:100%">
 								<!-- Detail Keranjang -->
-								<!-- <?php $tot_belanja = $list->total_harga;
-									  $tot_all = $tot_belanja + $tot_ongkir;
-									  ?> -->
+									 <?php foreach($detail_keranjang as $keranjang): ?>
+									<?php $tot_belanja = $keranjang->total_harga?>
+									<?php $tot_bayar = $ongkir + $tot_belanja ?>
 									 <div class="text-center mt-3">
 										 <span class="text-center" style="font-style: italic;">Jumlah Yang Harus Di Bayar</span>
-										 <h5 style="font-weight: bold;" class="text-center">Rp.300.000</h5>
-										
+										 <h5 style="font-weight: bold;" class="text-center">Rp.<?php echo number_format($tot_bayar); ?></h5>
 									 </div>
+									 <?php endforeach ?>
 								<!-- Akhir Detail Keranjang -->
 							</div>
 							<div class="col-md-12">
@@ -126,7 +131,7 @@
 										<!-- <?php endforeach?> -->
 										<!-- Akhir Keranjang -->
 										<!-- Detail Keranjang -->
-										<input type="hidden" value="<?php echo $tot_all?>" name="total_detail" id="total_detail">
+										<input type="hidden" value="<?php echo $tot_bayar?>" name="total_detail" id="total_detail">
 										<!-- Detail Keranjang -->
 									<br>
 										<button class="btn btn-dark mt-2 mr-2" id="pay-button" style="width:210px;margin-bottom:10px">Lanjut Ke Pembayaran</button>
