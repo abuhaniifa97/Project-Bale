@@ -71,7 +71,7 @@
         <!-- content-wrapper ends -->
 
          <!-- FOOTER -->
-         <?PHP 
+          <?PHP 
             $this->load->view('user/partial/footer');
           ?>
           

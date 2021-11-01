@@ -27,7 +27,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost:8080/ballesupply';
+=======
+$config['base_url'] = 'http://localhost:/Project-Bale';
+>>>>>>> e3922af3e133cf588a11933b50047b637131a589
 
 
 

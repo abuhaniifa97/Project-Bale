@@ -35,7 +35,6 @@
                       <a class="nav-link" style="background:none;" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Selesai</a>
                     </li>
                   </ul>
-                  
                   <div class="tab-content" style="border:none; padding:0px;" id="myTabContent">
                     <!-- kontent belum bayar -->
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -45,7 +44,6 @@
 													<?php endforeach ?>	
                         </div>
 												<hr>
-												
                       <div class="container">
                         <div class="col-md-12">
                           <div class="table-responsive">
@@ -576,8 +574,10 @@
             </div>
           </div>
           <!-- akhir kontent card kedua -->
+
+          <!-- content-wrapper ends -->
         </div>
-        <!-- content-wrapper ends -->
+        
 
         <!-- FOOTER -->
         <?PHP 
@@ -586,8 +586,8 @@
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
-    </div>   
-    <!-- page-body-wrapper ends -->
   </div>
+
+</div>
   <!-- container-scroller -->
 

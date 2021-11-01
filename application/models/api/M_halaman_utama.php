@@ -57,6 +57,7 @@ class M_halaman_utama extends CI_Model
     // GET BRAND
     public function getbrand($id = null)
     {
+
         if($id === null){
             return $this->db->get('brand')->result_array();
         } else{
